@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "banco-imagens-3f26d",
+  "private_key_id": "e76a4a9416573cb9ce71ab78ce5444dd0b7ddab9",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCZB5GAuMVAVApH\ncHLOudtEg+wWDcwQH1JyldapS7eGI2x5HwUos0VveYhtigyKoi0KplakuoJ0YvX+\nSdRJK5oM8uGUBa7nqU5nsnLdipeQ3W48uJu0zSQqalf4kRtNyOD9gByKqYe63NiJ\nM18pGjdFmVcqQOd1AwllWraWhxslYH43bLstWYBnpep1MUxemt3Ns6du721qen6m\n8j4Qr6WCH/gGXoPMN+c7DBCsV6OOQdh5KbBXZkvlH9WTwMS0rIxqmLwYMMzF71RR\n3/U+egQBS/XiL90QFWPNg+S2SitISJ1/KTeXKjrtuCZgOVm/0bYo9FQQjalPaRN8\n2yS8aT09AgMBAAECggEAM8T+sVhQyrljnNVq0YrIpf4nMTLLtSyTfNY5/53w4T08\npiEbYrB7LgIkaEJKid/hcvfg2euK1IriA3vAiFxqyjSkoanmiNKbBrO07kPDkKuI\nbpxZeKnpsTu2tQ2J+h+aFchwX2yI0WuDCa9KYyJOTopYlZ/NbaVwWUx99qCQS206\nc+sa8IOSuL4tlEDFRQum9QZWRbzaLl5DLwQI6RgI7zErW17YENbzM/hotaWBxwxk\nPZpqvTpuq7VknISq9tdoMgz2/0TzDTPe+8GRV60k14z5wrRe+wzgVkRmc08x1urC\nWRE7S7HpJ43ZL+i0V1B8rQ6sLLsAhoa0iOcMlCSCFQKBgQDJ1v+Hks0v3a7PEEjt\nhwflOv23KVEKOEwM1cyeh3S1wg/H4Ss+fIG0Ru4Gmk9xYAD2LOktvvFf3ho3yJ7h\nSznJwM1hOqk+Pjam9QuNo8J/hkaKL+Osb+huVFCgWI0oUiqkbJECxVF0iTG8WAjk\nW4j3LYUUe6lqmbyJJCMRVVVwgwKBgQDCF6RNvPN7G47EoL/wkvQW69vUxF1M1tez\nNrtHm2qxaE7Jl/Wy/Bo9COH0Vs0Ydb+GHw0K/P26Oaom5iXyeW+hfwAxE1Bz3gWN\nat0wxzkz/hysBr9/gd4Ob4EPUwnpCbdg0itXNNVhyw8YLktb+jgMuxTNEbVc3QK5\nQOFNnlOvPwKBgCxL6hKn7i42GbpJ2ad/fgUZ+Dqtb6Ktjks21Mxp7/w/1dTJHwN8\nsb6N3olGbm70YeGlI5utjy26AckCV5QcPVeA39IZ3LDTWI01tE5mhTYVkv+a2P2s\nJbeo+3TlWj1iIweo5/5SrbjEr0yliXYMfLe6nr1LEnhZux3h92xDbRffAoGAEDq5\n2mY6VcjwHzDx28Pt9RyzvQ7OXmZ4ktu4vTwZp8v5CpJSUS0TZJchjbTUYX83DJf8\nFzcgYDoCKE6GTcgptW9RLMlYqNefzztoU3PVLKvK6feGe7r4PmzEdeuToJDXbJkm\nVpxsW0kHchYs5vv9Q9NA4gThDWrNl3/9VuguRzECgYEAxZEAOfjPq8ZYjXMC2Kxh\nhNWq7SVxGOPUMqXQ5YmRilCeMAJQLTWoZqeSBrpLmNInqpzYujXY+MyBw5dT1buK\nyOcugw3jjkDEqvs4pADc1T9RdfcKk9pYW58+j/YPgMOSJCOf2bDYNYtcaTSLsrPw\n76z2DSYArZja+j9WhUEOfeo=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-mqngu@banco-imagens-3f26d.iam.gserviceaccount.com",
+  "client_id": "107318828995528233930",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-mqngu%40banco-imagens-3f26d.iam.gserviceaccount.com"
+}

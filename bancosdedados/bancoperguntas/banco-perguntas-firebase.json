@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "banco-perguntas",
+  "private_key_id": "2b7b8f9544b54da8011c3b2665cefdd06afcbe04",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC4Olpxu3PqnJ5D\n1GGtXZSrb0zisKjrEsfL1Fy8v75czd7WUsYGwDu73KjRoHQC8Ol8noI09qMgA/kk\niEbfdRX1/BbGbP00zTe1uM9RTiSd/MLD/HqRUR4nhii6TgWM8KPjTryWxcJZQUAB\n3hnOjiixhUB3d5pEdcwplORxag6qwam9RcrwlklqbpYb+qqciN4A9ZrQnaaIfcR9\nrR1hJe2Ii2GQgErE171VEvl8mPzUtsu3rhSG5V6hMPWuwNZ/Q5Y5/63G1CgZFhJS\nO9IHjCo4L/l6Wn1Aokh4hYfHAHF499lAFHYZymmzrSVkiun9YjE6E/j82Yq204As\nmugDMfAjAgMBAAECggEAFEZydxs28gEeoenD05KoWV28dnkUKMWTsOkZnmRJN77T\nNtSRRWOZWgmPmCfdMghVigjf3PhakkbIVVmc2Iby+HQwBX0v428adyjJwvGjXLKE\nCjxv44JWm+mgndsXB/XhSOj8yb3Qr9tbMgQW5FayP9H3Ja7HZErFQhDy5fsoIL6o\n3CPPYf2j2Mcsj8PTEPh7HbblmqmRd91XwFrgdGPmipZQX0r9KO+9aM10gDW1jBYb\ngyr6kE9SCOOAfbYp8e8Y2G2Ae/yYvblwrHlFCwlACLMiDnNLf8TFyjvj2vZSwQcr\nDCP4EquijENSGTyML8WZsdD47XRGpnMIbYmEMjewIQKBgQDyFs+rP/WMqbdGEZWw\n2JLiDCl19ZpuP4sthOCzL2Z1LHwP0ikO4iMVjVZnbnNwUx8y+dZJjyDXzBXpgIZQ\naedAb17fxxjeYREC+DCwACdxAo190ooPqBG/WmW68a3KkFiiSET1Fi5z/nP648rN\n6up6H/LFF9k96ZooSYNZPQ+MKwKBgQDC0GP3363aFDT7Uhm5cog2dzLcj1LEYnNB\nCrxX28tvCwjBKJUeKyyiLT1pXk5sAHTyKaFC44psj2PUmkUi9aPinxPdWaH9tHC7\nYMoIM+QzTr7+HozBoSr+X/amC2h0b9RtlLmb5SqfXl1PEJG6krMybQSXr5/HWHBx\n3xhZGBqX6QKBgB3HzJgmcBBzuEX4V8+/dKI2GMuYAP1a98YLuJCSXio/5KsVkVNx\nYht+nYhvv+ercgUVUtUNtF6XjoKA+wTdYkM88BDbLyX8DtmsqmCcRD3UsI8v3Sf7\n5uMBPc53eIeYpi6gcUstBV3jiWTtrL8UDPAlCfpQ6rqBCCO4l13c8xKtAoGABjc1\n6VO2rU2VvysIbRVNaUd2VPkxr9hgSwP3rGnz3LAicF9GGrdP7kC5Q+JhaCq/kHZp\nkcPGx93vVnoxmILz3qgqrxZMB9c4/ZGCAK7/Ke/qQhthbFAjGgifyv50L7rdsT1c\niq/OI1WUbpBdxfEmTIaT7e8JjwewVsHCeh09w/kCgYBL3K7CjHhyhR2Ww+GDy50z\nKeTZRoYSg+lepHjOeLUue99C9jJqcD708btDcZtp4B/+o3xLBF+i92ZnxBSlpAD7\nVrrGskPPEZb6aiTwkCgfMTThZzJidXiQcLhoo0JrRmzSrkn5vjgDeMU5pYHUjIt+\n+g87kOwt4mpJoabMMfztGw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-dooxc@banco-perguntas.iam.gserviceaccount.com",
+  "client_id": "100024814622169653002",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-dooxc%40banco-perguntas.iam.gserviceaccount.com"
+}
