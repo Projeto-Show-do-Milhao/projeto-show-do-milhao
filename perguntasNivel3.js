@@ -1,4 +1,4 @@
-const perguntasLista31 = [
+const perguntasLista1 = [
     0= {
         pergunta: 'Em qual espécie o macho choca os ovos e a fêmea procura alimento?',
         alternativas: {
@@ -112,7 +112,7 @@ const perguntasLista31 = [
 
 ];
 
-const perguntasLista32 = [
+const perguntasLista2 = [
     0= {
         pergunta: 'Os nazistas foram julgados em:',
         alternativas: {
@@ -226,7 +226,7 @@ const perguntasLista32 = [
 
 ];
 
-const perguntasLista33 = [
+const perguntasLista3 = [
     0= {
         pergunta: 'Que ramo da pecuária ocupase de bodes e cabras?',
         alternativas: {
