@@ -12,10 +12,11 @@ const estilos = StyleSheet.create({
         backgroundColor: '#150163',
         alignItems: 'center',
         justifyContent: 'center',
+        
     },
 
     imagemDeFundoDinheiroTelaJogar: {
-        marginTop: '50%',
+        marginTop: '90%',
         flex: 1,
         width: 432,
         height: 507,
@@ -47,16 +48,24 @@ const estilos = StyleSheet.create({
         flex: 1,
         backgroundColor: 'yellow',
         width: 215,
-        height: 60,
-        paddingTop: '5%',
+        paddingBottom: '2%',
+        paddingTop: '1%',
         marginBottom: '20%',
         borderRadius: 15,
         alignSelf: 'center',
-        paddingBottom: '3%'
     },
     textoJogar: {
-        fontSize: 20,
+        fontSize: 35,
         alignSelf: 'center',
+        fontWeight: 'bold',
+        color: 'white',
+        textShadowOffset: {
+            width: 1,
+            height: 1
+        },
+        textShadowColor: 'black',
+        textShadowRadius: 1,
+        // textDecorationLine: 'underline'
     },
     avatarTelaJogar: {
         width: 100,
