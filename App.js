@@ -12,8 +12,10 @@ export default function App() {
   console.disableYellowBox = true;
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Jogar">
-        <Stack.Screen name="Tela Inicial" component={TelaInicial} />
+      <Stack.Navigator 
+      initialRouteName="Jogar"
+      screenOptions={{ headerShown: false}}>
+        <Stack.Screen name="Tela Inicial" component={TelaInicial}/>
         <Stack.Screen name="Jogar" component={TelaJogar} />
       </Stack.Navigator>
     </NavigationContainer>
