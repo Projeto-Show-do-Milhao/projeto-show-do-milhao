@@ -5,10 +5,6 @@ import perguntasLista1, { perguntasListal } from '../../../perguntasNivel1'
 
 function TelaQuestoes() {
   const [pergunta, setPergunta] = useState({});
-  const [alternativaA, setAlternativaA] = useState();
-  const [alternativaB, setAlternativaB] = useState('');
-  const [alternativaC, setAlternativaC] = useState('');
-  const [alternativaD, setAlternativaD] = useState('');
   const [resposta, setResposta] = useState('');
 
   return (
@@ -91,7 +87,7 @@ function TelaQuestoes() {
               margin: 14,
 
             }}>
-              <Text style={{fontSize: 22, alignSelf: "center", }}>
+              <Text style={{ fontSize: 22, alignSelf: "center", }}>
                 PARAR
               </Text>
             </View>
@@ -105,7 +101,7 @@ function TelaQuestoes() {
               margin: 14,
 
             }}>
-              <Text style={{fontSize: 22, alignSelf: "center", }}>
+              <Text style={{ fontSize: 22, alignSelf: "center", }}>
                 PULAR
               </Text>
             </View>
