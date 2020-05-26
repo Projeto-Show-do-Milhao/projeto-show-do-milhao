@@ -1,124 +1,124 @@
 
 const perguntasListal = [
-    0= {
-        pergunta: 'Em que estado brasileiro nasceu a apresentadora Xuxa?',
-        alternativas: {
-            a: 'RIO DE JANEIRO',
-            b: 'RIO GRANDE DO SUL',
-            c: 'SANTA CATARINA',
-            d: 'GOIÁS',  
-        },
-        resposta: alternativas.b
-    
-    },
+	{
+			pergunta: 'Em que estado brasileiro nasceu a apresentadora Xuxa?',
+			alternativas: {
+					a: 'RIO DE JANEIRO',
+					b: 'RIO GRANDE DO SUL',
+					c: 'SANTA CATARINA',
+					d: 'GOIÁS',  
+			},
+			resposta: alternativas.b
+	
+	},
 
-    1= {
-        pergunta: 'Qual é o nome dado ao estado da água em forma de gelo?',
-        alternativas: {
-            a: 'LÍQUIDO',
-            b: 'SÓLIDO',
-            c: 'GASOSO',
-            d: 'VAPOROSO',  
-        },
-        resposta: alternativas.b
-    
-    },
-    
-    2= {
-        pergunta: 'Qual era o apelido da cantora Elis Regina?',
-        alternativas: {
-            a: 'GAUCHINHA',
-            b: 'PAULISTINHA',
-            c: 'PIMENTINHA',
-            d: 'ANDORINHA',  
-        },
-        resposta: alternativas.c
-    
-    },
+{
+			pergunta: 'Qual é o nome dado ao estado da água em forma de gelo?',
+			alternativas: {
+					a: 'LÍQUIDO',
+					b: 'SÓLIDO',
+					c: 'GASOSO',
+					d: 'VAPOROSO',  
+			},
+			resposta: alternativas.b
+	
+	},
+	
+	{
+			pergunta: 'Qual era o apelido da cantora Elis Regina?',
+			alternativas: {
+					a: 'GAUCHINHA',
+					b: 'PAULISTINHA',
+					c: 'PIMENTINHA',
+					d: 'ANDORINHA',  
+			},
+			resposta: alternativas.c
+	
+	},
 
-    3= {
-        pergunta: 'Quem é a namorada do Mickey?',
-        alternativas: {
-            a: 'MARGARIDA',
-            b: 'MINNIE',
-            c: 'A PEQUENA SEREIA',
-            d: 'OLÍVIA PALITO',  
-        },
-        resposta: alternativas.b
-    
-    },
+	{
+			pergunta: 'Quem é a namorada do Mickey?',
+			alternativas: {
+					a: 'MARGARIDA',
+					b: 'MINNIE',
+					c: 'A PEQUENA SEREIA',
+					d: 'OLÍVIA PALITO',  
+			},
+			resposta: alternativas.b
+	
+	},
 
-    4= {
-        pergunta: 'Qual é o personagem do folclore brasileiro que tem umaperna só?',
-        alternativas: {
-            a: 'CUCA',
-            b: 'NEGRINHO DO PASTOREIO',
-            c: 'BOITATÁ',
-            d: 'SACI-PERERÊ',  
-        },
-        resposta: alternativas.d
-    
-    },
+	{
+			pergunta: 'Qual é o personagem do folclore brasileiro que tem umaperna só?',
+			alternativas: {
+					a: 'CUCA',
+					b: 'NEGRINHO DO PASTOREIO',
+					c: 'BOITATÁ',
+					d: 'SACI-PERERÊ',  
+			},
+			resposta: alternativas.d
+	
+	},
 
-    5= {
-        pergunta: 'Fidel Castro nasceu em que país?',
-        alternativas: {
-            a: 'JAMAICA',
-            b: 'CUBA',
-            c: 'EL SALVADOR',
-            d: 'MÉXICO',  
-        },
-        resposta: alternativas.b
-    
-    },
+	{
+			pergunta: 'Fidel Castro nasceu em que país?',
+			alternativas: {
+					a: 'JAMAICA',
+					b: 'CUBA',
+					c: 'EL SALVADOR',
+					d: 'MÉXICO',  
+			},
+			resposta: alternativas.b
+	
+	},
 
-    6= {
-        pergunta: 'Quem proclamou a república no Brasil em 1889?',
-        alternativas: {
-            a: 'DUQUE DE CAXIAS',
-            b: 'MARECHAL RONDON',
-            c: 'DOM PEDRO II',
-            d: 'MARECHAL DEODORO',  
-        },
-        resposta: alternativas.d
-    
-    },
+	{
+			pergunta: 'Quem proclamou a república no Brasil em 1889?',
+			alternativas: {
+					a: 'DUQUE DE CAXIAS',
+					b: 'MARECHAL RONDON',
+					c: 'DOM PEDRO II',
+					d: 'MARECHAL DEODORO',  
+			},
+			resposta: alternativas.d
+	
+	},
 
-    7= {
-        pergunta: 'Quem é o patrono do exército brasileiro?',
-        alternativas: {
-            a: 'MARECHAL DEODORO',
-            b: 'BARÃO DE MAUÁ',
-            c: 'DUQUE DE CAXIAS',
-            d: 'MARQUÊS DE POMBAL',  
-        },
-        resposta: alternativas.c
-    
-    },
+	{
+			pergunta: 'Quem é o patrono do exército brasileiro?',
+			alternativas: {
+					a: 'MARECHAL DEODORO',
+					b: 'BARÃO DE MAUÁ',
+					c: 'DUQUE DE CAXIAS',
+					d: 'MARQUÊS DE POMBAL',  
+			},
+			resposta: alternativas.c
+	
+	},
 
-    8= {
-        pergunta: 'Quem era o apresentador que reprovava os calouros tocandouma buzina?',
-        alternativas: {
-            a: 'RAUL GIL',
-            b: 'BOLINHA',
-            c: 'FLÁVIO CAVALCANTI',
-            d: 'CHACRINHA',  
-        },
-        resposta: alternativas.d
-    
-    },
+	{
+			pergunta: 'Quem era o apresentador que reprovava os calouros tocandouma buzina?',
+			alternativas: {
+					a: 'RAUL GIL',
+					b: 'BOLINHA',
+					c: 'FLÁVIO CAVALCANTI',
+					d: 'CHACRINHA',  
+			},
+			resposta: alternativas.d
+	
+	},
 
-    9= {
-        pergunta: 'O que era Frankenstein, de Mary Shelley?',
-        alternativas: {
-            a: 'MONSTRO',
-            b: 'GORILA',
-            c: 'PRÍNCIPE',
-            d: 'SAPO',  
-        },
-        resposta: alternativas.a
-    
-    },
+	{
+			pergunta: 'O que era Frankenstein, de Mary Shelley?',
+			alternativas: {
+					a: 'MONSTRO',
+					b: 'GORILA',
+					c: 'PRÍNCIPE',
+					d: 'SAPO',  
+			},
+			resposta: alternativas.a
+	
+	},
 ];
 
 const perguntasLista2 = [
@@ -131,7 +131,7 @@ const perguntasLista2 = [
             d: 'ÁRIES',  
         },
         resposta: alternativas.c
-    
+	
     },
 
     1= {
@@ -143,7 +143,7 @@ const perguntasLista2 = [
             d: 'ANNA FORD',  
         },
         resposta: alternativas.c
-    
+	
     },
 
     2= {
@@ -155,7 +155,7 @@ const perguntasLista2 = [
             d: 'VERDE',  
         },
         resposta: alternativas.d
-    
+	
     },
 
     3= {
@@ -167,7 +167,7 @@ const perguntasLista2 = [
             d: '220',  
         },
         resposta: alternativas.b
-    
+	
     },
 
     4= {
@@ -179,7 +179,7 @@ const perguntasLista2 = [
             d: 'VATICANO',  
         },
         resposta: alternativas.d
-    
+	
     },
 
     5= {
@@ -191,7 +191,7 @@ const perguntasLista2 = [
             d: '25 DE DEZEMBRO',  
         },
         resposta: alternativas.c
-    
+	
     },
 
     6= {
@@ -203,7 +203,7 @@ const perguntasLista2 = [
             d: 'POLICIAIS',  
         },
         resposta: alternativas.b
-    
+	
     },
 
     7= {
@@ -215,7 +215,7 @@ const perguntasLista2 = [
             d: 'IAGO',  
         },
         resposta: alternativas.a
-    
+	
     },
 
     8= {
@@ -227,7 +227,7 @@ const perguntasLista2 = [
             d: 'DOZE',  
         },
         resposta: alternativas.d
-    
+	
     },
 
     9= {
@@ -239,9 +239,9 @@ const perguntasLista2 = [
             d: 'BAHIA',  
         },
         resposta: alternativas.d
-    
+	
     },
-    
+	
 ]
 
 const perguntasLista2 = [
@@ -254,7 +254,7 @@ const perguntasLista2 = [
             d: 'GATILHO',  
         },
         resposta: alternativas.b
-    
+	
     },
 
     1= {
@@ -266,7 +266,7 @@ const perguntasLista2 = [
             d: 'MAGALI',  
         },
         resposta: alternativas.b
-    
+	
     },
 
     2= {
@@ -278,7 +278,7 @@ const perguntasLista2 = [
             d: 'MARTINHA',  
         },
         resposta: alternativas.b
-    
+	
     },
 
     3= {
@@ -290,7 +290,7 @@ const perguntasLista2 = [
             d: 'MARANHÃO',  
         },
         resposta: alternativas.b
-    
+	
     },
 
     4= {
@@ -302,7 +302,7 @@ const perguntasLista2 = [
             d: 'MACHADO DE ASSIS',  
         },
         resposta: alternativas.c
-    
+	
     },
 
     5= {
@@ -314,7 +314,7 @@ const perguntasLista2 = [
             d: 'CHITÃOZINHO',  
         },
         resposta: alternativas.b
-    
+	
     },
 
     6= {
@@ -326,7 +326,7 @@ const perguntasLista2 = [
             d: 'PRÍNCIPE CHARLES',  
         },
         resposta: alternativas.c
-    
+	
     },
 
     7= {
@@ -338,7 +338,7 @@ const perguntasLista2 = [
             d: 'CHAVE DE RODA',  
         },
         resposta: alternativas.b
-    
+	
     },
 
     8= {
@@ -350,7 +350,7 @@ const perguntasLista2 = [
             d: 'SCOOBY-DOO',  
         },
         resposta: alternativas.d
-    
+	
     },
 
     9= {
@@ -362,9 +362,9 @@ const perguntasLista2 = [
             d: 'QUATRO',  
         },
         resposta: alternativas.b
-    
+	
     },
 
-    
+	
 ]
 
