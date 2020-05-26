@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import { Text, View, ImageBackground } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import TelaInicial from './src/telas/TelaInicial/index';
 import TelaJogar from './src/telas/TelaJogar/index';
 import TelaQuestoes from './src/telas/TelaQuestoes/index';
+import TelaPerfil from './src/telas/TelaPerfil/index'
+
 
 const Stack = createStackNavigator();
 
