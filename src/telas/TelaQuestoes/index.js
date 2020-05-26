@@ -16,7 +16,7 @@ function TelaQuestoes() {
         justifyContent: "space-around",
         flexDirection: 'row',
         alignItems: 'flex-start',
-        marginTop: 30
+        marginTop: 25
       }}>
         <ImageBackground source={require('../../imagens/showDoMilhaoBackground.png')} style={estilos.imagemDeFundoShowDoMilhaoTelaJogar}>
         </ImageBackground>

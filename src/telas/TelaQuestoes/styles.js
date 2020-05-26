@@ -45,7 +45,8 @@ const estilos = StyleSheet.create({
     height: 160,
     borderRadius: 15,
     alignSelf: 'center',
-    marginBottom: 400
+    marginBottom: 400,
+    marginTop: 10
   },
   containerResposta: {
     backgroundColor: 'rgba(0, 0, 255, 0.40)',
