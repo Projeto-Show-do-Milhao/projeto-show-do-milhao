@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { View, Image, ImageBackground, Text, ScrollView, TouchableHighlight } from 'react-native'
-import estilos from '../../telas/TelaJogar/styles';
+import estilos from '../../telas/TelaLobby/styles';
 
-function TelaJogar() {
+function TelaLobby() {
   return (
     <View style={estilos.containerTelaJogar}>
       <View style={estilos.containerImagemFundoTelaJogar}>
@@ -33,4 +33,4 @@ function TelaJogar() {
   )
 }
 
-export default TelaJogar;
+export default TelaLobby;

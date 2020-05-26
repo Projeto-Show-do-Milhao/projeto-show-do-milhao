@@ -1,7 +1,6 @@
 import React, { Component, useState } from 'react';
 import { View, Image, ImageBackground, Text, ScrollView, TouchableOpacity } from 'react-native'
 import estilos from '../../telas/TelaQuestoes/styles';
-import perguntasLista1, { perguntasListal } from '../../../perguntasNivel1'
 
 function TelaQuestoes() {
   const [pergunta, setPergunta] = useState({});
@@ -17,7 +16,7 @@ function TelaQuestoes() {
         justifyContent: "space-around",
         flexDirection: 'row',
         alignItems: 'flex-start',
-        marginTop: 25
+        marginTop: 30
       }}>
         <ImageBackground source={require('../../imagens/showDoMilhaoBackground.png')} style={estilos.imagemDeFundoShowDoMilhaoTelaJogar}>
         </ImageBackground>
@@ -29,16 +28,15 @@ function TelaQuestoes() {
       <View style={estilos.constainerPergunta}>
         <View>
           <Text style={{ color: 'yellow', margin: 10, fontSize: 22 }}>
-            {perguntasListal[0].pergunta}
           </Text>
         </View>
         <View style={{
           backgroundColor: 'rgba(0, 0, 255, 0.40)',
           width: 340,
-          height: 60,
+          height: 55,
           borderRadius: 15,
           alignSelf: 'center',
-          marginTop: 80
+          marginTop: 130,
         }}>
           <Text>
           </Text>
@@ -46,7 +44,7 @@ function TelaQuestoes() {
         <View style={{
           backgroundColor: 'rgba(0, 0, 255, 0.40)',
           width: 340,
-          height: 60,
+          height: 55,
           borderRadius: 15,
           alignSelf: 'center',
           marginTop: 20
@@ -57,7 +55,7 @@ function TelaQuestoes() {
         <View style={{
           backgroundColor: 'rgba(0, 0, 255, 0.40)',
           width: 340,
-          height: 60,
+          height: 55,
           borderRadius: 15,
           alignSelf: 'center',
           marginTop: 20
@@ -68,7 +66,7 @@ function TelaQuestoes() {
         <View style={{
           backgroundColor: 'rgba(0, 0, 255, 0.40)',
           width: 340,
-          height: 60,
+          height: 55,
           borderRadius: 15,
           alignSelf: 'center',
           marginTop: 20
