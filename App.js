@@ -19,6 +19,7 @@ export default function App() {
         <Stack.Screen name="Tela Inicial" component={TelaInicial}/>
         <Stack.Screen name="Tela Lobby" component={TelaLobby} />
         <Stack.Screen name="Questoes" component={TelaQuestoes} />
+        <Stack.Screen name="Tela do Perfil" component={TelaPerfil}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
