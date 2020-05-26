@@ -1,4 +1,4 @@
-
+export {perguntasListal}
 const perguntasListal = [
 	{
 			pergunta: 'Em que estado brasileiro nasceu a apresentadora Xuxa?',

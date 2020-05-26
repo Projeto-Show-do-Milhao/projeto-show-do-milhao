@@ -1,10 +1,11 @@
 import React, { Component, useState } from 'react';
 import { View, Image, ImageBackground, Text, ScrollView, TouchableOpacity } from 'react-native'
 import estilos from '../../telas/TelaQuestoes/styles';
+import perguntasLista1, { perguntasListal } from '../../../perguntasNivel1'
 
 function TelaQuestoes() {
-  const [pergunta, setPergunta] = useState('');
-  const [alternativaA, setAlternativaA] = useState('');
+  const [pergunta, setPergunta] = useState({});
+  const [alternativaA, setAlternativaA] = useState();
   const [alternativaB, setAlternativaB] = useState('');
   const [alternativaC, setAlternativaC] = useState('');
   const [alternativaD, setAlternativaD] = useState('');
@@ -32,7 +33,7 @@ function TelaQuestoes() {
       <View style={estilos.constainerPergunta}>
         <View>
           <Text style={{ color: 'yellow', margin: 10, fontSize: 22 }}>
-            Onde foi conduzida a vitória das forças aliadas na Segunda Guerra Mundial?
+            {perguntasListal[0].pergunta}
           </Text>
         </View>
         <View style={{
