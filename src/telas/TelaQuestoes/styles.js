@@ -41,7 +41,7 @@ const estilos = StyleSheet.create({
 
   constainerPergunta: {
     backgroundColor: 'rgba(0, 0, 255, 0.40)',
-    width: 360,
+    width: 340,
     height: 160,
     borderRadius: 15,
     alignSelf: 'center',
