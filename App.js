@@ -15,13 +15,13 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator 
-      initialRouteName="Tela do Fim"
+      initialRouteName="TelaDoFim"
       screenOptions={{ headerShown: false}}>
-        <Stack.Screen name="Tela Inicial" component={TelaInicial}/>
-        <Stack.Screen name="Tela Lobby" component={TelaLobby} />
+        <Stack.Screen name="TelaInicial" component={TelaInicial}/>
+        <Stack.Screen name="TelaLobby" component={TelaLobby} />
         <Stack.Screen name="Questoes" component={TelaQuestoes} />
-        <Stack.Screen name="Tela do Perfil" component={TelaPerfil}/>
-        <Stack.Screen name="Tela do Fim" component={TelaFinal}/>
+        <Stack.Screen name="TelaDoPerfil" component={TelaPerfil}/>
+        <Stack.Screen name="TelaDoFim" component={TelaFinal}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
