@@ -9,6 +9,8 @@ function TelaFinal({ navigation }) {
 	const mudaTela = () => {
 		
 	}
+
+
 	return (
 		<View style={estilos.containerTelaJogar}>
 				<View style={estilos.containerImagemFundoTelaJogar}>
@@ -28,11 +30,22 @@ function TelaFinal({ navigation }) {
 								alignItems: 'center',
 								marginTop: 350
 						}}>
-							<Button 
-							onPress={()=> navigatior.navigate("TelaLobby")}
-							title= 'SAIR'
-							color= 'yellow'
-							/>
+							<TouchableOpacity 
+							onPress={()=> navigation.navigate("TelaLobby")}
+							style={{
+								backgroundColor: 'yellow',
+								width: 215,
+								paddingBottom: '2%',
+								paddingTop: '1%',
+								marginBottom: '20%',
+								borderRadius: 15,
+								alignSelf: 'center',
+							}}
+							>
+								<Text>
+										SAIR
+								</Text>
+							</TouchableOpacity>
 						</View>
 				</View>
 		</View>

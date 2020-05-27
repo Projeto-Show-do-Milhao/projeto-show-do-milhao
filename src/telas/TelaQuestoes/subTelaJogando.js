@@ -1,10 +1,24 @@
 import React, { Component, useState } from 'react';
 import { View, Image, ImageBackground, Text, ScrollView, TouchableOpacity } from 'react-native'
 import estilos from './styles'
+import {perguntasListal} from './perguntas/teste'
 export {Jogando}
 
 
+
 function Jogando(){
+  const [perguntas, setPerguntas] = useState([perguntasListal])
+  const [pulos, setPulos] = useState(3)
+  const [premio, setPremio] = useState(0)
+  const [jogando, setJogando] = useState(false)
+
+  function escolhePergunta(){
+    <Text>
+      {perguntas[0].pergunta}
+    </Text>
+  }
+
+
     return(
       <View style={estilos.containerTelaJogar}>
       <View style={estilos.containerImagemFundoTelaJogar}>
@@ -33,6 +47,7 @@ function Jogando(){
       <View style={estilos.constainerPergunta}>
         <View>
           <Text style={{ color: 'yellow', margin: 10, fontSize: 22 }}>
+            {perguntas[0].pergunta}
           </Text>
         </View>
         <View style={{
