@@ -66,7 +66,14 @@ const estilos = StyleSheet.create({
     borderRadius: 15,
     alignSelf: 'center',
     marginTop: 80
-  }
+  },
+
+  containerCabecalho: {
+    justifyContent: "space-around",
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    marginTop: 25
+  },
 });
 
 export default estilos;
