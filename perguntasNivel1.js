@@ -1,4 +1,4 @@
-export {perguntasListal}
+export {perguntasListal, perguntasLista2, }
 const perguntasListal = [
 	{
 			pergunta: 'Em que estado brasileiro nasceu a apresentadora Xuxa?',
@@ -21,7 +21,7 @@ const perguntasListal = [
 					c: 'GASOSO',
 					d: 'VAPOROSO',  
             },
-            resposta: 'b'
+            resposta: 'SÓLIDO'
 			// resposta: alternativas.b
 	
 	},
@@ -34,7 +34,7 @@ const perguntasListal = [
 					c: 'PIMENTINHA',
 					d: 'ANDORINHA',  
             },
-            resposta: 'c'
+            resposta: 'PIMENTINHA'
 			// resposta: alternativas.c
 	
 	},
@@ -47,7 +47,7 @@ const perguntasListal = [
 					c: 'A PEQUENA SEREIA',
 					d: 'OLÍVIA PALITO',  
             },
-            resposta: 'b'
+            resposta: 'MINNIE'
 			// resposta: alternativas.b
 	
 	},
@@ -60,7 +60,7 @@ const perguntasListal = [
 					c: 'BOITATÁ',
 					d: 'SACI-PERERÊ',  
             },
-            resposta: 'd'
+            resposta: 'SACI-PERERÊ'
 			// resposta: alternativas.d
 	
 	},
@@ -73,7 +73,7 @@ const perguntasListal = [
 					c: 'EL SALVADOR',
 					d: 'MÉXICO',  
             },
-            resposta: 'b'
+            resposta: 'CUBA'
 			// resposta: alternativas.b
 	
 	},
@@ -86,7 +86,7 @@ const perguntasListal = [
 					c: 'DOM PEDRO II',
 					d: 'MARECHAL DEODORO',  
             },
-            resposta: 'd'
+            resposta: 'MARECHAL DEODORO'
 			// resposta: alternativas.d
 	
 	},
@@ -99,7 +99,7 @@ const perguntasListal = [
 					c: 'DUQUE DE CAXIAS',
 					d: 'MARQUÊS DE POMBAL',  
             },
-            resposta: 'c'
+            resposta: 'DUQUE DE CAXIAS'
 			// resposta: alternativas.c
 	
 	},
@@ -112,7 +112,7 @@ const perguntasListal = [
 					c: 'FLÁVIO CAVALCANTI',
 					d: 'CHACRINHA',  
             },
-            resposta: 'd'
+            resposta: 'CHACRINHA'
 			// resposta: alternativas.d
 	
 	},
@@ -125,134 +125,144 @@ const perguntasListal = [
 					c: 'PRÍNCIPE',
 					d: 'SAPO',  
             },
-            resposta: 'a'
+            resposta: 'MONSTRO'
 			// resposta: alternativas.a
 	
 	},
 ];
 
-// const perguntasLista2 = [
-//     0= {
-//         pergunta: 'Qual é o signo do zodíaco de quem nasce no dia do ano-novo?',
-//         alternativas: {
-//             a: 'VIRGEM',
-//             b: 'AQUÁRIO',
-//             c: 'CAPRICÓRNIO',
-//             d: 'ÁRIES',  
-//         },
-//         resposta: alternativas.c
+const perguntasLista2 = [
+    {
+        pergunta: 'Qual é o signo do zodíaco de quem nasce no dia do ano-novo?',
+        alternativas: {
+            a: 'VIRGEM',
+            b: 'AQUÁRIO',
+            c: 'CAPRICÓRNIO',
+            d: 'ÁRIES',  
+        },
+        // resposta: alternativas.c
+        resposta: 'CAPRICÓRNIO'
 	
-//     },
+    },
 
-//     1= {
-//         pergunta: 'Quem fundou a fábrica de automóveis Ford?',
-//         alternativas: {
-//             a: 'HARRISON FORD',
-//             b: 'GERALD FORD',
-//             c: 'HENRY FORD',
-//             d: 'ANNA FORD',  
-//         },
-//         resposta: alternativas.c
+    {
+        pergunta: 'Quem fundou a fábrica de automóveis Ford?',
+        alternativas: {
+            a: 'HARRISON FORD',
+            b: 'GERALD FORD',
+            c: 'HENRY FORD',
+            d: 'ANNA FORD',  
+        },
+        // resposta: alternativas.c
+        resposta: 'HENRY FORD'
 	
-//     },
+    },
 
-//     2= {
-//         pergunta: 'Qual é a cor que se associa com os grupos ecológicos?',
-//         alternativas: {
-//             a: 'PRETA',
-//             b: 'VERMELHA',
-//             c: 'AZUL',
-//             d: 'VERDE',  
-//         },
-//         resposta: alternativas.d
+    {
+        pergunta: 'Qual é a cor que se associa com os grupos ecológicos?',
+        alternativas: {
+            a: 'PRETA',
+            b: 'VERMELHA',
+            c: 'AZUL',
+            d: 'VERDE',  
+        },
+        // resposta: alternativas.d
+        resposta: 'AZUL'
 	
-//     },
+    },
 
-//     3= {
-//         pergunta: 'A água ferve a quantos graus centígrados?',
-//         alternativas: {
-//             a: '200',
-//             b: '100',
-//             c: '170',
-//             d: '220',  
-//         },
-//         resposta: alternativas.b
+    {
+        pergunta: 'A água ferve a quantos graus centígrados?',
+        alternativas: {
+            a: '200',
+            b: '100',
+            c: '170',
+            d: '220',  
+        },
+        // resposta: alternativas.b
+        resposta: '100'
 	
-//     },
+    },
 
-//     4= {
-//         pergunta: 'Qual lugar é também chamado de Santa Sé?',
-//         alternativas: {
-//             a: 'VENEZA',
-//             b: 'VITÓRIA',
-//             c: 'VANCOUVER',
-//             d: 'VATICANO',  
-//         },
-//         resposta: alternativas.d
+    {
+        pergunta: 'Qual lugar é também chamado de Santa Sé?',
+        alternativas: {
+            a: 'VENEZA',
+            b: 'VITÓRIA',
+            c: 'VANCOUVER',
+            d: 'VATICANO',  
+        },
+        // resposta: alternativas.d
+        resposta: 'VATICANO'
 	
-//     },
+    },
 
-//     5= {
-//         pergunta: 'Quando é comemorado o dia da independência do Brasil?',
-//         alternativas: {
-//             a: '21 DE ABRIL',
-//             b: '12 DE OUTUBRO',
-//             c: '7 DE SETEMBRO',
-//             d: '25 DE DEZEMBRO',  
-//         },
-//         resposta: alternativas.c
+    {
+        pergunta: 'Quando é comemorado o dia da independência do Brasil?',
+        alternativas: {
+            a: '21 DE ABRIL',
+            b: '12 DE OUTUBRO',
+            c: '7 DE SETEMBRO',
+            d: '25 DE DEZEMBRO',  
+        },
+        // resposta: alternativas.c
+        resposta: '7 DE SETEMBRO'
 	
-//     },
+    },
 
-//     6= {
-//         pergunta: 'Quem tem por lema a frase: “Sempre alerta”?',
-//         alternativas: {
-//             a: 'MÉDICOS',
-//             b: 'ESCOTEIROS',
-//             c: 'BOMBEIROS',
-//             d: 'POLICIAIS',  
-//         },
-//         resposta: alternativas.b
+    {
+        pergunta: 'Quem tem por lema a frase: “Sempre alerta”?',
+        alternativas: {
+            a: 'MÉDICOS',
+            b: 'ESCOTEIROS',
+            c: 'BOMBEIROS',
+            d: 'POLICIAIS',  
+        },
+        // resposta: alternativas.b
+        resposta: 'ESCOTEIROS'
 	
-//     },
+    },
 
-//     7= {
-//         pergunta: 'Quem foi o grande amor de Julieta?',
-//         alternativas: {
-//             a: 'ROMEU',
-//             b: 'ORFEU',
-//             c: 'HAMLET',
-//             d: 'IAGO',  
-//         },
-//         resposta: alternativas.a
+    {
+        pergunta: 'Quem foi o grande amor de Julieta?',
+        alternativas: {
+            a: 'ROMEU',
+            b: 'ORFEU',
+            c: 'HAMLET',
+            d: 'IAGO',  
+        },
+        // resposta: alternativas.a
+        resposta: 'ROMEU'
 	
-//     },
+    },
 
-//     8= {
-//         pergunta: 'Quantos signos formam o zodíaco?',
-//         alternativas: {
-//             a: 'NOVE',
-//             b: 'DEZ',
-//             c: 'ONZE',
-//             d: 'DOZE',  
-//         },
-//         resposta: alternativas.d
+    {
+        pergunta: 'Quantos signos formam o zodíaco?',
+        alternativas: {
+            a: 'NOVE',
+            b: 'DEZ',
+            c: 'ONZE',
+            d: 'DOZE',  
+        },
+        // resposta: alternativas.d
+        resposta: 'DOZE'
 	
-//     },
+    },
 
-//     9= {
-//         pergunta: 'Vatapá é uma comida típica de qual estado?',
-//         alternativas: {
-//             a: 'PARANÁ',
-//             b: 'SANTA CATARINA',
-//             c: 'SÃO PAULO',
-//             d: 'BAHIA',  
-//         },
-//         resposta: alternativas.d
+    {
+        pergunta: 'Vatapá é uma comida típica de qual estado?',
+        alternativas: {
+            a: 'PARANÁ',
+            b: 'SANTA CATARINA',
+            c: 'SÃO PAULO',
+            d: 'BAHIA',  
+        },
+        // resposta: alternativas.d
+        resposta: 'BAHIA'
 	
-//     },
+    },
 	
-// ]
+]
 
 // const perguntasLista2 = [
 //     0= {
