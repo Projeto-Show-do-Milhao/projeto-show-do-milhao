@@ -10,11 +10,9 @@ import {perguntasListal} from '../../../perguntasNivel1'
 function TelaQuestoes({ navigation }) {
   const [pergunta, setPergunta] = useState(perguntasListal);
   const [resposta, setResposta] = useState('');
-  const [perguntaUsada, setPerguntaUsada] = useState('') 
-  const [alternativaA, setAlternativaA] = useState('')
-  const [alternativaB, setAlternativaB] = useState('')
-  const [alternativaC, setAlternativaC] = useState('')
-  const [alternativaD, setAlternativaD] = useState('')
+  const [pulo, setPulo] = useState(3)
+  const [alternativaSelecionada, setAlternativaSelecionada] = useState('')
+
   
   const numeroAleatorio = BuscaNumeroAleatorio()
 
@@ -70,29 +68,29 @@ function TelaQuestoes({ navigation }) {
       </View>
     </View>
     <View style={estilos.constainerPergunta}>
-      <View>
-        <Text>
+      <View style={{justifyContent: "center", alignItems:'center'}}>
+        <Text style={{color: 'yellow', fontSize: 22, margin: 5, textAlign: 'center', }}>
           {buscaPerguntaAleatoria(pergunta,numeroAleatorio)}
         </Text>
         
       </View>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={()=> setAlternativaSelecionada}>
       <View style={{
         backgroundColor: 'rgba(0, 0, 255, 0.40)',
         width: 340,
         height: 55,
         borderRadius: 15,
         alignSelf: 'center',
-        marginTop: 130,
+        marginTop: 120,
       }}>
-        <Text>
+        <Text style={{color: 'yellow', fontSize: 22, margin: 8, textAlign: 'center', }}>
           {buscaAlternativaA(pergunta,numeroAleatorio)}
           {/* {alternativasAleatorias(pergunta, numeroAleatorio)} */}
         
         </Text>
       </View>
       </TouchableOpacity>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={()=> setAlternativaSelecionada}>
       <View style={{
         backgroundColor: 'rgba(0, 0, 255, 0.40)',
         width: 340,
@@ -102,12 +100,12 @@ function TelaQuestoes({ navigation }) {
         marginTop: 20
 
       }} >
-        <Text>
+        <Text style={{color: 'yellow', fontSize: 22, margin: 8, textAlign: 'center', }}>
         {buscaAlternativaB(pergunta,numeroAleatorio)}
         </Text>
       </View>
       </TouchableOpacity>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={()=> setAlternativaSelecionada}>
       <View style={{
         backgroundColor: 'rgba(0, 0, 255, 0.40)',
         width: 340,
@@ -117,12 +115,12 @@ function TelaQuestoes({ navigation }) {
         marginTop: 20
 
       }}>
-                <Text>
+                <Text style={{color: 'yellow', fontSize: 22, margin: 8, textAlign: 'center', }}>
         {buscaAlternativaC(pergunta,numeroAleatorio)}
         </Text>
       </View>
       </TouchableOpacity>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={()=> setAlternativaSelecionada}>
       <View style={{
         backgroundColor: 'rgba(0, 0, 255, 0.40)',
         width: 340,
@@ -132,7 +130,7 @@ function TelaQuestoes({ navigation }) {
         marginTop: 20
 
       }}>
-        <Text>
+        <Text style={{color: 'yellow', fontSize: 22, margin: 8, textAlign: 'center', }}>
         {buscaAlternativaD(pergunta,numeroAleatorio)}
         </Text>
       </View>
@@ -149,11 +147,11 @@ function TelaQuestoes({ navigation }) {
 
           }}>
             <Text style={{ fontSize: 22, alignSelf: "center", }}>
-              PARAR
+              PARAR 
             </Text>
           </View>
         </TouchableOpacity>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={()=> setPulo}>
           <View style={{
             height: 60,
             width: 100,
@@ -163,7 +161,10 @@ function TelaQuestoes({ navigation }) {
 
           }}>
             <Text style={{ fontSize: 22, alignSelf: "center", }}>
-              PULAR
+              PULAR 
+            </Text>
+            <Text style={{ fontSize: 22, alignSelf: "center",}}>
+            {pulo}/3
             </Text>
           </View>
         </TouchableOpacity>
