@@ -3,11 +3,34 @@ import { View, Image, ImageBackground, Text, ScrollView, TouchableOpacity } from
 import estilos from '../../telas/TelaQuestoes/styles';
 // import {Jogando} from './subTelaJogando';
 import 'react-native-gesture-handler';
+import {perguntasListal} from '../../../perguntasNivel1'
+
 
 
 function TelaQuestoes({ navigation }) {
-  const [pergunta, setPergunta] = useState({});
+  const [pergunta, setPergunta] = useState(perguntasListal);
   const [resposta, setResposta] = useState('');
+  const [perguntaUsada, setPerguntaUsada] = useState('') 
+  const [alternativaA, setAlternativaA] = useState('')
+  const [alternativaB, setAlternativaB] = useState('')
+  const [alternativaC, setAlternativaC] = useState('')
+  const [alternativaD, setAlternativaD] = useState('')
+  
+  const numeroAleatorio = BuscaNumeroAleatorio()
+
+  function BuscaNumeroAleatorio(){
+    let n = Math.floor(Math.random() * 10)
+    return n
+  } 
+  
+
+  function buscaPerguntaAleatoria(pergunta,numeroAleatorio){
+    return pergunta[numeroAleatorio].pergunta  
+  }
+  
+  function buscaAlternativaA(pergunta,numeroAleatorio){
+    return pergunta[numeroAleatorio].alternativas.a
+  }
 
   return(
     <View style={estilos.containerTelaJogar}>
@@ -36,9 +59,10 @@ function TelaQuestoes({ navigation }) {
     </View>
     <View style={estilos.constainerPergunta}>
       <View>
-        <Text style={{ color: 'yellow', margin: 10, fontSize: 22 }}>
-          {/* {perguntas[0].pergunta} */}
+        <Text>
+          {buscaPerguntaAleatoria(pergunta,numeroAleatorio)}
         </Text>
+        
       </View>
       <View style={{
         backgroundColor: 'rgba(0, 0, 255, 0.40)',
@@ -49,6 +73,7 @@ function TelaQuestoes({ navigation }) {
         marginTop: 130,
       }}>
         <Text>
+          {buscaAlternativaA(pergunta,numeroAleatorio)}
         </Text>
       </View>
       <View style={{

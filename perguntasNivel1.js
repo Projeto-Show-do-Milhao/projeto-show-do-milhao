@@ -8,7 +8,7 @@ const perguntasListal = [
 					c: 'SANTA CATARINA',
 					d: 'GOIÁS',  
             },
-            resposta: 'b'
+            resposta: 'RIO GRANDE DO SUL'
 			// resposta: alternativas.b
 	
 	},

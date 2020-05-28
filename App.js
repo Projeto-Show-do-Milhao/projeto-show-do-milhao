@@ -15,7 +15,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator 
-      initialRouteName="TelaDoFim"
+      initialRouteName="Questoes"
       screenOptions={{ headerShown: false}}>
         <Stack.Screen name="TelaInicial" component={TelaInicial}/>
         <Stack.Screen name="TelaLobby" component={TelaLobby} />
