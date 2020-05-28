@@ -27,9 +27,21 @@ function TelaQuestoes({ navigation }) {
   function buscaPerguntaAleatoria(pergunta,numeroAleatorio){
     return pergunta[numeroAleatorio].pergunta  
   }
+  // function alternativasAleatorias(pergunta, numeroAleatorio){
+  //   return pergunta[numeroAleatorio].alternativas.a, pergunta[numeroAleatorio].pergunta   
+  // }
   
   function buscaAlternativaA(pergunta,numeroAleatorio){
     return pergunta[numeroAleatorio].alternativas.a
+  }
+  function buscaAlternativaB(pergunta,numeroAleatorio){
+    return pergunta[numeroAleatorio].alternativas.b
+  }
+  function buscaAlternativaC(pergunta,numeroAleatorio){
+    return pergunta[numeroAleatorio].alternativas.c
+  }
+  function buscaAlternativaD(pergunta,numeroAleatorio){
+    return pergunta[numeroAleatorio].alternativas.d
   }
 
   return(
@@ -64,6 +76,7 @@ function TelaQuestoes({ navigation }) {
         </Text>
         
       </View>
+      <TouchableOpacity>
       <View style={{
         backgroundColor: 'rgba(0, 0, 255, 0.40)',
         width: 340,
@@ -74,8 +87,12 @@ function TelaQuestoes({ navigation }) {
       }}>
         <Text>
           {buscaAlternativaA(pergunta,numeroAleatorio)}
+          {/* {alternativasAleatorias(pergunta, numeroAleatorio)} */}
+        
         </Text>
       </View>
+      </TouchableOpacity>
+      <TouchableOpacity>
       <View style={{
         backgroundColor: 'rgba(0, 0, 255, 0.40)',
         width: 340,
@@ -85,8 +102,12 @@ function TelaQuestoes({ navigation }) {
         marginTop: 20
 
       }} >
-
+        <Text>
+        {buscaAlternativaB(pergunta,numeroAleatorio)}
+        </Text>
       </View>
+      </TouchableOpacity>
+      <TouchableOpacity>
       <View style={{
         backgroundColor: 'rgba(0, 0, 255, 0.40)',
         width: 340,
@@ -96,8 +117,12 @@ function TelaQuestoes({ navigation }) {
         marginTop: 20
 
       }}>
-
+                <Text>
+        {buscaAlternativaC(pergunta,numeroAleatorio)}
+        </Text>
       </View>
+      </TouchableOpacity>
+      <TouchableOpacity>
       <View style={{
         backgroundColor: 'rgba(0, 0, 255, 0.40)',
         width: 340,
@@ -107,8 +132,11 @@ function TelaQuestoes({ navigation }) {
         marginTop: 20
 
       }}>
-
+        <Text>
+        {buscaAlternativaD(pergunta,numeroAleatorio)}
+        </Text>
       </View>
+      </TouchableOpacity>
       <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
 
         <TouchableOpacity onPress={()=> navigation.navigate("TelaDoFim")}>
