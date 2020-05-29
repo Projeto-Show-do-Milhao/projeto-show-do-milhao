@@ -3,14 +3,9 @@ import React, { Component, useState } from 'react';
 import { View, Image, ImageBackground, Text, TouchableOpacity, Button } from 'react-native';
 import estilos from '../../telas/TelaFinal/styles';
 
-function TelaFinal({ navigation }) {
-const [pergunta, setPergunta] = useState({});
-const [resposta, setResposta] = useState('');
-const mudaTela = () => {
-	
-}
+function TelaFinal({route , navigation }) {
 
-
+const premioTotal = route.params
 return (
 	<View style={estilos.containerTelaJogar}>
 			<View style={estilos.containerImagemFundoTelaJogar}>
@@ -26,10 +21,16 @@ return (
 					</View>
 			</View>
 			<View style={estilos.constainerTelaFinal}>
+			<Text style={estilos.textoSair}>
+							{premioTotal}
+						</Text>
 					<View style={{
 							alignItems: 'center',
 							marginTop: 350
 					}}>
+						
+			</View>
+
 						<TouchableOpacity 
 						onPress={()=> navigation.navigate("TelaLobby")}
 						style={{
@@ -48,7 +49,6 @@ return (
 							</Text>
 						</TouchableOpacity>
 					</View>
-			</View>
 	</View>
 )
 }

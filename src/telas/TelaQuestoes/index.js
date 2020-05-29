@@ -12,28 +12,35 @@ import {perguntasLista1Nivel3} from '../../../perguntasNivel3'
 function TelaQuestoes({ navigation }) {
   const [pergunta, setPergunta] = useState(perguntasListal);
   const [pulo, setPulo] = useState(3)
-  const [premio, setPremio] = useState([0,1000, 5000, 10000, 25000, 50000, 100000, 200000, 300000, 500.000, 1000000])
+  const [premio, setPremio] = useState([0,1000, 5000, 10000, 25000, 50000, 100000, 200000, 300000, 500000, 1000000])
   const [numPergunta, setNumPergunta] = useState(0)
-  const [jogando, setJogando] = useState(true)
-  const premioTotal = premio[numPergunta]
+  let premioTotal = premio[numPergunta]
   const numeroAleatorio = BuscaNumeroAleatorio()
-  const telaFinal = ()=>{navigation.navigate('TelaDoFim')}
+  const telaFinal = ()=>{navigation.navigate('TelaDoFim', premioTotal)}
 
   function mudaPerguntaEpontuacao(){
     setNumPergunta(numPergunta+1)
-    if(numPergunta<=3){
+    if(numPergunta<=2){
       setPergunta(perguntasLista2)
-    }else if(numPergunta<=6){
+    }else if(numPergunta<=4){
       setPergunta(perguntasLista1Nivel2)
-    }else if(numPergunta<=9){
+    }else if(numPergunta<=8){
       setPergunta(perguntasLista1Nivel3)
+    }else if(numPergunta<=10){
+      setPergunta(perguntasLista1Nivel3)
+    }else if(numPergunta===11){
+      telaFinal()
     }
     
     
     buscaPerguntaAleatoria(pergunta, numeroAleatorio)
-    console.log(premioTotal)
   }
 
+  function finalizaJogo(){
+    
+      telaFinal()
+    
+  }
 
 
   function validaRespostaA() {
@@ -45,8 +52,9 @@ function TelaQuestoes({ navigation }) {
     }else{
       console.log('errou')
       setPergunta(perguntasListal)
-      telaFinal()
       setNumPergunta(0)
+      premioTotal=0
+      telaFinal()
     }
   }
 
@@ -59,8 +67,9 @@ function TelaQuestoes({ navigation }) {
     }else{
       console.log('vc errou')
       setPergunta(perguntasListal)
-      telaFinal()
       setNumPergunta(0)
+      premioTotal=0
+      telaFinal()
     }
   }
 
@@ -73,8 +82,9 @@ function TelaQuestoes({ navigation }) {
     }else{
       console.log('vc errou')
       setPergunta(perguntasListal)
-      telaFinal()
       setNumPergunta(0)
+      premioTotal=0
+      telaFinal()
     }
   }
 
@@ -87,8 +97,9 @@ function TelaQuestoes({ navigation }) {
     }else{
       console.log('vc errou')
       setPergunta(perguntasListal)
-      telaFinal()
       setNumPergunta(0)
+      premioTotal=0
+      telaFinal()
     }
   }
 
@@ -223,7 +234,7 @@ function TelaQuestoes({ navigation }) {
         </TouchableOpacity>
         <View style={{ flexDirection: "row", justifyContent: "space-around" }}>
 
-          <TouchableOpacity onPress={() => navigation.navigate("TelaDoFim")}>
+          <TouchableOpacity onPress={() => navigation.navigate("TelaDoFim", premioTotal/2)}>
             <View style={{
               height: 60,
               width: 100,
