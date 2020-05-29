@@ -159,7 +159,7 @@ function TelaQuestoes({ navigation }) {
           <Text style={{ color: 'yellow', fontSize: 22, margin: 5, textAlign: 'center', }}>
             {buscaPerguntaAleatoria(pergunta, numeroAleatorio)}
           </Text>
-
+          </View>
         </View>
         <TouchableOpacity onPress={validaRespostaA}>
           <View style={{
@@ -260,7 +260,7 @@ function TelaQuestoes({ navigation }) {
       </View>
 
 
-    </View>
+   
   )
 }
 

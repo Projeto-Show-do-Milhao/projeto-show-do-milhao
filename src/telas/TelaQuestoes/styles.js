@@ -45,7 +45,7 @@ const estilos = StyleSheet.create({
     height: 120,
     borderRadius: 15,
     alignSelf: 'center',
-    marginBottom: 400,
+    marginBottom: 5,
     marginTop: 10
   },
   containerResposta: {
