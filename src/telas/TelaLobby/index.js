@@ -14,8 +14,10 @@ function TelaLobby({ navigation }) {
         <ImageBackground source={require('../../imagens/showDoMilhaoBackground.png')} style={estilos.imagemDeFundoShowDoMilhaoTelaJogar}>
         </ImageBackground>
         <View>
+        <TouchableHighlight onPress={()=> navigation.navigate("TelaDoPerfil")}>
           <Image source={require('../../imagens/chico1.png')} style={estilos.avatarTelaJogar}>
           </Image>
+          </TouchableHighlight>
         </View>
       </View>
       <View style={estilos.containerRank}>
