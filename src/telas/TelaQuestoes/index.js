@@ -221,7 +221,7 @@ function TelaQuestoes({ navigation }) {
             </Text>
           </View>
         </TouchableOpacity>
-        <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
+        <View style={{ flexDirection: "row", justifyContent: "space-around" }}>
 
           <TouchableOpacity onPress={() => navigation.navigate("TelaDoFim")}>
             <View style={{
