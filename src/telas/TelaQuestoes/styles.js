@@ -39,10 +39,10 @@ const estilos = StyleSheet.create({
         borderWidth: 2
     },
 
-  constainerPergunta: {
+  containerPergunta: {
     backgroundColor: 'rgba(0, 0, 255, 0.40)',
     width: 340,
-    height: 160,
+    height: 120,
     borderRadius: 15,
     alignSelf: 'center',
     marginBottom: 400,

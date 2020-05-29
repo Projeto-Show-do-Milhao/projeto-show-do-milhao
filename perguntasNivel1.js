@@ -167,7 +167,7 @@ const perguntasLista2 = [
             d: 'VERDE',  
         },
         // resposta: alternativas.d
-        resposta: 'AZUL'
+        resposta: 'VERDE'
 	
     },
 
