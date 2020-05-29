@@ -26,7 +26,7 @@ function TelaQuestoes({ navigation }) {
     }else if(numPergunta<=6){
       setPergunta(perguntasLista1Nivel2)
     }else if(numPergunta<=9){
-      setPergunta()
+      setPergunta(perguntasLista1Nivel3)
     }
     
     
