@@ -87,6 +87,18 @@ const estilos = StyleSheet.create({
     textShadowColor: 'black',
     textShadowRadius: 1,
   },
+  textoFinal: {
+    fontSize: 35,
+    alignSelf: 'center',
+    fontWeight: 'bold',
+    color: 'white',
+    textShadowOffset: {
+        width: 1,
+        height: 1
+    },
+    textShadowColor: 'black',
+    textShadowRadius: 1,
+  },
 });
 
 export default estilos;

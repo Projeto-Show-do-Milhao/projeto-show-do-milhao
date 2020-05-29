@@ -6,6 +6,16 @@ import estilos from '../../telas/TelaFinal/styles';
 function TelaFinal({route , navigation }) {
 
 const premioTotal = route.params
+let resposta = ''
+if(premioTotal == 0){
+	resposta = 'Infelizmente você perdeu Tudo'
+}else if(premioTotal <= 100000){
+	resposta = 'Você não ta rico mas pode comprar um Kinder Ovo'
+}else if(premioTotal>100000){
+	resposta = 'Não ta milionario mas ta rico ja'
+}else if(premioTotal == 1000000){
+	resposta = 'Você agora é milionario'
+}
 return (
 	<View style={estilos.containerTelaJogar}>
 			<View style={estilos.containerImagemFundoTelaJogar}>
@@ -21,9 +31,12 @@ return (
 					</View>
 			</View>
 			<View style={estilos.constainerTelaFinal}>
-			<Text style={estilos.textoSair}>
-							{premioTotal}
+			<Text style={estilos.textoFinal}>
+							{resposta}
 						</Text>
+						<Text style={estilos.textoFinal}>
+							R${premioTotal}
+							</Text>
 					<View style={{
 							alignItems: 'center',
 							marginTop: 350
