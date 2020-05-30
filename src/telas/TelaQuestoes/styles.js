@@ -69,6 +69,12 @@ const estilos = StyleSheet.create({
     backgroundColor: 'yellow',
     borderRadius: 15,
     margin: 14,
+  },
+  containerCabecalho: {
+    justifyContent: "space-around",
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    marginTop: 25
   }
 });
 

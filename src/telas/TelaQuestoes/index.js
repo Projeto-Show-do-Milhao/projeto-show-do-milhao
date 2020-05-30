@@ -1,7 +1,6 @@
 import React, { Component, useState } from 'react';
 import { View, Image, ImageBackground, Text, ScrollView, TouchableOpacity } from 'react-native'
 import estilos from '../../telas/TelaQuestoes/styles';
-// import {Jogando} from './subTelaJogando';
 import 'react-native-gesture-handler';
 import { perguntasListal} from '../../../perguntasNivel1'
 import {perguntasLista1Nivel2} from '../../../perguntasNivel2'
@@ -112,7 +111,6 @@ function TelaQuestoes({ navigation }) {
     return n
   }
 
-
   function buscaPerguntaAleatoria(pergunta, numeroAleatorio) {
     return pergunta[numeroAleatorio].pergunta
   }
@@ -141,12 +139,7 @@ function TelaQuestoes({ navigation }) {
           style={estilos.imagemDeFundoDinheiroTelaJogar}>
         </ImageBackground>
       </View>
-      <View style={{
-        justifyContent: "space-around",
-        flexDirection: 'row',
-        alignItems: 'flex-start',
-        marginTop: 25
-      }}>
+      <View style={estilos.containerCabecalho}>
         <ImageBackground source={
           require('../../imagens/showDoMilhaoBackground.png')}
           style={estilos.imagemDeFundoShowDoMilhaoTelaJogar}>
@@ -227,7 +220,7 @@ function TelaQuestoes({ navigation }) {
             </Text>
               <Text style={{ fontSize: 22, alignSelf: "center", }}>
                 {pulo}/3
-            </Text>
+              </Text>
             </View>
           </TouchableOpacity>
         </View>
