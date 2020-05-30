@@ -20,29 +20,18 @@ function TelaQuestoes({ navigation }) {
   const telaCampea = ()=>{navigation.navigate('TelaDoFim', premio[10])}
   
   function mudaPerguntaEpontuacao(){
-    pergunta.splice(numeroAleatorio, 1)
     setNumPergunta(numPergunta+1)
-    console.log(pergunta)
     if(numPergunta<=1){
 			console.log(numPergunta)
       setPergunta(perguntasListal)
-      pergunta.splice(numeroAleatorio, 1)
-      console.log(pergunta)
     }else if(numPergunta<=2){
 			console.log(numPergunta)
       setPergunta(perguntasLista1Nivel2)
-      pergunta.splice(numeroAleatorio, 1)
-      console.log(pergunta)
     }else if(numPergunta<=5){
 			console.log(numPergunta)
       setPergunta(perguntasLista1Nivel3)
-      pergunta.splice(numeroAleatorio, 1)
-      console.log(pergunta)
     }else if(numPergunta<=8){
       console.log(numPergunta)
-      setPergunta(perguntasLista1Nivel3)
-      pergunta.splice(numeroAleatorio, 1)
-      console.log(pergunta)
     }else if(numPergunta==9){
 			console.log('chegou no final')
 			telaCampea()
@@ -119,7 +108,7 @@ function TelaQuestoes({ navigation }) {
   }
  
   function BuscaNumeroAleatorio() {
-    let n = Math.floor(Math.random() * pergunta.length-1)
+    let n = Math.floor(Math.random() * 50)
     return n
   }
 
@@ -188,14 +177,7 @@ function TelaQuestoes({ navigation }) {
           </View>
         </View>
         <TouchableOpacity onPress={validaRespostaA}>
-          <View style={{
-            backgroundColor: 'rgba(0, 0, 255, 0.40)',
-            width: 340,
-            height: 55,
-            borderRadius: 15,
-            alignSelf: 'center',
-            marginTop: 80,
-          }}>
+          <View style={estilos.containerResposta}>
             <Text style={{ color: 'yellow', fontSize: 22, margin: 8, textAlign: 'center', }}>
               {buscaAlternativaA(pergunta, numeroAleatorio)}
               {/* {alternativasAleatorias(pergunta, numeroAleatorio)} */}
@@ -204,44 +186,21 @@ function TelaQuestoes({ navigation }) {
           </View>
         </TouchableOpacity>
         <TouchableOpacity onPress={validaRespostaB}>
-          <View style={{
-            backgroundColor: 'rgba(0, 0, 255, 0.40)',
-            width: 340,
-            height: 55,
-            borderRadius: 15,
-            alignSelf: 'center',
-            marginTop: 20
-          }} >
+          <View style={estilos.containerResposta} >
             <Text style={{ color: 'yellow', fontSize: 22, margin: 8, textAlign: 'center', }}>
               {buscaAlternativaB(pergunta, numeroAleatorio)}
             </Text>
           </View>
         </TouchableOpacity>
         <TouchableOpacity onPress={validaRespostaC}>
-          <View style={{
-            backgroundColor: 'rgba(0, 0, 255, 0.40)',
-            width: 340,
-            height: 55,
-            borderRadius: 15,
-            alignSelf: 'center',
-            marginTop: 20
-
-          }}>
+          <View style={estilos.containerResposta}>
             <Text style={{ color: 'yellow', fontSize: 22, margin: 8, textAlign: 'center', }}>
               {buscaAlternativaC(pergunta, numeroAleatorio)}
             </Text>
           </View>
         </TouchableOpacity>
         <TouchableOpacity onPress={validaRespostaD}>
-          <View style={{
-            backgroundColor: 'rgba(0, 0, 255, 0.40)',
-            width: 340,
-            height: 55,
-            borderRadius: 15,
-            alignSelf: 'center',
-            marginTop: 20
-
-          }}>
+          <View style={estilos.containerResposta}>
             <Text style={{ color: 'yellow', fontSize: 22, margin: 8, textAlign: 'center', }}>
               {buscaAlternativaD(pergunta, numeroAleatorio)}
             </Text>
@@ -250,14 +209,7 @@ function TelaQuestoes({ navigation }) {
         <View style={{ flexDirection: "row", justifyContent: "space-around" }}>
 
           <TouchableOpacity onPress={() => navigation.navigate("TelaDoFim", premioTotal/2)}>
-            <View style={{
-              height: 60,
-              width: 100,
-              backgroundColor: 'red',
-              borderRadius: 15,
-              margin: 14,
-
-            }}>
+            <View style={estilos.botaoParar}>
             <Text style={{ fontSize: 22, alignSelf: "center", }}>
                 PARAR
             </Text>
@@ -269,14 +221,7 @@ function TelaQuestoes({ navigation }) {
             </View>
           </TouchableOpacity>
           <TouchableOpacity onPress={() => pular()}>
-            <View style={{
-              height: 60,
-              width: 100,
-              backgroundColor: 'yellow',
-              borderRadius: 15,
-              margin: 14,
-
-            }}>
+            <View style={estilos.botaoPular}>
               <Text style={{ fontSize: 22, alignSelf: "center", }}>
                 PULAR
             </Text>

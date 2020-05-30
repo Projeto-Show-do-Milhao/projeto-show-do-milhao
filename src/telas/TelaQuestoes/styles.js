@@ -50,11 +50,25 @@ const estilos = StyleSheet.create({
   },
   containerResposta: {
     backgroundColor: 'rgba(0, 0, 255, 0.40)',
-    width: 360,
-    height: 60,
+    width: 340,
+    height: 55,
     borderRadius: 15,
     alignSelf: 'center',
-    marginTop: 80
+    marginTop: 20,
+  },
+  botaoParar:{
+    height: 60,
+    width: 100,
+    backgroundColor: 'red',
+    borderRadius: 15,
+    margin: 14,
+  },
+  botaoPular: {
+    height: 60,
+    width: 100,
+    backgroundColor: 'yellow',
+    borderRadius: 15,
+    margin: 14,
   }
 });
 
