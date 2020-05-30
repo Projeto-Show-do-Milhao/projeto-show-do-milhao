@@ -43,7 +43,6 @@ function TelaQuestoes({ navigation }) {
 	function pular(){
 		if(pulo>0){
       setPulo(pulo-1)
-      verificaAleatorio(numeroAleatorio)
 			buscaPerguntaAleatoria(pergunta, numeroAleatorio)
 		}
 	}
