@@ -13,9 +13,9 @@ if(premioTotal == 0){
 }else if(premioTotal <= 100000){
 	resposta = 'Você não tá rico mas pode comprar um Kinder Ovo\n🥳🥳🥳'
 }else if(premioTotal <= 500000){
-	resposta = 'Não tá milionário mas tá rico ja\n🤩🤩🤩'
+	resposta = 'Não tá milionário mas tá rico já!\n🤩🤩🤩'
 }else if(premioTotal > 500000){
-	resposta = 'Parabéns!\nVocê agora é um Milionário!!!\n🤑🤑🤑'
+	resposta = '👑\nParabéns!\nVocê agora é um Milionário!!!\n🤑🤑🤑🤑'
 }
 return (
 	<View style={estilos.containerTelaJogar}>

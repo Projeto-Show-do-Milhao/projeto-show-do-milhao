@@ -92,7 +92,7 @@ const estilos = StyleSheet.create({
     alignSelf: 'center',
     fontWeight: 'bold',
     color: 'white',
-    margin: 10,
+    margin: 5,
     textShadowOffset: {
         width: 1,
         height: 1
@@ -105,7 +105,7 @@ const estilos = StyleSheet.create({
     textAlign: 'center',
     fontWeight: 'bold',
     color: 'white',
-    margin: 10,
+    margin: 5,
     marginLeft: 10,
     textShadowOffset: {
         width: 1,
