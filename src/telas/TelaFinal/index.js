@@ -9,7 +9,7 @@ const premioTotal = route.params
 
 let resposta = ''
 if(premioTotal == 0){
-	resposta = 'Infelizmente você perdeu Tudo\n🤬😭🥺'
+	resposta = 'Infelizmente você perdeu Tudo!\n🤬😭🥺'
 }else if(premioTotal <= 100000){
 	resposta = 'Você não tá rico mas pode comprar um Kinder Ovo\n🥳🥳🥳'
 }else if(premioTotal <= 500000){
