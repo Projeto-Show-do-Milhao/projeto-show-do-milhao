@@ -114,6 +114,16 @@ const estilos = StyleSheet.create({
     textShadowColor: 'black',
     textShadowRadius: 1,
   },
+  botaoSair: {
+    backgroundColor: 'yellow',
+    width: 215,
+    height: 60,
+    paddingBottom: '2%',
+    paddingTop: '1%',
+    marginBottom: '20%',
+    borderRadius: 15,
+    alignSelf: 'center',
+  }
 });
 
 export default estilos;

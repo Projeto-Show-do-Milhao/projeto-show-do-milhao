@@ -19,50 +19,45 @@ resposta = '👑\nParabéns!\nVocê agora é um Milionário!!!\n🤑🤑🤑🤑
 }
 return (
 <View style={estilos.containerTelaJogar}>
-    <View style={estilos.containerImagemFundoTelaJogar}>
-        <ImageBackground source={require('../../imagens/dinheiroBackground.png')} style={estilos.imagemDeFundoDinheiroTelaJogar}>
-        </ImageBackground>
-    </View>
-    <View style={estilos.containerCabecalho}>
-        <ImageBackground source={require('../../imagens/showDoMilhaoBackground.png')} style={estilos.imagemDeFundoShowDoMilhaoTelaJogar}>
-        </ImageBackground>
-        <View>
-            <Image source={require('../../imagens/chico1.png')} style={estilos.avatarTelaJogar}>
-            </Image>
-        </View>
-    </View>
-    <View style={estilos.constainerTelaFinal}>
-      <Text style={estilos.textoFinal}>
-          {resposta}
-      </Text>
-          <Text style={estilos.premioFinal}>
-            R${premioTotal} {console.log(premioTotal)}
-            </Text>
-    </View>
-        <View style={{
-            alignItems: 'center',
-            marginTop: 50
-        }}>
-          
-    </View>
+	<View style={estilos.containerImagemFundoTelaJogar}>
+			<ImageBackground source={require('../../imagens/dinheiroBackground.png')} 
+				style={estilos.imagemDeFundoDinheiroTelaJogar}
+			>
+			</ImageBackground>
+	</View>
+	<View style={estilos.containerCabecalho}>
+			<ImageBackground source={require('../../imagens/showDoMilhaoBackground.png')}
+			 	style={estilos.imagemDeFundoShowDoMilhaoTelaJogar}
+			>
+			</ImageBackground>
+			<View>
+					<Image source={require('../../imagens/chico1.png')} style={estilos.avatarTelaJogar}>
+					</Image>
+			</View>
+	</View>
+	<View style={estilos.constainerTelaFinal}>
+		<Text style={estilos.textoFinal}>
+				{resposta}
+		</Text>
+				<Text style={estilos.premioFinal}>
+					R${premioTotal} {console.log(premioTotal)}
+					</Text>
+	</View>
+			<View style={{
+					alignItems: 'center',
+					marginTop: 50
+			}}>
+				
+	</View>
 
-          <TouchableOpacity 
-          onPress={()=> navigation.navigate("TelaLobby")}
-          style={{
-            backgroundColor: 'yellow',
-            width: 215,
-            height: 60,
-            paddingBottom: '2%',
-            paddingTop: '1%',
-            marginBottom: '20%',
-            borderRadius: 15,
-            alignSelf: 'center',
-          }}
-          >
-            <Text style={estilos.textoSair}>
-                SAIR
-            </Text>
-          </TouchableOpacity>
+				<TouchableOpacity 
+				onPress={()=> navigation.navigate("TelaLobby")}
+				style={estilos.botaoSair}
+				>
+					<Text style={estilos.textoSair}>
+							SAIR
+					</Text>
+				</TouchableOpacity>
 </View>
 )
 }

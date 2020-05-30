@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { Component, useState, useEffect } from 'react';
 import { View, Image, ImageBackground, Text, ScrollView, TouchableOpacity } from 'react-native'
 import estilos from '../../telas/TelaQuestoes/styles';
 import 'react-native-gesture-handler';

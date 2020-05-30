@@ -7,11 +7,15 @@ function TelaLobby({ navigation }) {
   return (
     <View style={estilos.containerTelaJogar}>
       <View style={estilos.containerImagemFundoTelaJogar}>
-        <ImageBackground source={require('../../imagens/dinheiroBackground.png')} style={estilos.imagemDeFundoDinheiroTelaJogar}>
+        <ImageBackground source={require('../../imagens/dinheiroBackground.png')}
+          style={estilos.imagemDeFundoDinheiroTelaJogar}
+        >
         </ImageBackground>
       </View>
       <View style={estilos.containerLogoEAvatar}>
-        <ImageBackground source={require('../../imagens/showDoMilhaoBackground.png')} style={estilos.imagemDeFundoShowDoMilhaoTelaJogar}>
+        <ImageBackground source={require('../../imagens/showDoMilhaoBackground.png')}
+          style={estilos.imagemDeFundoShowDoMilhaoTelaJogar}
+        >
         </ImageBackground>
         <View>
         <TouchableHighlight onPress={()=> navigation.navigate("TelaDoPerfil")}>
