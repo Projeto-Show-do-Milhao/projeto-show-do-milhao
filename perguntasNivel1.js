@@ -261,130 +261,125 @@ const perguntasLista2 = [
         resposta: 'BAHIA'
 	
     },
+    {
+        pergunta: 'Como se chama o lugar onde são armazenadas as balas deum revólver',
+        alternativas: {
+            a: 'CANO',
+            b: 'TAMBOR',
+            c: 'AGULHA',
+            d: 'GATILHO',  
+        },
+        //resposta: alternativas.b
+        resposta: 'TAMBOR'
+    },
+
+    {
+        pergunta: 'Qual personagem da turma da Mônica tem apenas cinco fiosde cabelo?',
+        alternativas: {
+            a: 'MÔNICA',
+            b: 'CEBOLINHA',
+            c: 'CASCÃO',
+            d: 'MAGALI',  
+        },
+        //resposta: alternativas.b
+        resposta: 'CEBOLINHA'
+    },
+
+    {
+        pergunta: 'Qual cantora tinha o apelido de “Ternurinha” na época da jovemguarda?',
+        alternativas: {
+            a: 'SILVINHA',
+            b: 'WANDERLÉIA',
+            c: 'GRETCHEN',
+            d: 'MARTINHA',  
+        },
+        //resposta: alternativas.b
+        resposta: 'WANDERLÉIA'
+    },
+
+    {
+        pergunta: 'O churrasco é considerado uma comida típica de qual estado?',
+        alternativas: {
+            a: 'CEARÁ',
+            b: 'RIO GRANDE DO SUL',
+            c: 'PARÁ',
+            d: 'MARANHÃO',  
+        },
+        //resposta: alternativas.b
+        resposta: 'RIO GRANDE DO SUL'
+    },
+
+    {
+        pergunta: 'Quem foi o criador dospersonagens Pedrinho,Narizinho e Emília?',
+        alternativas: {
+            a: 'MAURÍCIO DE SOUSA',
+            b: 'ZIRALDO',
+            c: 'MONTEIRO LOBATO',
+            d: 'MACHADO DE ASSIS',  
+        },
+        //resposta: alternativas.c
+        resposta: 'MONTEIRO LOBATO'
+    },
+
+    {
+        pergunta: 'Qual cantor é o pai da dupla Sandy e Júnior?',
+        alternativas: {
+            a: 'LEONARDO',
+            b: 'XORORÓ',
+            c: 'ZEZÉ DI CAMARGO',
+            d: 'CHITÃOZINHO',  
+        },
+        //resposta: alternativas.b
+        resposta: 'XORORÓ'
+    },
+
+    {
+        pergunta: 'Quem fundou a Microsoft?',
+        alternativas: {
+            a: 'SULTÃO DE BRUNEI',
+            b: 'AKIO MORITA',
+            c: 'BILL GATES',
+            d: 'PRÍNCIPE CHARLES',  
+        },
+        //resposta: alternativas.c
+        resposta: 'BILL GATES'
+    },
+
+    {
+        pergunta: 'Qual é o nome dado ao pneu reserva do carro?',
+        alternativas: {
+            a: 'CALOTA',
+            b: 'ESTEPE',
+            c: 'MACACO',
+            d: 'CHAVE DE RODA',  
+        },
+        //resposta: alternativas.b
+        resposta: 'ESTEPE'
+    },
+
+    {
+        pergunta: 'Qual é o nome do cachorro medroso do Salsicha, dos desenhos animados?',
+        alternativas: {
+            a: 'FLOQUINHO',
+            b: 'RIN-TIN-TIN',
+            c: 'LASSIE',
+            d: 'SCOOBY-DOO',  
+        },
+        //resposta: alternativas.d
+        resposta: 'SCOOBY-DOO'
+    },
+
+    {
+        pergunta: 'Quantas dentições naturais tem o ser humano durante a vida',
+        alternativas: {
+            a: 'UMA',
+            b: 'DUAS',
+            c: 'TRÊS',
+            d: 'QUATRO',  
+        },
+        //resposta: alternativas.b
+        resposta: 'DUAS'
+    },
+
 	
 ]
-
-// const perguntasLista2 = [
-//     0= {
-//         pergunta: 'Como se chama o lugar onde são armazenadas as balas deum revólver',
-//         alternativas: {
-//             a: 'CANO',
-//             b: 'TAMBOR',
-//             c: 'AGULHA',
-//             d: 'GATILHO',  
-//         },
-//         resposta: alternativas.b
-	
-//     },
-
-//     1= {
-//         pergunta: 'Qual personagem da turma da Mônica tem apenas cinco fiosde cabelo?',
-//         alternativas: {
-//             a: 'MÔNICA',
-//             b: 'CEBOLINHA',
-//             c: 'CASCÃO',
-//             d: 'MAGALI',  
-//         },
-//         resposta: alternativas.b
-	
-//     },
-
-//     2= {
-//         pergunta: 'Qual cantora tinha o apelido de “Ternurinha” na época da jovemguarda?',
-//         alternativas: {
-//             a: 'SILVINHA',
-//             b: 'WANDERLÉIA',
-//             c: 'GRETCHEN',
-//             d: 'MARTINHA',  
-//         },
-//         resposta: alternativas.b
-	
-//     },
-
-//     3= {
-//         pergunta: 'O churrasco é considerado uma comida típica de qual estado?',
-//         alternativas: {
-//             a: 'CEARÁ',
-//             b: 'RIO GRANDE DO SUL',
-//             c: 'PARÁ',
-//             d: 'MARANHÃO',  
-//         },
-//         resposta: alternativas.b
-	
-//     },
-
-//     4= {
-//         pergunta: 'Quem foi o criador dospersonagens Pedrinho,Narizinho e Emília?',
-//         alternativas: {
-//             a: 'MAURÍCIO DE SOUSA',
-//             b: 'ZIRALDO',
-//             c: 'MONTEIRO LOBATO',
-//             d: 'MACHADO DE ASSIS',  
-//         },
-//         resposta: alternativas.c
-	
-//     },
-
-//     5= {
-//         pergunta: 'Qual cantor é o pai da dupla Sandy e Júnior?',
-//         alternativas: {
-//             a: 'LEONARDO',
-//             b: 'XORORÓ',
-//             c: 'ZEZÉ DI CAMARGO',
-//             d: 'CHITÃOZINHO',  
-//         },
-//         resposta: alternativas.b
-	
-//     },
-
-//     6= {
-//         pergunta: 'Quem fundou a Microsoft?',
-//         alternativas: {
-//             a: 'SULTÃO DE BRUNEI',
-//             b: 'AKIO MORITA',
-//             c: 'BILL GATES',
-//             d: 'PRÍNCIPE CHARLES',  
-//         },
-//         resposta: alternativas.c
-	
-//     },
-
-//     7= {
-//         pergunta: 'Qual é o nome dado ao pneu reserva do carro?',
-//         alternativas: {
-//             a: 'CALOTA',
-//             b: 'ESTEPE',
-//             c: 'MACACO',
-//             d: 'CHAVE DE RODA',  
-//         },
-//         resposta: alternativas.b
-	
-//     },
-
-//     8= {
-//         pergunta: 'Qual é o nome do cachorro medroso do Salsicha, dos desenhos animados?',
-//         alternativas: {
-//             a: 'FLOQUINHO',
-//             b: 'RIN-TIN-TIN',
-//             c: 'LASSIE',
-//             d: 'SCOOBY-DOO',  
-//         },
-//         resposta: alternativas.d
-	
-//     },
-
-//     9= {
-//         pergunta: 'Quantas dentições naturais temo ser humano durante a vida',
-//         alternativas: {
-//             a: 'UMA',
-//             b: 'DUAS',
-//             c: 'TRÊS',
-//             d: 'QUATRO',  
-//         },
-//         resposta: alternativas.b
-	
-//     },
-
-	
-// ]
-
