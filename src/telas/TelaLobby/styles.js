@@ -37,15 +37,16 @@ const estilos = StyleSheet.create({
         flex: 4,
         paddingTop: '35%',
         marginBottom: '5%',
-        backgroundColor: 'blue',
+        backgroundColor: 'rgba(0, 0, 255, 0.40)',
         width: 360,
         borderRadius: 15,
-        opacity: 0.15,
-        alignSelf: 'center'
+        alignSelf: 'center',
+        marginTop:-150,
     },
 
     botaoJogar: {
-        flex: 1,
+        // flex: 1,
+        height:75,
         backgroundColor: 'yellow',
         width: 215,
         paddingBottom: '2%',
@@ -59,6 +60,34 @@ const estilos = StyleSheet.create({
         alignSelf: 'center',
         fontWeight: 'bold',
         color: 'white',
+        textShadowOffset: {
+            width: 1,
+            height: 1
+        },
+        textShadowColor: 'black',
+        textShadowRadius: 1,
+        // textDecorationLine: 'underline'
+    },
+    textoRegrasPrincipal: {
+        fontSize: 35,
+        alignSelf: 'center',
+        fontWeight: 'bold',
+        color: 'white',
+        textShadowOffset: {
+            width: 1,
+            height: 1
+        },
+        textShadowColor: 'black',
+        textShadowRadius: 1,
+        marginTop:-150
+        // textDecorationLine: 'underline'
+    },
+    textoRegrasSub: {
+        fontSize: 15,
+        margin:15,
+        alignSelf: 'center',
+        fontWeight: 'bold',
+        color: 'yellow',
         textShadowOffset: {
             width: 1,
             height: 1
