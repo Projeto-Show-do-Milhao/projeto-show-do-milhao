@@ -130,255 +130,264 @@ const perguntasLista1Nivel2 = [
         resposta: 'EMBARCAÇÃO'
 
     },
-];
+    {
+                pergunta: 'Sashimi é um prato originário de qual país?',
+                alternativas: {
+                    a: 'JAPÃO',
+                    b: 'CHINA',
+                    c: 'ÍNDIA',
+                    d: 'INDONÉSIA',
+                },
+                // respota: alternativa.a
+                resposta: 'JAPÃO'
+        
+            },
+            //112
+            {
+                pergunta: 'Como é chamada a cantora que representa o papel principal em uma ópera?',
+                alternativas: {
+                    a: 'PRIMEIRA DAMA',
+                    b: 'DONA-PRIMA',
+                    c: 'PRIMA-DONA',
+                    d: 'OBRA-PRIMA',
+                },
+                // respota: alternativa.c
+                resposta:'PRIMA-DONA'
+        
+            },
+            //113
+            {
+                pergunta: 'Peroba é uma espécie de?',
+                alternativas: {
+                    a: 'INSETO',
+                    b: 'ÁRVORE',
+                    c: 'VERME',
+                    d: 'VERDURA',
+                },
+                // respota: alternativa.b
+                resposta:'ÁRVORE'
+        
+            },
+            //114
+            {
+                pergunta: 'O alpinismo é praticado em que lugar?',
+                alternativas: {
+                    a: 'MAR',
+                    b: 'MONTANHA',
+                    c: 'RIO',
+                    d: 'PRAIA',
+                },
+                // respota: alternativa.b
+                resposta:'MONTANHA' 
+        
+            },
+            //115
+            {
+                pergunta: 'O Coliseu é um monumento histórico de que cidade européia?',
+                alternativas: {
+                    a: 'PARIS',
+                    b: 'COPENHAGUE',
+                    c: 'ROMA',
+                    d: 'LONDRES',
+                },
+                // respota: alternativa.c
+                resposta:'ROMA'
+        
+            },
+            //116
+            {
+                pergunta: 'Qual é o ponto mais alto da Terra?',
+                alternativas: {
+                    a: 'EVEREST',
+                    b: 'MONTE SINAI',
+                    c: 'MONTE CASTELO',
+                    d: 'MONT BLANC',
+                },
+                // respota: alternativa.a
+                resposta:'EVEREST'
+        
+            },
+            //117
+            {
+                pergunta: 'Que rio corta a cidade de Londres, na Inglaterra?',
+                alternativas: {
+                    a: 'TÂMISA',
+                    b: 'SENA',
+                    c: 'RENO',
+                    d: 'AUBE',
+                },
+                // respota: alternativa.a
+                resposta:'TÂMISA'
 
-// const perguntasLista2 = [
-//     //111
-//     0 = {
-//         pergunta: 'Sashimi é um prato originário de qual país?',
-//         alternativas: {
-//             a: 'JAPÃO',
-//             b: 'CHINA',
-//             c: 'ÍNDIA',
-//             d: 'INDONÉSIA',
-//         },
-//         respota: alternativa.a
+        
+            },
+            //118
+            {
+                pergunta: 'Qual é a raça do personagem principal do filme “Beethoven”?',
+                alternativas: {
+                    a: 'FILA',
+                    b: 'PASTOR ALEMÃO',
+                    c: 'POODLE',
+                    d: 'SÃO-BERNARDO',
+                },
+                // respota: alternativa.d
+                resposta:'SÃO-BERNARDO'
 
-//     },
-//     //112
-//     1 = {
-//         pergunta: 'Como é chamada a cantora que representa o papel principal em uma ópera?',
-//         alternativas: {
-//             a: 'PRIMEIRA DAMA',
-//             b: 'DONA-PRIMA',
-//             c: 'PRIMA-DONA',
-//             d: 'OBRA-PRIMA',
-//         },
-//         respota: alternativa.c
-
-//     },
-//     //113
-//     2 = {
-//         pergunta: 'Peroba é uma espécie de?',
-//         alternativas: {
-//             a: 'INSETO',
-//             b: 'ÁRVORE',
-//             c: 'VERME',
-//             d: 'VERDURA',
-//         },
-//         respota: alternativa.b
-
-//     },
-//     //114
-//     3 = {
-//         pergunta: 'O alpinismo é praticado em que lugar?',
-//         alternativas: {
-//             a: 'MAR',
-//             b: 'MONTANHA',
-//             c: 'RIO',
-//             d: 'PRAIA',
-//         },
-//         respota: alternativa.b
-
-//     },
-//     //115
-//     4 = {
-//         pergunta: 'O Coliseu é um monumento histórico de que cidade européia?',
-//         alternativas: {
-//             a: 'PARIS',
-//             b: 'COPENHAGUE',
-//             c: 'ROMA',
-//             d: 'LONDRES',
-//         },
-//         respota: alternativa.c
-
-//     },
-//     //116
-//     5 = {
-//         pergunta: 'Qual é o ponto mais alto da Terra?',
-//         alternativas: {
-//             a: 'EVEREST',
-//             b: 'MONTE SINAI',
-//             c: 'MONTE CASTELO',
-//             d: 'MONT BLANC',
-//         },
-//         respota: alternativa.a
-
-//     },
-//     //117
-//     6 = {
-//         pergunta: 'Que rio corta a cidade de Londres, na Inglaterra?',
-//         alternativas: {
-//             a: 'TÂMISA',
-//             b: 'SENA',
-//             c: 'RENO',
-//             d: 'AUBE',
-//         },
-//         respota: alternativa.a
-
-//     },
-//     //118
-//     7 = {
-//         pergunta: 'Qual é a raça do personagem principal do filme “Beethoven”?',
-//         alternativas: {
-//             a: 'FILA',
-//             b: 'PASTOR ALEMÃO',
-//             c: 'POODLE',
-//             d: 'SÃO-BERNARDO',
-//         },
-//         respota: alternativa.d
-
-//     },
-//     //119
-//     8 = {
-//         pergunta: 'Quem foi eleito presidente África do Sul em 1994?',
-//         alternativas: {
-//             a: 'NELSON PIQUET',
-//             b: 'NELSON MANDELA',
-//             c: 'NELSON NED',
-//             d: 'JOHN NELSON',
-//         },
-//         respota: alternativa.b
-
-//     },
-//     //120
-//     9 = {
-//         pergunta: 'Qual cantor ficou conhecido como “O rei da voz”?',
-//         alternativas: {
-//             a: 'ORLANDO SILVA',
-//             b: 'VICENTE CELESTINO',
-//             c: 'FRANCISCO ALVES',
-//             d: 'CARLOS GALHARDO',
-//         },
-//         respota: alternativa.c
-
-//     },
-
+        
+            },
+            //119
+            {
+                pergunta: 'Quem foi eleito presidente África do Sul em 1994?',
+                alternativas: {
+                    a: 'NELSON PIQUET',
+                    b: 'NELSON MANDELA',
+                    c: 'NELSON NED',
+                    d: 'JOHN NELSON',
+                },
+                // respota: alternativa.b
+                resposta:'NELSON MANDELA'
+        
+            },
+            //120
+            {
+                pergunta: 'Qual cantor ficou conhecido como “O rei da voz”?',
+                alternativas: {
+                    a: 'ORLANDO SILVA',
+                    b: 'VICENTE CELESTINO',
+                    c: 'FRANCISCO ALVES',
+                    d: 'CARLOS GALHARDO',
+                },
+                // respota: alternativa.c
+                resposta:'FRANCISCO ALVES'
+        
+            },
+        
+        ];
+        
+//         const perguntasLista3 = [
+//             //121
+//             0 = {
+//                 pergunta: 'Quantos quilates tem o ouro puro?',
+//                 alternativas: {
+//                     a: '18',
+//                     b: '20',
+//                     c: '24',
+//                     d: '30',
+//                 },
+//                 respota: alternativa.c
+        
+//             },
+//             //122
+//             1 = {
+//                 pergunta: 'Qual é a sigla da Organização das Nações Unidas?',
+//                 alternativas: {
+//                     a: 'ONU',
+//                     b: 'FMI',
+//                     c: 'CIA',
+//                     d: 'OTAN',
+//                 },
+//                 respota: alternativa.a
+        
+//             },
+//             //123
+//             2 = {
+//                 pergunta: 'De quantos em quantos anos aparece o cometa Halley?',
+//                 alternativas: {
+//                     a: '57 ANOS',
+//                     b: '67 ANOS',
+//                     c: '76 ANOS',
+//                     d: '79 ANOS',
+//                 },
+//                 respota: alternativa.c
+        
+//             },
+//             //124
+//             3 = {
+//                 pergunta: 'Segundo a crença popular, a mula-sem-cabeça é mulher quem?',
+//                 alternativas: {
+//                     a: 'DO COROINHA',
+//                     b: 'DO PADRE',
+//                     c: 'DO SACRISTÃO',
+//                     d: 'DO BISPO',
+//                 },
+//                 respota: alternativa.b
+        
+//             },
+//             //125
+//             4 = {
+//                 pergunta: 'Que atriz protagonizou o filme “Titanic”?',
+//                 alternativas: {
+//                     a: 'CAMERON DIAZ',
+//                     b: 'KATE WINSLET',
+//                     c: 'BRIDGET FONDA',
+//                     d: 'CATHERINE ZETTA JONES',
+//                 },
+//                 respota: alternativa.b
+        
+//             },
+//             //126
+//             5 = {
+//                 pergunta: 'Como é chamada a doença que causa perda desigual da melanina?',
+//                 alternativas: {
+//                     a: 'ASTIGMATISMO',
+//                     b: 'TENDINITE',
+//                     c: 'VITILIGO',
+//                     d: 'VITINGA',
+//                 },
+//                 respota: alternativa.c
+        
+//             },
+//             //127
+//             6 = {
+//                 pergunta: 'Quem realizou a primeira cirurgia de ponte de safena no Brasil?',
+//                 alternativas: {
+//                     a: 'DR. ZERBINI',
+//                     b: 'DR. FRITZ',
+//                     c: 'DR. JATENE',
+//                     d: 'DR. CALLIGARI',
+//                 },
+//                 respota: alternativa.c
+        
+//             },
+//             //128
+//             7 = {
+//                 pergunta: 'No filme, quem era parceiro de crimes da Bonnie?',
+//                 alternativas: {
+//                     a: 'BILL',
+//                     b: 'CLYDE',
+//                     c: 'JAMES',
+//                     d: 'BUTCH',
+//                 },
+//                 respota: alternativa.b
+        
+//             },
+//             //129
+//             8 = {
+//                 pergunta: 'Qual é a moeda oficial da Alemanha?',
+//                 alternativas: {
+//                     a: 'LIRA',
+//                     b: 'MARCO',
+//                     c: 'FRANCO',
+//                     d: 'LIBRA',
+//                 },
+//                 respota: alternativa.b
+        
+//             },
+//             //130
+//             9 = {
+//                 pergunta: 'Quem foi o assassino de Lee Harvey Oswald?',
+//                 alternativas: {
+//                     a: 'JACK RUBY',
+//                     b: 'JOHN WILKES BOOTH',
+//                     c: 'PAT GARRET',
+//                     d: 'CHARLOTTE CORDAY',
+//                 },
+//                 respota: alternativa.a
+        
+//             },
 // ];
 
-// const perguntasLista3 = [
-//     //121
-//     0 = {
-//         pergunta: 'Quantos quilates tem o ouro puro?',
-//         alternativas: {
-//             a: '18',
-//             b: '20',
-//             c: '24',
-//             d: '30',
-//         },
-//         respota: alternativa.c
 
-//     },
-//     //122
-//     1 = {
-//         pergunta: 'Qual é a sigla da Organização das Nações Unidas?',
-//         alternativas: {
-//             a: 'ONU',
-//             b: 'FMI',
-//             c: 'CIA',
-//             d: 'OTAN',
-//         },
-//         respota: alternativa.a
-
-//     },
-//     //123
-//     2 = {
-//         pergunta: 'De quantos em quantos anos aparece o cometa Halley?',
-//         alternativas: {
-//             a: '57 ANOS',
-//             b: '67 ANOS',
-//             c: '76 ANOS',
-//             d: '79 ANOS',
-//         },
-//         respota: alternativa.c
-
-//     },
-//     //124
-//     3 = {
-//         pergunta: 'Segundo a crença popular, a mula-sem-cabeça é mulher quem?',
-//         alternativas: {
-//             a: 'DO COROINHA',
-//             b: 'DO PADRE',
-//             c: 'DO SACRISTÃO',
-//             d: 'DO BISPO',
-//         },
-//         respota: alternativa.b
-
-//     },
-//     //125
-//     4 = {
-//         pergunta: 'Que atriz protagonizou o filme “Titanic”?',
-//         alternativas: {
-//             a: 'CAMERON DIAZ',
-//             b: 'KATE WINSLET',
-//             c: 'BRIDGET FONDA',
-//             d: 'CATHERINE ZETTA JONES',
-//         },
-//         respota: alternativa.b
-
-//     },
-//     //126
-//     5 = {
-//         pergunta: 'Como é chamada a doença que causa perda desigual da melanina?',
-//         alternativas: {
-//             a: 'ASTIGMATISMO',
-//             b: 'TENDINITE',
-//             c: 'VITILIGO',
-//             d: 'VITINGA',
-//         },
-//         respota: alternativa.c
-
-//     },
-//     //127
-//     6 = {
-//         pergunta: 'Quem realizou a primeira cirurgia de ponte de safena no Brasil?',
-//         alternativas: {
-//             a: 'DR. ZERBINI',
-//             b: 'DR. FRITZ',
-//             c: 'DR. JATENE',
-//             d: 'DR. CALLIGARI',
-//         },
-//         respota: alternativa.c
-
-//     },
-//     //128
-//     7 = {
-//         pergunta: 'No filme, quem era parceiro de crimes da Bonnie?',
-//         alternativas: {
-//             a: 'BILL',
-//             b: 'CLYDE',
-//             c: 'JAMES',
-//             d: 'BUTCH',
-//         },
-//         respota: alternativa.b
-
-//     },
-//     //129
-//     8 = {
-//         pergunta: 'Qual é a moeda oficial da Alemanha?',
-//         alternativas: {
-//             a: 'LIRA',
-//             b: 'MARCO',
-//             c: 'FRANCO',
-//             d: 'LIBRA',
-//         },
-//         respota: alternativa.b
-
-//     },
-//     //130
-//     9 = {
-//         pergunta: 'Quem foi o assassino de Lee Harvey Oswald?',
-//         alternativas: {
-//             a: 'JACK RUBY',
-//             b: 'JOHN WILKES BOOTH',
-//             c: 'PAT GARRET',
-//             d: 'CHARLOTTE CORDAY',
-//         },
-//         respota: alternativa.a
-
-//     },
-
-// ]
 
 // const perguntasLista4 = [
 // //131

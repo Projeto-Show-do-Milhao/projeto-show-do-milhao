@@ -3,7 +3,7 @@ import { View, Image, ImageBackground, Text, ScrollView, TouchableOpacity } from
 import estilos from '../../telas/TelaQuestoes/styles';
 // import {Jogando} from './subTelaJogando';
 import 'react-native-gesture-handler';
-import { perguntasListal, perguntasLista2 } from '../../../perguntasNivel1'
+import { perguntasListal} from '../../../perguntasNivel1'
 import {perguntasLista1Nivel2} from '../../../perguntasNivel2'
 import {perguntasLista1Nivel3} from '../../../perguntasNivel3'
 
@@ -24,7 +24,7 @@ function TelaQuestoes({ navigation }) {
     setNumPergunta(numPergunta+1)
     if(numPergunta<=1){
 			console.log(numPergunta)
-      setPergunta(perguntasLista2)
+      setPergunta(perguntasListal)
     }else if(numPergunta<=2){
 			console.log(numPergunta)
       setPergunta(perguntasLista1Nivel2)
@@ -123,7 +123,7 @@ function TelaQuestoes({ navigation }) {
   }
 
   function BuscaNumeroAleatorio() {
-    let n = Math.floor(Math.random() * 10)
+    let n = Math.floor(Math.random() * 20)
     return n
   }
 

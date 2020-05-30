@@ -1,4 +1,4 @@
-export {perguntasListal, perguntasLista2, }
+export {perguntasListal}
 const perguntasListal = [
 	{
 			pergunta: 'Em que estado brasileiro nasceu a apresentadora Xuxa?',
@@ -128,10 +128,7 @@ const perguntasListal = [
             resposta: 'MONSTRO'
 			// resposta: alternativas.a
 	
-	},
-];
-
-const perguntasLista2 = [
+    },
     {
         pergunta: 'Qual é o signo do zodíaco de quem nasce no dia do ano-novo?',
         alternativas: {
@@ -380,6 +377,6 @@ const perguntasLista2 = [
         //resposta: alternativas.b
         resposta: 'DUAS'
     },
+];
 
-	
-]
+
