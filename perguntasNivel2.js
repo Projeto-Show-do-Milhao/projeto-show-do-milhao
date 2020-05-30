@@ -106,16 +106,16 @@ const perguntasLista1Nivel2 = [
     },
     //109
     {
-        pergunta: 'Como eram chamados os pilotos suicidas da Segunda Guerra?',
+        pergunta: 'Em que cidade está situada a famosa Praça Vermelha?',
         alternativas: {
-            a: 'CAMICASES',
-            b: 'SASHIMIS',
-            c: 'HARAQUIRIS',
-            d: 'SUMÔS',
+            a: 'MOSCOU',
+            b: 'BERLIM',
+            c: 'PARIS',
+            d: 'ROMA',
         },
-        //resposta: ''a
-        resposta: 'CAMICASES'
-
+        // respota: alternativa.a
+        resposta:'MOSCOU'
+  
     },
     //110
     {

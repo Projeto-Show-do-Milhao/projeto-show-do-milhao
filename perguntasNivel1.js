@@ -308,7 +308,7 @@ const perguntasListal = [
   },
 
   {
-      pergunta: 'Quem foi o criador dospersonagens Pedrinho,Narizinho e Emília?',
+      pergunta: 'Quem foi o criador dos personagens Pedrinho, Narizinho e Emília?',
       alternativas: {
           a: 'MAURÍCIO DE SOUSA',
           b: 'ZIRALDO',
@@ -481,19 +481,18 @@ const perguntasListal = [
       resposta:'LEONARDO DA VINCI'
 
   },
-//139
   {
-      pergunta: 'Em que cidade está situada a famosa Praça Vermelha?',
-      alternativas: {
-          a: 'MOSCOU',
-          b: 'BERLIM',
-          c: 'PARIS',
-          d: 'ROMA',
-      },
-      // respota: alternativa.a
-      resposta:'MOSCOU'
+    pergunta: 'Como eram chamados os pilotos suicidas da Segunda Guerra?',
+    alternativas: {
+        a: 'CAMICASES',
+        b: 'SASHIMIS',
+        c: 'HARAQUIRIS',
+        d: 'SUMÔS',
+    },
+    //resposta: ''a
+    resposta: 'CAMICASES'
 
-  },
+},
 //140
   {
       pergunta: 'Qual é o nome do vulcão que sepultou cidades na Itália no ano de 79?',
