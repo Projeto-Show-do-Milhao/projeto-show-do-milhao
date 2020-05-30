@@ -42,13 +42,13 @@ function TelaQuestoes({ navigation }) {
     buscaPerguntaAleatoria(pergunta, numeroAleatorio)
   }
 
-  function finalizaJogo(numPergunta){
-    if(numPergunta == 11){
-      console.log('ganhou')
-    }
-  }
-
-
+	function pular(){
+		if(pulo>0){
+			setPulo(pulo-1)
+			buscaPerguntaAleatoria(pergunta, numeroAleatorio)
+		}
+	}
+	
   function validaRespostaA() {
     const respostaCerta = buscaResposta(pergunta, numeroAleatorio)
     const respostaSelecionada = buscaAlternativaA(pergunta, numeroAleatorio)
@@ -258,7 +258,7 @@ function TelaQuestoes({ navigation }) {
             </Text>
             </View>
           </TouchableOpacity>
-          <TouchableOpacity onPress={() => setPulo}>
+          <TouchableOpacity onPress={() => pular()}>
             <View style={{
               height: 60,
               width: 100,
