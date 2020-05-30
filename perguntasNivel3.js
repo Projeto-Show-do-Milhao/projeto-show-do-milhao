@@ -365,123 +365,242 @@ const perguntasLista1Nivel3 = [
         resposta:'ÍNDIA'
 
     },
+    {
+                pergunta: 'Que ramo da pecuária ocupase de bodes e cabras?',
+                alternativas: {
+                    a: 'ASININO',
+                    b: 'CAPRINO',
+                    c: 'BUFALINO',
+                    d: 'MUAR',  
+                },
+                // resposta: alternativas.b
+                resposta:'CAPRINO'
+            
+            },
+            {
+                pergunta: 'Como é chamada a bola de gelo e poeira que orbita em torno do sol?',
+                alternativas: {
+                    a: 'COMETA',
+                    b: 'METEORITO',
+                    c: 'CAMADA DE OZÔNIO',
+                    d: 'ESTRELA D’ALVA',  
+                },
+                // resposta: alternativas.a
+                resposta: 'COMETA'
+            
+            },
+            {
+                pergunta: 'O confucionismo é uma filosofia de qual nacionalidade?',
+                alternativas: {
+                    a: 'INDIANA',
+                    b: 'JAPONESA',
+                    c: 'CHINESA',
+                    d: 'COREANA',  
+                },
+                // resposta: alternativas.c
+                resposta:'CHINESA'
+            
+            },
+            {
+                pergunta: 'Qual a ciência que estuda a distribuição dos animais?',
+                alternativas: {
+                    a: 'ZOOTERAPIA',
+                    b: 'ZOOGEOGRAFIA',
+                    c: 'ZODÍACO',
+                    d: 'ZOOMETRIA',  
+                },
+                // resposta: alternativas.b
+                resposta:'ZOOGEOGRAFIA'
+            
+            },
+            {
+                pergunta: 'A eletrônica é parte de qual ciência?',
+                alternativas: {
+                    a: 'FÍSICA',
+                    b: 'BIOLOGIA',
+                    c: 'QUÍMICA',
+                    d: 'BOTÂNICA',  
+                },
+                // resposta: alternativas.a
+                resposta:'FÍSICA'
+            
+            },
+            {
+                pergunta: 'A Bélgica é:',
+                alternativas: {
+                    a: 'UMA REPÚBLICA',
+                    b: 'UMA MONARQUIA CONSTITUCIONAL',
+                    c: 'UM EMIRADO',
+                    d: 'UM PRINCIPADO',  
+                },
+                // resposta: alternativas.b
+                resposta:'UMA MONARQUIA CONSTITUCIONAL'
+
+            
+            },
+            {
+                pergunta: 'Que parte do corpo humano é infectada pela cólera?',
+                alternativas: {
+                    a: 'GARGANTA',
+                    b: 'INTESTINO',
+                    c: 'PULMÕES',
+                    d: 'RINS',  
+                },
+                // resposta: alternativas.b
+                resposta:'INTESTINO'
+            
+            },
+            {
+                pergunta: 'Que figura mitológica é conhecida por sua força extraordinária?',
+                alternativas: {
+                    a: 'ÁTILA',
+                    b: 'MINOTAURO',
+                    c: 'PERSEU',
+                    d: 'HÉRCULES',  
+                },
+                // resposta: alternativas.d
+                resposta:'HÉRCULES'
+
+            
+            },
+            {
+                pergunta: 'A união do espermatozóide com o óvulo origina uma célula chamada:',
+                alternativas: {
+                    a: 'ZIGOTO',
+                    b: 'BIGOTO',
+                    c: 'FETO',
+                    d: 'GAROTO',  
+                },
+                // resposta: alternativas.a
+                resposta:'ZIGOTO'
+            
+            },
+            {
+                pergunta: 'A que país pertence a ilha de Terra Nova?',
+                alternativas: {
+                    a: 'ESTADOS UNIDOS',
+                    b: 'DINAMARCA',
+                    c: 'CANADÁ',
+                    d: 'FRANÇA',  
+                },
+                // resposta: alternativas.c
+                resposta:'CANADÁ'
+            
+            },
+            {//298
+                pergunta: 'Qual foi o piloto de Fórmula 1 que conquistou o título de campeão mundial cinco vezes?',
+                alternativas: {
+                    a: 'JACQUES STEWART',
+                    b: 'ALAIN PROST',
+                    c: 'AYRTON SENNA',
+                    d: 'J. MANOEL FANGIO',  
+                },
+                resposta:'J. MANOEL FANGIO'
+            
+            },
+            {//300
+                pergunta: 'Como é chamada a gravura impressa sobre pranchas de madeira?',
+                alternativas: {
+                    a: 'MATEROGRAFIA',
+                    b: 'LITOGRAFIA',
+                    c: 'XILOGRAFIA',
+                    d: 'SERIGRAFIA',  
+                },
+                resposta:'XILOGRAFIA'
+            
+            },
+            {//297
+                pergunta: 'Miró, Picasso e Salvador Dalí eram pintores:',
+                alternativas: {
+                    a: 'ITALIANOS',
+                    b: 'PORTUGUESES',
+                    c: 'ESPANHÓIS',
+                    d: 'CHILENOS',  
+                },
+                resposta:'ESPANHÓIS'
+            
+            },
+            {//296
+                pergunta: 'O que o pintor Claude Monet representou em suas telas?',
+                alternativas: {
+                    a: 'OS JARDINS DE GIVERNY',
+                    b: 'OS BISTRÔS DE PARIS',
+                    c: 'CENAS DO MOULIN ROUGE',
+                    d: 'PAISAGENS DA PROVENÇA',  
+                },
+                resposta:'OS JARDINS DE GIVERNY'
+            
+            },
+            {//294
+                pergunta: 'O filme “A noviça rebelde”, premiado com 5 Oscars, foi estrelado por:',
+                alternativas: {
+                    a: 'JUDY GARLAND',
+                    b: 'SHIRLEY TEMPLE',
+                    c: 'JULIE ANDREWS',
+                    d: 'DORIS DAY',  
+                },
+                resposta:'JULIE ANDREWS'
+            
+            },
+            {//293
+                pergunta: 'Qual é a maior ilha da Europa?',
+                alternativas: {
+                    a: 'GRÃ-BRETANHA',
+                    b: 'IRLANDA',
+                    c: 'ISLÂNDIA',
+                    d: 'SICÍLIA',  
+                },
+                resposta:'GRÃ-BRETANHA'
+            
+            },
+            {//292
+                pergunta: 'A baleia está classificada em qual grupo de mamíferos?',
+                alternativas: {
+                    a: 'CETÁCEOS',
+                    b: 'FELINOS',
+                    c: 'SIRÊNIOS',
+                    d: 'CARNÍVOROS',  
+                },
+                resposta:'CETÁCEOS'
+            
+            },
+            {//290
+                pergunta: 'Como se chama o explorador de grutas e cavernas?',
+                alternativas: {
+                    a: 'ESPELEÓLOGO',
+                    b: 'AGROSTÓLOGO',
+                    c: 'PSICÓLOGO',
+                    d: 'CAMPANÓLOGO',  
+                },
+                resposta:'ESPELEÓLOGO'
+            
+            },
+            {//289
+                pergunta: 'Pablo Picasso foi um dos criadores do:',
+                alternativas: {
+                    a: 'CUBISMO',
+                    b: 'SURREALISMO',
+                    c: 'IMPRESSIONISMO',
+                    d: 'REALISMO',  
+                },
+                resposta:'CUBISMO'
+            
+            },
+            {//288
+                pergunta: 'A que país pertence a Groenlândia?',
+                alternativas: {
+                    a: 'DINAMARCA',
+                    b: 'INGLATERRA',
+                    c: 'NORUEGA',
+                    d: 'ESTADOS UNIDOS',  
+                },
+                resposta:'DINAMARCA'
+            
+            },
+
+        
 
 ];
 
 
-
-// const perguntasLista3 = [
-//     0= {
-//         pergunta: 'Que ramo da pecuária ocupase de bodes e cabras?',
-//         alternativas: {
-//             a: 'ASININO',
-//             b: 'CAPRINO',
-//             c: 'BUFALINO',
-//             d: 'MUAR',  
-//         },
-//         resposta: alternativas.b
-    
-//     },
-//     1= {
-//         pergunta: 'Como é chamada a bola de gelo e poeira que orbita em torno do sol?',
-//         alternativas: {
-//             a: 'COMETA',
-//             b: 'METEORITO',
-//             c: 'CAMADA DE OZÔNIO',
-//             d: 'ESTRELA D’ALVA',  
-//         },
-//         resposta: alternativas.a
-    
-//     },
-//     2= {
-//         pergunta: 'O confucionismo é uma filosofia de qual nacionalidade?',
-//         alternativas: {
-//             a: 'INDIANA',
-//             b: 'JAPONESA',
-//             c: 'CHINESA',
-//             d: 'COREANA',  
-//         },
-//         resposta: alternativas.c
-    
-//     },
-//     3= {
-//         pergunta: 'Qual a ciência que estuda a distribuição dos animais?',
-//         alternativas: {
-//             a: 'ZOOTERAPIA',
-//             b: 'ZOOGEOGRAFIA',
-//             c: 'ZODÍACO',
-//             d: 'ZOOMETRIA',  
-//         },
-//         resposta: alternativas.b
-    
-//     },
-//     4= {
-//         pergunta: 'A eletrônica é parte de qual ciência?',
-//         alternativas: {
-//             a: 'FÍSICA',
-//             b: 'BIOLOGIA',
-//             c: 'QUÍMICA',
-//             d: 'BOTÂNICA',  
-//         },
-//         resposta: alternativas.a
-    
-//     },
-//     5= {
-//         pergunta: 'A Bélgica é:',
-//         alternativas: {
-//             a: 'UMA REPÚBLICA',
-//             b: '2 UMA MONARQUIA CONSTITUCIONAL',
-//             c: 'UM EMIRADO',
-//             d: 'UM PRINCIPADO',  
-//         },
-//         resposta: alternativas.b
-    
-//     },
-//     6= {
-//         pergunta: 'Que parte do corpo humano é infectada pela cólera?',
-//         alternativas: {
-//             a: 'GARGANTA',
-//             b: 'INTESTINO',
-//             c: 'PULMÕES',
-//             d: 'RINS',  
-//         },
-//         resposta: alternativas.b
-    
-//     },
-//     7= {
-//         pergunta: 'Que figura mitológica é conhecida por sua força extraordinária?',
-//         alternativas: {
-//             a: 'ÁTILA',
-//             b: 'MINOTAURO',
-//             c: 'PERSEU',
-//             d: 'HÉRCULES',  
-//         },
-//         resposta: alternativas.d
-    
-//     },
-//     8= {
-//         pergunta: 'A união do espermatozóide com o óvulo origina uma célula chamada:',
-//         alternativas: {
-//             a: 'ZIGOTO',
-//             b: 'BIGOTO',
-//             c: 'FETO',
-//             d: 'GAROTO',  
-//         },
-//         resposta: alternativas.a
-    
-//     },
-//     9= {
-//         pergunta: 'A que país pertence a ilha de Terra Nova?',
-//         alternativas: {
-//             a: 'ESTADOS UNIDOS',
-//             b: 'DINAMARCA',
-//             c: 'CANADÁ',
-//             d: 'FRANÇA',  
-//         },
-//         resposta: alternativas.c
-    
-//     },
-
-
-// ]
 
