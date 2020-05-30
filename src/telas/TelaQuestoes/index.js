@@ -18,10 +18,13 @@ function TelaQuestoes({ navigation }) {
   let premioTotal = premio[numPergunta]
   const numeroAleatorio = BuscaNumeroAleatorio()
   const telaFinal = ()=>{navigation.navigate('TelaDoFim', premioTotal)}
-	const telaCampea = ()=>{navigation.navigate('TelaDoFim', premio[10])}
+  const telaCampea = ()=>{navigation.navigate('TelaDoFim', premio[10])}
+  const arrayNumAleatorio = []
   
   function mudaPerguntaEpontuacao(){
     setNumPergunta(numPergunta+1)
+    console.log(arrayNumAleatorio)
+    console.log(verificaAleatorio())
     if(numPergunta<=1){
 			console.log(numPergunta)
       setPergunta(perguntasListal)
@@ -43,7 +46,8 @@ function TelaQuestoes({ navigation }) {
 
 	function pular(){
 		if(pulo>0){
-			setPulo(pulo-1)
+      setPulo(pulo-1)
+      verificaAleatorio(numeroAleatorio)
 			buscaPerguntaAleatoria(pergunta, numeroAleatorio)
 		}
 	}
@@ -121,9 +125,21 @@ function TelaQuestoes({ navigation }) {
       telaFinal()
     }
   }
+  function verificaAleatorio(numeroAleatorio){
+    
+    arrayNumAleatorio.push(...arrayNumAleatorio,numeroAleatorio)
+    arrayNumAleatorio.map((res)=>{
+      if(res == numeroAleatorio){
+        BuscaNumeroAleatorio()
+        
+      }
+    })
+  }
+  verificaAleatorio(numeroAleatorio)
 
   function BuscaNumeroAleatorio() {
     let n = Math.floor(Math.random() * 30)
+    
     return n
   }
 
