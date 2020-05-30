@@ -228,7 +228,7 @@ const perguntasLista2 = [
 
 const perguntasLista3 = [
     0= {
-        pergunta: 'Que ramo da pecuária ocupase de bodes e cabras?',
+        pergunta: 'Que ramo da pecuária ocupa-se de bodes e cabras?',
         alternativas: {
             a: 'ASININO',
             b: 'CAPRINO',
