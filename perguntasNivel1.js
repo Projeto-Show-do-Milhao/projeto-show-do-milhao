@@ -1,4 +1,5 @@
 export {perguntasListal}
+
 const perguntasListal = [
 {
     pergunta: 'Em que estado brasileiro nasceu a apresentadora Xuxa?',
@@ -615,116 +616,6 @@ const perguntasListal = [
     },
     resposta: 'PEDIATRIA'
   },
-  {
-    pergunta: 'O saquê é uma bebida típica de qual país?',
-    alternativas: {
-        a: 'ESTADOS UNIDOS',
-        b: 'JAPÃO',
-        c: 'CORÉIA DO SUL',
-        d: 'CHINA',
-    },
-    resposta: 'JAPÃO'
-  },
-  {
-    pergunta: 'O dromedário tem quantas corcovas?',
-    alternativas: {
-        a: 'UMA',
-        b: 'DUAS',
-        c: 'TRÊS',
-        d: 'QUATRO',
-    },
-    resposta: 'UMA'
-  },
-  {
-    pergunta: 'Um adulto sadio tem quantos dentes na boca?',
-    alternativas: {
-        a: '18',
-        b: '24',
-        c: '32',
-        d: '36',
-    },
-    resposta: '32'
-  },
-  {
-    pergunta: 'Qual dos sete anões usa óculos?',
-    alternativas: {
-        a: 'DUNGA',
-        b: 'ZANGADO',
-        c: 'DENGOSO',
-        d: 'MESTRE',
-    },
-    resposta: 'MESTRE'
-  },
-  {
-    pergunta: 'Quem é o Homem de Aço das histórias em quadrinhos?',
-    alternativas: {
-        a: 'BATMAN',
-        b: 'HUCK',
-        c: 'HE-MAN',
-        d: 'SUPER-HOMEM',
-    },
-    resposta: 'SUPER-HOMEM'
-  },
-  {
-    pergunta: 'Cavalo, rainha e torre sãopeças de qual jogo?',
-    alternativas: {
-        a: 'DAMAS',
-        b: 'XADREZ',
-        c: 'LUDO',
-        d: 'DOMINÓ',
-    },
-    resposta: 'XADREZ'
-  },
-  {
-    pergunta: 'Turmalina é uma espécie de quê?',
-    alternativas: {
-        a: 'FLOR',
-        b: 'FRUTO',
-        c: 'PEDRA',
-        d: 'VERDURA',
-    },
-    resposta: 'PEDRA'
-  },
-  {
-    pergunta: 'Qual é o santo casamenteiro?',
-    alternativas: {
-        a: 'SÃO PEDRO',
-        b: 'SÃO PAULO',
-        c: 'SÃO JOÃO',
-        d: 'SANTO ANTÔNIO',
-    },
-    resposta: 'SANTO ANTÔNIO'
-  },
-  {
-    pergunta: 'Quem ocupou o cargo de Ministro da Saúde do Brasil no ano de 2000?',
-    alternativas: {
-        a: 'ADIB JATENE',
-        b: 'JOSÉ SERRA',
-        c: 'CIRO GOMES',
-        d: 'PEDRO MALAN',
-    },
-    resposta: 'JOSÉ SERRA'
-  },
-  {
-    pergunta: 'Segundo a Bíblia, quem foi morto por Caim?',
-    alternativas: {
-        a: 'ADÃO',
-        b: 'ISAAC',
-        c: 'ABEL',
-        d: 'ABRAÃO',
-    },
-    resposta: 'ABEL'
-  },
-  {
-    pergunta: 'Qual é o livro dividido em Velho Testamento e Novo Testamento?',
-    alternativas: {
-        a: 'BÍBLIA',
-        b: 'ENCICLOPÉDIA',
-        c: 'DICIONÁRIO',
-        d: 'ATLAS',
-    },
-    resposta: 'BÍBLIA'
-  },
+ 
 ];
-
 
