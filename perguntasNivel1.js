@@ -377,6 +377,135 @@ const perguntasListal = [
         //resposta: alternativas.b
         resposta: 'DUAS'
     },
+    {
+        pergunta: 'Quem é o parceiro de aventuras de Dom Quixote?',
+        alternativas: {
+            a: 'SANCHO PANÇA',
+            b: 'GUILHERME TELL',
+            c: 'SIGMUND FREUD',
+            d: 'LANCELOT',
+        },
+        // respota: alternativa.a
+        resposta:'SANCHO PANÇA'
+
+    },
+//132
+    {
+        pergunta: 'Nas histórias do Snoopy, qual  o nome do passarinho?',
+        alternativas: {
+            a: 'PIU-PIU',
+            b: 'WOODSTOCK',
+            c: 'CANARINHO',
+            d: 'ROUXINOL',
+        },
+        // respota: alternativa.b
+        resposta:'WOODSTOCK'
+
+    },
+    //133
+    {
+        pergunta: 'Que metal avermelhado cria uma camada esverdeada contato com a umidade?',
+        alternativas: {
+            a: 'FERRO',
+            b: 'COBRE',
+            c: 'MERCÚRIO',
+            d: 'AÇO',
+        },
+        // respota: alternativa.b
+        resposta:'COBRE'
+
+    },
+    //134
+    {
+        pergunta: 'Que planta era usada para fabricação de papel no antigo Egito?',
+        alternativas: {
+            a: 'PAPIRO',
+            b: 'EUCALIPTO',
+            c: 'OLIVEIRA',
+            d: 'MILHO',
+        },
+        // respota: alternativa.a
+        resposta:'PAPIRO'
+
+    },
+    //135
+    {
+        pergunta: 'Que país europeu tem como atração a tourada?',
+        alternativas: {
+            a: 'ESPANHA',
+            b: 'ITÁLIA',
+            c: 'FRANÇA',
+            d: 'ALEMANHA',
+        },
+        // respota: alternativa.a
+        resposta:'ESPANHA'
+
+    },
+    //136
+    {
+        pergunta: 'Que humorista, falecido em 1999, foi baterista de Raul Seixas?',
+        alternativas: {
+            a: 'LILICO',
+            b: 'RONI CÓCEGAS',
+            c: 'GRANDE OTELO',
+            d: 'MAZZAROPI',
+        },
+        // respota: alternativa.b
+        resposta:'RONI CÓCEGAS'
+
+    },
+//137
+    {
+        pergunta: 'O que os filatelistas colecionam?',
+        alternativas: {
+            a: 'QUADROS',
+            b: 'MOEDAS',
+            c: 'SELOS',
+            d: 'FIGURINHAS',
+        },
+        // respota: alternativa.c
+        resposta:'SELOS'
+
+    },
+//138
+    {
+        pergunta: 'Quem pintou o quadro “La Gioconda”, conhecido como “Mona Lisa”?',
+        alternativas: {
+            a: 'LEONARDO DA VINCI',
+            b: 'TICIANO',
+            c: 'RAFAEL',
+            d: 'MICHELÂNGELO',
+        },
+        // respota: alternativa.a
+        resposta:'LEONARDO DA VINCI'
+
+    },
+//139
+    {
+        pergunta: 'Em que cidade está situada a famosa Praça Vermelha?',
+        alternativas: {
+            a: 'MOSCOU',
+            b: 'BERLIM',
+            c: 'PARIS',
+            d: 'ROMA',
+        },
+        // respota: alternativa.a
+        resposta:'MOSCOU'
+
+    },
+//140
+    {
+        pergunta: 'Qual é o nome do vulcão que sepultou cidades na Itália no ano de 79?',
+        alternativas: {
+            a: 'VÊNUS',
+            b: 'VESÚVIO',
+            c: 'VARSÓVIA',
+            d: 'VENEZA',
+        },
+        // respota: alternativa.b
+        resposta:'VESÚVIO'
+
+    },
 ];
 
 

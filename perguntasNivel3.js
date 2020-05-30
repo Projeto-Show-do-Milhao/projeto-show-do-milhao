@@ -236,6 +236,135 @@ const perguntasLista1Nivel3 = [
                 resposta:'PETRÓLEO'
             
             },
+            {
+        pergunta: 'Quando começou e terminou a Primeira Guerra Mundial?',
+        alternativas: {
+            a: '1914-1919',
+            b: '1939-1945',
+            c: '1921-1932',
+            d: '1912-1915',
+        },
+        // respota: alternativa.b
+        resposta:'1939-1945'
+
+    },
+//142
+    {
+        pergunta: 'Qual é a letra do alfabeto que simboliza o número dez em algarismo romano?',
+        alternativas: {
+            a: 'V',
+            b: 'D',
+            c: 'L',
+            d: 'X',
+        },
+        // respota: alternativa.d
+        resposta:'X'
+
+    },
+    //143
+    {
+        pergunta: 'Qual é a história que Francis Ford Coppola dirigiu em três partes?',
+        alternativas: {
+            a: 'TITANIC',
+            b: 'SEXTA-FEIRA TREZE',
+            c: 'O PODEROSO CHEFÃO',
+            d: 'GUERRA NAS ESTRELAS',
+        },
+        // respota: alternativa.c
+        resposta:'O PODEROSO CHEFÃO'
+
+    },
+    //144
+    {
+        pergunta: 'Que animais são criados nas pocilgas?',
+        alternativas: {
+            a: 'CAMELOS',
+            b: 'BÚFALOS',
+            c: 'CARNEIROS',
+            d: 'PORCOS',
+        },
+        // respota: alternativa.d
+        resposta:'PORCOS'
+
+    },
+    //145
+    {
+        pergunta: 'Quem foi o diretor do filme “A lista de Schindler?',
+        alternativas: {
+            a: 'CLINT EASTWOOD',
+            b: 'STEVEN SPIELBERG',
+            c: 'STANLEY KUBRICK',
+            d: 'PEDRO ALMODÓVAR',
+        },
+        // respota: alternativa.b
+        resposta:'STEVEN SPIELBERG'
+
+    },
+    //146
+    {
+        pergunta: 'Qual é o alimento produzido pela moagem dos grãos de cacau?',
+        alternativas: {
+            a: 'PARAFINA',
+            b: 'AÇÚCAR',
+            c: 'CHOCOLATE',
+            d: 'CAFÉ',
+        },
+        // respota: alternativa.c
+        resposta:'CHOCOLATE'
+
+    },
+//147
+    {
+        pergunta: 'Quem introduziu o futebol no Brasil?',
+        alternativas: {
+            a: 'PELÉ',
+            b: 'JOÃO HAVELANGE',
+            c: 'CHARLES MILLER',
+            d: 'PAULO MACHADO',
+        },
+        // respota: alternativa.c
+        resposta:'CHARLES MILLER'
+
+    },
+//148
+    {
+        pergunta: 'Em que continente se situa o rio Nilo?',
+        alternativas: {
+            a: 'AFRICANO',
+            b: 'EUROPEU',
+            c: 'AMERICANO',
+            d: 'ASIÁTICO',
+        },
+        // respota: alternativa.a
+        resposta:'AFRICANO'
+
+    },
+//149
+    {
+        pergunta: 'Que colônia britânica foi devolvida à China em 1997?',
+        alternativas: {
+            a: 'PEQUIM',
+            b: 'HANÓI',
+            c: 'HIROSHIMA',
+            d: 'HONG KONG',
+        },
+        // respota: alternativa.d
+        resposta:'HONG KONG'
+
+    },
+//150
+    {
+        pergunta: 'Nova Delhi é a capital de que país?',
+        alternativas: {
+            a: 'ÍNDIA',
+            b: 'ISLÂNDIA',
+            c: 'PAQUISTÃO',
+            d: 'MÉXICO',
+        },
+        // respota: alternativa.a
+        resposta:'ÍNDIA'
+
+    },
 
 ];
 

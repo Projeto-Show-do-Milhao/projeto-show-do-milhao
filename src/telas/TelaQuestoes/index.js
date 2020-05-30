@@ -123,7 +123,7 @@ function TelaQuestoes({ navigation }) {
   }
 
   function BuscaNumeroAleatorio() {
-    let n = Math.floor(Math.random() * 20)
+    let n = Math.floor(Math.random() * 30)
     return n
   }
 
