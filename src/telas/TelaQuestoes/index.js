@@ -20,19 +20,29 @@ function TelaQuestoes({ navigation }) {
   const telaCampea = ()=>{navigation.navigate('TelaDoFim', premio[10])}
   
   function mudaPerguntaEpontuacao(){
+    pergunta.splice(numeroAleatorio, 1)
     setNumPergunta(numPergunta+1)
+    console.log(pergunta)
     if(numPergunta<=1){
 			console.log(numPergunta)
       setPergunta(perguntasListal)
+      pergunta.splice(numeroAleatorio, 1)
+      console.log(pergunta)
     }else if(numPergunta<=2){
 			console.log(numPergunta)
       setPergunta(perguntasLista1Nivel2)
+      pergunta.splice(numeroAleatorio, 1)
+      console.log(pergunta)
     }else if(numPergunta<=5){
 			console.log(numPergunta)
       setPergunta(perguntasLista1Nivel3)
+      pergunta.splice(numeroAleatorio, 1)
+      console.log(pergunta)
     }else if(numPergunta<=8){
-			setPergunta(perguntasLista1Nivel3)
-			console.log(numPergunta)
+      console.log(numPergunta)
+      setPergunta(perguntasLista1Nivel3)
+      pergunta.splice(numeroAleatorio, 1)
+      console.log(pergunta)
     }else if(numPergunta==9){
 			console.log('chegou no final')
 			telaCampea()
@@ -109,7 +119,7 @@ function TelaQuestoes({ navigation }) {
   }
  
   function BuscaNumeroAleatorio() {
-    let n = Math.floor(Math.random() * 50)
+    let n = Math.floor(Math.random() * pergunta.length-1)
     return n
   }
 
