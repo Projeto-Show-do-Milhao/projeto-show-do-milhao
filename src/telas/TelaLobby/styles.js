@@ -35,14 +35,14 @@ const estilos = StyleSheet.create({
 
     containerRank: {
         // flex: 4,
-        height:500,
+        height:450,
         paddingTop: '35%',
-        marginBottom: '5%',
+        marginBottom: 10,
         backgroundColor: 'rgba(0, 0, 255, 0.40)',
         width: 360,
         borderRadius: 15,
         alignSelf: 'center',
-        marginTop:-230,
+        marginTop:-245,
     },
 
     botaoJogar: {
@@ -75,8 +75,8 @@ const estilos = StyleSheet.create({
         fontWeight: 'bold',
         color: 'white',
         textShadowOffset: {
-            width: 1,
-            height: 1
+            width: 3,
+            height: 3
         },
         textShadowColor: 'black',
         textShadowRadius: 1,
@@ -85,8 +85,8 @@ const estilos = StyleSheet.create({
         // textDecorationLine: 'underline'
     },
     textoRegrasSub: {
-        fontSize: 15,
-        margin:15,
+        fontSize: 18,
+        margin:20,
         alignSelf: 'center',
         fontWeight: 'bold',
         color: 'yellow',
@@ -100,6 +100,23 @@ const estilos = StyleSheet.create({
         marginBottom:-2,
         // textDecorationLine: 'underline'
     },
+    textoRegrasSubFinal: {
+        fontSize: 22,
+        margin:20,
+        alignSelf: 'center',
+        fontWeight: 'bold',
+        color: 'yellow',
+        textShadowOffset: {
+            width: 1,
+            height: 1
+        },
+        textShadowColor: 'black',
+        textShadowRadius: 1,
+        textAlign:'center',
+        marginBottom:-2,
+        // textDecorationLine: 'underline'
+    },
+
     avatarTelaJogar: {
         width: 100,
         height: 100,

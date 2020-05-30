@@ -25,35 +25,23 @@ function TelaLobby({ navigation }) {
           Regras do Jogo
         </Text>
         <Text style={estilos.textoRegrasSub}>
-          - Cada questão tem quatro alternativas e apenas uma correta
+          Cada questão tem quatro alternativas com apenas uma correta.
         </Text>
         <Text style={estilos.textoRegrasSub}>
-          - As questões são separadas em quatro niveis:
-          
+          Pressione a alternativa correta para avançar e aumentar seu prêmio!
         </Text>
         <Text style={estilos.textoRegrasSub}>
-          - Facil
+          Você pode pular de pergunta até três vezes;
         </Text>
         <Text style={estilos.textoRegrasSub}>
-          - Medio
+          Ou arregar pela metade do prêmio.
         </Text>
         <Text style={estilos.textoRegrasSub}>
-          - Dificil
+         Mas se errar...
         </Text>
-        <Text style={estilos.textoRegrasSub}>
-          - Pergunta do milhão
+        <Text style={estilos.textoRegrasSubFinal}>
+         PERDE TUDO!!!
         </Text>
-        <Text style={estilos.textoRegrasSub}>
-          - Você pode pular 3 vezes
-        </Text>
-        <Text style={estilos.textoRegrasSub}>
-          - Caso você queira parar recebe metade do valor acumulado durante a partida
-        </Text>
-        <Text style={estilos.textoRegrasSub}>
-          -  Caso erre a pergunta você perde tudo
-        </Text>
-        
-
       </View>
       <View style={estilos.botaoJogar}>
         <TouchableHighlight onPress={()=> navigation.navigate("Questoes")}>
