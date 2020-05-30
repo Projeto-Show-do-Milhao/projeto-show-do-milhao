@@ -106,7 +106,7 @@ function TelaQuestoes({ navigation }) {
       telaFinal()
     }
   }
-
+  
   function validaRespostaD() {
     const respostaCerta = buscaResposta(pergunta, numeroAleatorio)
     const respostaSelecionada = buscaAlternativaD(pergunta, numeroAleatorio)
@@ -191,9 +191,6 @@ function TelaQuestoes({ navigation }) {
           </Text>
           </View>
         </View>
-        <Text>
-          {tempo}
-        </Text>
         <TouchableOpacity onPress={validaRespostaA}>
           <View style={{
             backgroundColor: 'rgba(0, 0, 255, 0.40)',
