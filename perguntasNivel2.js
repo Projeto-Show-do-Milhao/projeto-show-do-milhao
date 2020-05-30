@@ -9,7 +9,7 @@ const perguntasLista1Nivel2 = [
             c: 'Dez',
             d: 'Doze',
         },
-        //respota: alternativa,d
+        //resposta: ''d
         resposta: 'Doze'
 
     },
@@ -23,7 +23,7 @@ const perguntasLista1Nivel2 = [
             c: 'PARAGUAI',
             d: 'ESPANHA',
         },
-        //respota: alternativa,b
+        //resposta: ''b
         resposta: 'ARGENTINA'
 
     },
@@ -36,7 +36,7 @@ const perguntasLista1Nivel2 = [
             c: 'BRUTUS',
             d: 'CALÍGULA',
         },
-        //respota: alternativa,b
+        //resposta: ''b
         resposta: 'NERO'
     },
     //104
@@ -48,7 +48,7 @@ const perguntasLista1Nivel2 = [
             c: 'ITÁLIA',
             d: 'ESTADOS UNIDOS',
         },
-        //respota: alternativa,c
+        //resposta: ''c
         resposta: 'ITÁLIA'
 
     },
@@ -61,7 +61,7 @@ const perguntasLista1Nivel2 = [
             c: 'MILISTA',
             d: 'MILANÊS',
         },
-        //respota: alternativa,d
+        //resposta: ''d
         resposta: 'MILANÊS'
 
     },
@@ -74,7 +74,7 @@ const perguntasLista1Nivel2 = [
             c: 'CONFEITEIRO',
             d: 'BOMBEIRO',
         },
-        //respota: alternativa,a
+        //resposta: ''a
         resposta: 'CARPINTEIRO'
 
     },
@@ -87,7 +87,7 @@ const perguntasLista1Nivel2 = [
             c: 'MARACANÃ',
             d: 'MINEIRÃO',
         },
-        // respota: alternativa,c
+        // resposta: ''c
         resposta: 'MARACANÃ'
 
     },
@@ -100,7 +100,7 @@ const perguntasLista1Nivel2 = [
             c: 'INSTRUMENTO MUSICAL',
             d: 'TRIBO INDÍGENA',
         },
-        // respota: alternativa,c
+        // resposta: ''c
         resposta: 'INSTRUMENTO MUSICAL'
 
     },
@@ -113,7 +113,7 @@ const perguntasLista1Nivel2 = [
             c: 'HARAQUIRIS',
             d: 'SUMÔS',
         },
-        //respota: alternativa,a
+        //resposta: ''a
         resposta: 'CAMICASES'
 
     },
@@ -126,7 +126,7 @@ const perguntasLista1Nivel2 = [
             c: 'MÚSICA',
             d: 'SÍMBOLO',
         },
-        //respota: alternativa,a
+        //resposta: ''a
         resposta: 'EMBARCAÇÃO'
 
     },
@@ -138,7 +138,7 @@ const perguntasLista1Nivel2 = [
             c: 'ÍNDIA',
             d: 'INDONÉSIA',
         },
-        // respota: alternativa,a
+        // resposta: ''a
         resposta: 'JAPÃO'
 
     },
@@ -151,7 +151,7 @@ const perguntasLista1Nivel2 = [
             c: 'PRIMA-DONA',
             d: 'OBRA-PRIMA',
         },
-        // respota: alternativa,c
+        // resposta: ''c
         resposta: 'PRIMA-DONA'
 
     },
@@ -164,7 +164,7 @@ const perguntasLista1Nivel2 = [
             c: 'VERME',
             d: 'VERDURA',
         },
-        // respota: alternativa,b
+        // resposta: ''b
         resposta: 'ÁRVORE'
 
     },
@@ -177,7 +177,7 @@ const perguntasLista1Nivel2 = [
             c: 'RIO',
             d: 'PRAIA',
         },
-        // respota: alternativa,b
+        // resposta: ''b
         resposta: 'MONTANHA'
 
     },
@@ -190,7 +190,7 @@ const perguntasLista1Nivel2 = [
             c: 'ROMA',
             d: 'LONDRES',
         },
-        // respota: alternativa,c
+        // resposta: ''c
         resposta: 'ROMA'
 
     },
@@ -203,7 +203,7 @@ const perguntasLista1Nivel2 = [
             c: 'MONTE CASTELO',
             d: 'MONT BLANC',
         },
-        // respota: alternativa,a
+        // resposta: ''a
         resposta: 'EVEREST'
 
     },
@@ -216,7 +216,7 @@ const perguntasLista1Nivel2 = [
             c: 'RENO',
             d: 'AUBE',
         },
-        // respota: alternativa,a
+        // resposta: ''a
         resposta: 'TÂMISA'
 
 
@@ -230,7 +230,7 @@ const perguntasLista1Nivel2 = [
             c: 'POODLE',
             d: 'SÃO-BERNARDO',
         },
-        // respota: alternativa,d
+        // resposta: ''d
         resposta: 'SÃO-BERNARDO'
 
 
@@ -244,7 +244,7 @@ const perguntasLista1Nivel2 = [
             c: 'NELSON NED',
             d: 'JOHN NELSON',
         },
-        // respota: alternativa,b
+        // resposta: ''b
         resposta: 'NELSON MANDELA'
 
     },
@@ -257,7 +257,7 @@ const perguntasLista1Nivel2 = [
             c: 'FRANCISCO ALVES',
             d: 'CARLOS GALHARDO',
         },
-        // respota: alternativa,c
+        // resposta: ''c
         resposta: 'FRANCISCO ALVES'
 
     },
@@ -269,7 +269,7 @@ const perguntasLista1Nivel2 = [
             c: '24',
             d: '30',
         },
-        // respota: alternativa,c
+        // resposta: ''c
         resposta: '24'
 
     },
@@ -282,7 +282,7 @@ const perguntasLista1Nivel2 = [
             c: 'CIA',
             d: 'OTAN',
         },
-        // respota: alternativa,a
+        // resposta: ''a
         resposta: 'ONU'
 
     },
@@ -295,7 +295,7 @@ const perguntasLista1Nivel2 = [
             c: '76 ANOS',
             d: '79 ANOS',
         },
-        // respota: alternativa,c
+        // resposta: ''c
         resposta: '76 ANOS'
 
     },
@@ -308,7 +308,7 @@ const perguntasLista1Nivel2 = [
             c: 'DO SACRISTÃO',
             d: 'DO BISPO',
         },
-        // respota: alternativa,b
+        // resposta: ''b
         resposta: 'DO PADRE'
 
     },
@@ -321,7 +321,7 @@ const perguntasLista1Nivel2 = [
             c: 'BRIDGET FONDA',
             d: 'CATHERINE ZETTA JONES',
         },
-        // respota: alternativa,b
+        // resposta: ''b
         resposta: 'KATE WINSLET'
 
     },
@@ -334,7 +334,7 @@ const perguntasLista1Nivel2 = [
             c: 'VITILIGO',
             d: 'VITINGA',
         },
-        // respota: alternativa,c
+        // resposta: ''c
         resposta: 'VITILIGO'
 
     },
@@ -347,7 +347,7 @@ const perguntasLista1Nivel2 = [
             c: 'DR, JATENE',
             d: 'DR, CALLIGARI',
         },
-        // respota: alternativa,c
+        // resposta: ''c
         resposta: 'DR, JATENE'
 
     },
@@ -360,7 +360,7 @@ const perguntasLista1Nivel2 = [
             c: 'JAMES',
             d: 'BUTCH',
         },
-        // respota: alternativa,b
+        // resposta: ''b
         resposta: 'CLYDE'
 
     },
@@ -373,7 +373,7 @@ const perguntasLista1Nivel2 = [
             c: 'FRANCO',
             d: 'LIBRA',
         },
-        // respota: alternativa,b
+        // resposta: ''b
         resposta: 'MARCO'
 
     },
@@ -386,256 +386,249 @@ const perguntasLista1Nivel2 = [
             c: 'PAT GARRET',
             d: 'CHARLOTTE CORDAY',
         },
-        // respota: alternativa,a
+        // resposta: ''a
         resposta: 'JACK RUBY'
 
     },
+    //151
+    {
+        pergunta: 'O que leva o sangue do coração para o corpo?',
+        alternativas: {
+            a: 'VEIAS',
+            b: 'MÚSCULOS',
+            c: 'ARTÉRIAS',
+            d: 'OSSOS',
+        },
+        resposta: 'ARTÉRIAS'
 
-];
 
+    },
+    //152
+    {
+        pergunta: 'Como é chamado o objeto falsificado vendido como original?',
+        alternativas: {
+            a: 'PIRARUCU',
+            b: 'PERNETA',
+            c: 'PIRATA',
+            d: 'PAPAGAIO',
+        },
+        resposta: 'PIRATA'
 
-// const perguntasLista6 = [
-//     //151
-//     {
-//         pergunta: 'O que leva o sangue do coração para o corpo?',
-//         alternativas: {
-//             a: '1914-1919',
-//             b: '1939-1945',
-//             c: '1921-1932',
-//             d: '1912-1915',
-//         },
-//         respota: alternativa,
+    },
+    //153
+    {
+        pergunta: 'Em que matéria estuda-se álgebra na escola?',
+        alternativas: {
+            a: 'MATEMÁTICA',
+            b: 'BIOLOGIA',
+            c: 'QUÍMICA',
+            d: 'FÍSICA',
+        },
+        resposta: 'MATEMÁTICA'
 
-//     },
-//     //152
-//     {
-//         pergunta: 'O que leva o sangue do coração para o corpo?',
-//         alternativas: {
-//             a: 'PIRARUCU',
-//             b: 'PERNETA',
-//             c: 'PIRATA',
-//             d: 'PAPAGAIO',
-//         },
-//         respota: alternativa,
+    },
+    //154
+    {
+        pergunta: 'Qual é o nome original do filme “O médico e o monstro”?',
+        alternativas: {
+            a: 'MASTERS E JOHNSON',
+            b: 'DR, JEKYLL E MR, HYDE',
+            c: 'BONNIE E CLYDE',
+            d: 'D, QUIXOTE E SANCHO PANÇA',
+        },
+        resposta: 'DR, JEKYLL E MR, HYDE'
 
-//     },
-//     //153
-//     {
-//         pergunta: 'Em que matéria estuda-se álgebra na escola?',
-//         alternativas: {
-//             a: 'MATEMÁTICA',
-//             b: 'BIOLOGIA',
-//             c: 'QUÍMICA',
-//             d: 'FÍSICA',
-//         },
-//         respota: alternativa,
+    },
+    //155
+    {
+        pergunta: 'Que atriz casou com Joe Dimaggio e Arthur Miller?',
+        alternativas: {
+            a: 'GLENDA JACKSON',
+            b: 'MARGARET BECKET',
+            c: 'MARILYN MONROE',
+            d: 'ELIZABETH TAYLOR',
+        },
+        resposta: 'MARILYN MONROE'
 
-//     },
-//     //154
-//     {
-//         pergunta: 'Qual é o nome original do filme “O médico e o monstro”?',
-//         alternativas: {
-//             a: 'MASTERS E JOHNSON',
-//             b: 'DR, JEKYLL E MR, HYDE',
-//             c: 'BONNIE E CLYDE',
-//             d: 'D, QUIXOTE E SANCHO PANÇA',
-//         },
-//         respota: alternativa,
+    },
+    //156
+    {
+        pergunta: 'Quem disse a frase: “Vim, vi e venci”?',
+        alternativas: {
+            a: 'JÚLIO CÉSAR',
+            b: 'CALÍGULA',
+            c: 'NERO',
+            d: 'MARCO ANTÔNIO',
+        },
+        resposta: 'JÚLIO CÉSAR'
 
-//     },
-//     //155
-//     {
-//         pergunta: 'Que atriz casou com Joe Dimaggio e Arthur Miller?',
-//         alternativas: {
-//             a: 'GLENDA JACKSON',
-//             b: 'MARGARET BECKET',
-//             c: 'MARILYN MONROE',
-//             d: 'ELIZABETH TAYLOR',
-//         },
-//         respota: alternativa,
+    },
+    //157
+    {
+        pergunta: 'Que nome se dá à volta dos cardumes de peixes para a nascente do rio?',
+        alternativas: {
+            a: 'POROROCA',
+            b: 'PERERECA',
+            c: 'PIRAPORA',
+            d: 'PIRACEMA',
+        },
+        resposta: 'PIRACEMA'
 
-//     },
-//     //156
-//     {
-//         pergunta: 'Quem disse a frase: “Vim, vi e venci”?',
-//         alternativas: {
-//             a: 'JÚLIO CÉSAR',
-//             b: 'CALÍGULA',
-//             c: 'NERO',
-//             d: 'MARCO ANTÔNIO',
-//         },
-//         respota: alternativa,
+    },
+    //158
+    {
+        pergunta: 'Qual é o país que participou de todas as copas do mundo de futebol, até 1998?',
+        alternativas: {
+            a: 'ITÁLIA',
+            b: 'URUGUAI',
+            c: 'ARGENTINA',
+            d: 'BRASIL',
+        },
+        resposta: 'BRASIL'
 
-//     },
-//     //157
-//     {
-//         pergunta: 'Que nome se dá à volta dos cardumes de peixes para a nascente do rio?',
-//         alternativas: {
-//             a: 'POROROCA',
-//             b: 'PERERECA',
-//             c: 'PIRAPORA',
-//             d: 'PIRACEMA',
-//         },
-//         respota: alternativa,
+    },
+    //159
+    {
+        pergunta: 'Quais são os naipes vermelhos do baralho?',
+        alternativas: {
+            a: 'OUROS E COPAS',
+            b: 'COPAS E PAUS',
+            c: 'PAUS E OUROS',
+            d: 'ESPADAS E PAUS',
+        },
+        resposta: 'OUROS E COPAS'
 
-//     },
-//     //158
-//     {
-//         pergunta: 'Qual é o país que participou de todas as copas do mundo de futebol, até 1998?',
-//         alternativas: {
-//             a: 'ITÁLIA',
-//             b: 'URUGUAI',
-//             c: 'ARGENTINA',
-//             d: 'BRASIL',
-//         },
-//         respota: alternativa,
+    },
+    //160
+    {
+        pergunta: 'Qual é o nome verdadeiro do Batman?',
+        alternativas: {
+            a: 'BRUCE WAYNE',
+            b: 'DEXTER',
+            c: 'CLARK KENT',
+            d: 'LEX LUTOR',
+        },
+        resposta: 'BRUCE WAYNE'
 
-//     },
-//     //159
-//     {
-//         pergunta: 'Quais são os naipes vermelhos do baralho?',
-//         alternativas: {
-//             a: 'OUROS E COPAS',
-//             b: 'COPAS E PAUS',
-//             c: 'PAUS E OUROS',
-//             d: 'ESPADAS E PAUS',
-//         },
-//         respota: alternativa,
+    },
+    //161
+    {
+        pergunta: 'Beirute é a capital de que país?',
+        alternativas: {
+            a: 'SÍRIA',
+            b: 'NEPAL',
+            c: 'MONGÓLIA',
+            d: 'LÍBANO',
+        },
+        resposta: 'LÍBANO'
 
-//     },
-//     //160
-//     {
-//         pergunta: 'Qual é o nome verdadeiro do Batman?',
-//         alternativas: {
-//             a: 'BRUCE WAYNE',
-//             b: 'DEXTER',
-//             c: 'CLARK KENT',
-//             d: 'LEX LUTOR',
-//         },
-//         respota: alternativa,
+    },
+    //162
+    {
+        pergunta: 'O que é um contratorpedeiro?',
+        alternativas: {
+            a: 'TANQUE',
+            b: 'NAVIO DE GUERRA',
+            c: 'DIRIGÍVEL',
+            d: 'AVIÃO DE CAÇA',
+        },
+        resposta: 'NAVIO DE GUERRA'
 
-//     },
-// ]
+    },
+    //163
+    {
+        pergunta: 'Às margens de que riacho foi proclamada a Independência do Brasil?',
+        alternativas: {
+            a: 'CAMBUCI',
+            b: 'SACOMÃ',
+            c: 'IPIRANGA',
+            d: 'SÃO FRANCISCO',
+        },
+        resposta: 'IPIRANGA'
 
-// const perguntasLista26 = [
-//     //161
-//     {
-//         pergunta: 'Beirute é a capital de que país?',
-//         alternativas: {
-//             a: 'SÍRIA',
-//             b: 'NEPAL',
-//             c: 'MONGÓLIA',
-//             d: 'LÍBANO',
-//         },
-//         respota: alternativa,
+    },
+    //164
+    {
+        pergunta: 'O “super bowl” faz parte de qual esporte?',
+        alternativas: {
+            a: 'BASEBALL',
+            b: 'BASQUETE',
+            c: 'FUTEBOL AMERICANO',
+            d: 'GOLF',
+        },
+        resposta: 'FUTEBOL AMERICANO'
 
-//     },
-//     //162
-//     {
-//         pergunta: 'O que é um contratorpedeiro?',
-//         alternativas: {
-//             a: 'TANQUE',
-//             b: 'NAVIO DE GUERRA',
-//             c: 'DIRIGÍVEL',
-//             d: 'AVIÃO DE CAÇA',
-//         },
-//         respota: alternativa,
+    },
+    //165
+    {
+        pergunta: 'Qual é o nome da embarcação típica do litoral nordestino brasileiro?',
+        alternativas: {
+            a: 'SUBMARINO',
+            b: 'JET SKI',
+            c: 'JANGADA',
+            d: 'LANCHA',
+        },
+        resposta: 'JANGADA'
 
-//     },
-//     //163
-//     {
-//         pergunta: 'Às margens de que riacho foi proclamada a Independência do Brasil?',
-//         alternativas: {
-//             a: 'CAMBUCI',
-//             b: 'SACOMÃ',
-//             c: 'IPIRANGA',
-//             d: 'SÃO FRANCISCO',
-//         },
-//         respota: alternativa,
+    },
+    //166
+    {
+        pergunta: 'Em que estado norte-americano fica a cidade de Miami?',
+        alternativas: {
+            a: 'ALASCA',
+            b: 'NOVA YORK',
+            c: 'FLÓRIDA',
+            d: 'CALIFÓRNIA',
+        },
+        resposta: 'FLÓRIDA'
 
-//     },
-//     //164
-//     {
-//         pergunta: 'O “super bowl” faz parte de qual esporte?',
-//         alternativas: {
-//             a: 'BASEBALL',
-//             b: 'BASQUETE',
-//             c: 'FUTEBOL AMERICANO',
-//             d: 'GOLF',
-//         },
-//         respota: alternativa,
+    },
+    //167
+    {
+        pergunta: 'Qual é a capital do Iraque?',
+        alternativas: {
+            a: 'BELÉM',
+            b: 'BAGDÁ',
+            c: 'BEIRUTE',
+            d: 'BUDAPESTE',
+        },
+        resposta: 'BAGDÁ'
 
-//     },
-//     //165
-//     {
-//         pergunta: 'Qual é o nome da embarcação típica do litoral nordestino brasileiro?',
-//         alternativas: {
-//             a: 'SUBMARINO',
-//             b: 'JET SKI',
-//             c: 'JANGADA',
-//             d: 'LANCHA',
-//         },
-//         respota: alternativa,
+    },
+    //168
+    {
+        pergunta: 'Como se chama a máquina usada para compactar o asfalto?',
+        alternativas: {
+            a: 'ROLO COMPRESSOR',
+            b: 'ESCAVADEIRA',
+            c: 'TRATOR',
+            d: 'LIXADEIRA',
+        },
+        resposta: 'ROLO COMPRESSOR'
 
-//     },
-//     //166
-//     {
-//         pergunta: 'Em que estado norte-americano fica a cidade de Miami?',
-//         alternativas: {
-//             a: 'ALASCA',
-//             b: 'NOVA YORK',
-//             c: 'FLÓRIDA',
-//             d: 'CALIFÓRNIA',
-//         },
-//         respota: alternativa,
+    },
+    //169
+    {
+        pergunta: 'Em 1991, que esportista americano se afastou do basquete por ser HIV positivo?',
+        alternativas: {
+            a: 'MICHAEL JORDAN',
+            b: 'MAGIC JOHNSON',
+            c: 'DENNIS RODMAN',
+            d: 'MIKE TYSON',
+        },
+        resposta: 'MAGIC JOHNSON'
 
-//     },
-//     //167
-//     {
-//         pergunta: 'Qual é a capital do Iraque?',
-//         alternativas: {
-//             a: 'BELÉM',
-//             b: 'BAGDÁ',
-//             c: 'BEIRUTE',
-//             d: 'BUDAPESTE',
-//         },
-//         respota: alternativa,
+    },
+    //170
+    {
+        pergunta: 'Qual é o nome do cachorro de Charlie Brown?',
+        alternativas: {
+            a: 'PLUTO',
+            b: 'FLOQUINHO',
+            c: 'BALEIA',
+            d: 'SNOOPY',
+        },
+        resposta: 'SNOOPY'
 
-//     },
-//     //168
-//     {
-//         pergunta: 'Como se chama a máquina usada para compactar o asfalto?',
-//         alternativas: {
-//             a: 'ROLO COMPRESSOR',
-//             b: 'ESCAVADEIRA',
-//             c: 'TRATOR',
-//             d: 'LIXADEIRA',
-//         },
-//         respota: alternativa,
-
-//     },
-//     //169
-//     {
-//         pergunta: 'Em 1991, que esportista americano se afastou do basquete por ser HIV positivo?',
-//         alternativas: {
-//             a: 'MICHAEL JORDAN',
-//             b: 'MAGIC JOHNSON',
-//             c: 'DENNIS RODMAN',
-//             d: 'MIKE TYSON',
-//         },
-//         respota: alternativa,
-
-//     },
-//     //170
-//     {
-//         pergunta: 'Qual é o nome do cachorro de Charlie Brown?',
-//         alternativas: {
-//             a: 'PLUTO',
-//             b: 'FLOQUINHO',
-//             c: 'BALEIA',
-//             d: 'SNOOPY',
-//         },
-//         respota: alternativa,
-
-//     },
-// ]
+    },
+]

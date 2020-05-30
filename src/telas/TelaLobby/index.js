@@ -21,9 +21,38 @@ function TelaLobby({ navigation }) {
         </View>
       </View>
       <View style={estilos.containerRank}>
-        <ScrollView>
-
-        </ScrollView>
+        <Text style={estilos.textoRegrasPrincipal}>
+          Regras do Jogo
+        </Text>
+        <Text style={estilos.textoRegrasSub}>
+          - Cada questão tem quatro alternativas e apenas uma correta
+        </Text>
+        <Text style={estilos.textoRegrasSub}>
+          - As questões são separadas em quatro niveis:
+          
+        </Text>
+        <Text style={estilos.textoRegrasSub}>
+          - Facil
+        </Text>
+        <Text style={estilos.textoRegrasSub}>
+          - Medio
+        </Text>
+        <Text style={estilos.textoRegrasSub}>
+          - Dificil
+        </Text>
+        <Text style={estilos.textoRegrasSub}>
+          - Pergunta do milhão
+        </Text>
+        <Text style={estilos.textoRegrasSub}>
+          - Você pode pular 3 vezes
+        </Text>
+        <Text style={estilos.textoRegrasSub}>
+          - Caso você queira parar recebe metade do valor acumulado durante a partida
+        </Text>
+        <Text style={estilos.textoRegrasSub}>
+          -  Caso erre a pergunta você perde tudo
+        </Text>
+        
 
       </View>
       <View style={estilos.botaoJogar}>
