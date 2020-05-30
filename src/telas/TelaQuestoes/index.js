@@ -23,8 +23,6 @@ function TelaQuestoes({ navigation }) {
   
   function mudaPerguntaEpontuacao(){
     setNumPergunta(numPergunta+1)
-    console.log(arrayNumAleatorio)
-    console.log(verificaAleatorio())
     if(numPergunta<=1){
 			console.log(numPergunta)
       setPergunta(perguntasListal)
