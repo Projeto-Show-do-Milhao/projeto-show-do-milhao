@@ -19,7 +19,6 @@ function TelaQuestoes({ navigation }) {
   const numeroAleatorio = BuscaNumeroAleatorio()
   const telaFinal = ()=>{navigation.navigate('TelaDoFim', premioTotal)}
   const telaCampea = ()=>{navigation.navigate('TelaDoFim', premio[10])}
-  const arrayNumAleatorio = []
   
   function mudaPerguntaEpontuacao(){
     setNumPergunta(numPergunta+1)
@@ -45,7 +44,6 @@ function TelaQuestoes({ navigation }) {
 	function pular(){
 		if(pulo>0){
       setPulo(pulo-1)
-      verificaAleatorio(numeroAleatorio)
 			buscaPerguntaAleatoria(pergunta, numeroAleatorio)
 		}
 	}
