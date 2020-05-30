@@ -251,8 +251,11 @@ function TelaQuestoes({ navigation }) {
               margin: 14,
 
             }}>
-              <Text style={{ fontSize: 22, alignSelf: "center", }}>
+            <Text style={{ fontSize: 22, alignSelf: "center", }}>
                 PARAR
+            </Text>
+						<Text style={{ fontSize: 14, alignSelf: "center", }}>
+                R${premioTotal/2}
             </Text>
             <Text style={{ fontSize: 22, alignSelf: "center", }}>
             </Text>

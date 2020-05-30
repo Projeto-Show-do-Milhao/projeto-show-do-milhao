@@ -9,13 +9,13 @@ const premioTotal = route.params
 
 let resposta = ''
 if(premioTotal == 0){
-	resposta = 'Infelizmente você perdeu Tudo'
+	resposta = 'Infelizmente você perdeu Tudo\n🤬😭🥺'
 }else if(premioTotal <= 100000){
-	resposta = 'Você não ta rico mas pode comprar um Kinder Ovo'
+	resposta = 'Você não ta rico mas pode comprar um Kinder Ovo\n🥳🥳🥳'
 }else if(premioTotal <= 500000){
-	resposta = 'Não ta milionario mas ta rico ja'
+	resposta = 'Não ta milionário mas ta rico ja\n🤩🤩🤩'
 }else if(premioTotal > 500000){
-	resposta = 'Você agora é milionario'
+	resposta = 'Parabéns!\nVocê agora é um Milionário!!!\n🤑🤑🤑'
 }
 return (
 	<View style={estilos.containerTelaJogar}>
