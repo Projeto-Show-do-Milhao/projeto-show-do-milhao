@@ -34,14 +34,15 @@ const estilos = StyleSheet.create({
     },
 
     containerRank: {
-        flex: 4,
+        // flex: 4,
+        height:500,
         paddingTop: '35%',
         marginBottom: '5%',
         backgroundColor: 'rgba(0, 0, 255, 0.40)',
         width: 360,
         borderRadius: 15,
         alignSelf: 'center',
-        marginTop:-150,
+        marginTop:-230,
     },
 
     botaoJogar: {
@@ -79,7 +80,8 @@ const estilos = StyleSheet.create({
         },
         textShadowColor: 'black',
         textShadowRadius: 1,
-        marginTop:-150
+        marginTop:-150,
+        marginBottom:30
         // textDecorationLine: 'underline'
     },
     textoRegrasSub: {
@@ -94,6 +96,8 @@ const estilos = StyleSheet.create({
         },
         textShadowColor: 'black',
         textShadowRadius: 1,
+        textAlign:'center',
+        marginBottom:-2,
         // textDecorationLine: 'underline'
     },
     avatarTelaJogar: {

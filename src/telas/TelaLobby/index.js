@@ -49,6 +49,9 @@ function TelaLobby({ navigation }) {
         <Text style={estilos.textoRegrasSub}>
           - Caso você queira parar recebe metade do valor acumulado durante a partida
         </Text>
+        <Text style={estilos.textoRegrasSub}>
+          -  Caso erre a pergunta você perde tudo
+        </Text>
         
 
       </View>
