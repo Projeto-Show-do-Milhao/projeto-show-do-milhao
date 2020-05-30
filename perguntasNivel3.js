@@ -426,15 +426,15 @@ const perguntasLista1Nivel3 = [
             
             },
             {
-                pergunta: 'A Bélgica é:',
+                pergunta: 'A Bélgica é :',
                 alternativas: {
                     a: 'UMA REPÚBLICA',
-                    b: 'UMA MONARQUIA CONSTITUCIONAL',
+                    b: 'MONARQUIA CONSTITUCIONAL',
                     c: 'UM EMIRADO',
                     d: 'UM PRINCIPADO',  
                 },
                 // resposta: alternativas.b
-                resposta:'UMA MONARQUIA CONSTITUCIONAL'
+                resposta:'MONARQUIA CONSTITUCIONAL'
 
             
             },
