@@ -125,21 +125,9 @@ function TelaQuestoes({ navigation }) {
       telaFinal()
     }
   }
-  function verificaAleatorio(numeroAleatorio){
-    
-    arrayNumAleatorio.push(...arrayNumAleatorio,numeroAleatorio)
-    arrayNumAleatorio.map((res)=>{
-      if(res == numeroAleatorio){
-        BuscaNumeroAleatorio()
-        
-      }
-    })
-  }
-  verificaAleatorio(numeroAleatorio)
-
+ 
   function BuscaNumeroAleatorio() {
-    let n = Math.floor(Math.random() * 30)
-    
+    let n = Math.floor(Math.random() * 50)
     return n
   }
 
