@@ -12,34 +12,40 @@ import {perguntasLista1Nivel3} from '../../../perguntasNivel3'
 function TelaQuestoes({ navigation }) {
   const [pergunta, setPergunta] = useState(perguntasListal);
   const [pulo, setPulo] = useState(3)
-  const [premio, setPremio] = useState([0,1000, 5000, 10000, 25000, 50000, 100000, 200000, 300000, 500000, 1000000])
+  const [premio, setPremio] = useState([0, 1000, 5000, 10000, 25000, 50000, 100000, 200000, 300000, 500000, 1000000])
   const [numPergunta, setNumPergunta] = useState(0)
   let premioTotal = premio[numPergunta]
   const numeroAleatorio = BuscaNumeroAleatorio()
   const telaFinal = ()=>{navigation.navigate('TelaDoFim', premioTotal)}
-
+	const telaCampea = ()=>{navigation.navigate('TelaDoFim', premio[10])}
+	
   function mudaPerguntaEpontuacao(){
-    setNumPergunta(numPergunta+1)
-    if(numPergunta<=2){
+		setNumPergunta(numPergunta+1)
+    if(numPergunta<=1){
+			console.log(numPergunta)
       setPergunta(perguntasLista2)
-    }else if(numPergunta<=4){
+    }else if(numPergunta<=2){
+			console.log(numPergunta)
       setPergunta(perguntasLista1Nivel2)
+    }else if(numPergunta<=5){
+			console.log(numPergunta)
+      setPergunta(perguntasLista1Nivel3)
     }else if(numPergunta<=8){
-      setPergunta(perguntasLista1Nivel3)
-    }else if(numPergunta<=10){
-      setPergunta(perguntasLista1Nivel3)
-    }else if(numPergunta===11){
-      telaFinal()
+			setPergunta(perguntasLista1Nivel3)
+			console.log(numPergunta)
+    }else if(numPergunta==9){
+			console.log('chegou no final')
+			telaCampea()
     }
     
     
     buscaPerguntaAleatoria(pergunta, numeroAleatorio)
   }
 
-  function finalizaJogo(){
-    
-      telaFinal()
-    
+  function finalizaJogo(numPergunta){
+    if(numPergunta == 11){
+      console.log('ganhou')
+    }
   }
 
 
@@ -48,7 +54,8 @@ function TelaQuestoes({ navigation }) {
     const respostaSelecionada = buscaAlternativaA(pergunta, numeroAleatorio)
     if(respostaCerta === respostaSelecionada){
       console.log('vc acertou')
-      mudaPerguntaEpontuacao()
+			mudaPerguntaEpontuacao()
+			
     }else{
       console.log('errou')
       setPergunta(perguntasListal)
@@ -62,11 +69,12 @@ function TelaQuestoes({ navigation }) {
     const respostaCerta = buscaResposta(pergunta, numeroAleatorio)
     const respostaSelecionada = buscaAlternativaB(pergunta, numeroAleatorio)
     if(respostaCerta === respostaSelecionada){
-      console.log('vc acertou')
+			console.log('vc acertou')
       mudaPerguntaEpontuacao()
     }else{
       console.log('vc errou')
-      setPergunta(perguntasListal)
+			setPergunta(perguntasListal)
+			setNumPergunta(numPergunta+1)
       setNumPergunta(0)
       premioTotal=0
       telaFinal()
@@ -77,7 +85,7 @@ function TelaQuestoes({ navigation }) {
     const respostaCerta = buscaResposta(pergunta, numeroAleatorio)
     const respostaSelecionada = buscaAlternativaC(pergunta, numeroAleatorio)
     if(respostaCerta === respostaSelecionada){
-      console.log('vc acertou')
+			console.log('vc acertou')
       mudaPerguntaEpontuacao()
     }else{
       console.log('vc errou')
@@ -92,7 +100,7 @@ function TelaQuestoes({ navigation }) {
     const respostaCerta = buscaResposta(pergunta, numeroAleatorio)
     const respostaSelecionada = buscaAlternativaD(pergunta, numeroAleatorio)
     if(respostaCerta === respostaSelecionada){
-      console.log('vc acertou')
+			console.log('vc acertou')
       mudaPerguntaEpontuacao()
     }else{
       console.log('vc errou')

@@ -6,14 +6,15 @@ import estilos from '../../telas/TelaFinal/styles';
 function TelaFinal({route , navigation }) {
 
 const premioTotal = route.params
+
 let resposta = ''
 if(premioTotal == 0){
 	resposta = 'Infelizmente você perdeu Tudo'
 }else if(premioTotal <= 100000){
 	resposta = 'Você não ta rico mas pode comprar um Kinder Ovo'
-}else if(premioTotal>100000){
+}else if(premioTotal <= 500000){
 	resposta = 'Não ta milionario mas ta rico ja'
-}else if(premioTotal == 1000000){
+}else if(premioTotal > 500000){
 	resposta = 'Você agora é milionario'
 }
 return (
@@ -31,11 +32,11 @@ return (
 					</View>
 			</View>
 			<View style={estilos.constainerTelaFinal}>
-			<Text style={estilos.textoFinal}>
-							{resposta}
-						</Text>
-						<Text style={estilos.textoFinal}>
-							R${premioTotal}
+				<Text style={estilos.textoFinal}>
+						{resposta}
+				</Text>
+						<Text style={estilos.premioFinal}>
+							R${premioTotal} {console.log(premioTotal)}
 							</Text>
 					<View style={{
 							alignItems: 'center',

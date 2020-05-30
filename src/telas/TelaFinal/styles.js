@@ -87,11 +87,26 @@ const estilos = StyleSheet.create({
     textShadowColor: 'black',
     textShadowRadius: 1,
   },
-  textoFinal: {
+  premioFinal: {
     fontSize: 35,
     alignSelf: 'center',
     fontWeight: 'bold',
     color: 'white',
+    margin: 10,
+    textShadowOffset: {
+        width: 1,
+        height: 1
+    },
+    textShadowColor: 'black',
+    textShadowRadius: 1,
+  },
+  textoFinal: {
+    fontSize: 35,
+    textAlign: 'center',
+    fontWeight: 'bold',
+    color: 'white',
+    margin: 10,
+    marginLeft: 10,
     textShadowOffset: {
         width: 1,
         height: 1
