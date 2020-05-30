@@ -254,7 +254,7 @@ function TelaQuestoes({ navigation }) {
             <Text style={{ fontSize: 22, alignSelf: "center", }}>
                 PARAR
             </Text>
-						<Text style={{ fontSize: 14, alignSelf: "center", }}>
+						<Text style={{ fontSize: 16, alignSelf: "center", }}>
                 R${premioTotal/2}
             </Text>
             <Text style={{ fontSize: 22, alignSelf: "center", }}>
