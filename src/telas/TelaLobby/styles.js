@@ -30,12 +30,13 @@
 		containerLogoEAvatar: {
 				flexDirection: 'row',
 				flex: 3,
-				justifyContent: 'space-around',
+                justifyContent: 'space-around',
+                marginTop:-25
 		},
 
 		containerRank: {
 				// flex: 4,
-				height:450,
+				height:400,
 				paddingTop: '35%',
 				marginBottom: 10,
 				backgroundColor: 'rgba(0, 0, 255, 0.40)',
@@ -80,13 +81,13 @@
 				},
 				textShadowColor: 'black',
 				textShadowRadius: 1,
-				marginTop:-150,
+				marginTop:-110,
 				marginBottom:30
 				// textDecorationLine: 'underline'
 		},
 		textoRegrasSub: {
 				fontSize: 18,
-				margin:20,
+				margin:15,
 				alignSelf: 'center',
 				fontWeight: 'bold',
 				color: 'yellow',
