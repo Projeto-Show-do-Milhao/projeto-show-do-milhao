@@ -1,5 +1,5 @@
 import React, { Component, useState, useEffect } from 'react';
-import { View, Image, ImageBackground, Text, ScrollView, TouchableOpacity } from 'react-native'
+import { View, Image, ImageBackground, Text, ScrollView, TouchableOpacity, Alert } from 'react-native'
 import estilos from '../../telas/TelaQuestoes/styles';
 import 'react-native-gesture-handler';
 import { perguntasListal} from '../../../perguntasNivel1'
@@ -173,8 +173,6 @@ function TelaQuestoes({ navigation }) {
           <View style={estilos.containerResposta}>
             <Text style={{ color: 'yellow', fontSize: 22, margin: 8, textAlign: 'center', }}>
               {buscaAlternativaA(pergunta, numeroAleatorio)}
-              {/* {alternativasAleatorias(pergunta, numeroAleatorio)} */}
-
             </Text>
           </View>
         </TouchableOpacity>

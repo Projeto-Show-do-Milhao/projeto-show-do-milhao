@@ -272,7 +272,7 @@ const perguntasListal = [
   },
 
   {
-      pergunta: 'Qual personagem da turma da Mônica tem apenas cinco fiosde cabelo?',
+      pergunta: 'Qual personagem da turma da Mônica tem apenas cinco fios de cabelo?',
       alternativas: {
           a: 'MÔNICA',
           b: 'CEBOLINHA',
@@ -531,7 +531,7 @@ const perguntasListal = [
 
   },
   {
-      pergunta: 'Qual foi o placar no final daCopa de 98, quando o Brasil perdeu para a França?',
+      pergunta: 'Qual foi o placar no final da Copa de 98, quando o Brasil perdeu para a França?',
       alternativas: {
           a: 'DOIS A ZERO',
           b: 'TRÊS A ZERO',
