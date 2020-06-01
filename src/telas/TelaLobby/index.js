@@ -47,11 +47,11 @@ function TelaLobby({ navigation }) {
          PERDE TUDO!!!
         </Text>
       </View>
-      <View style={estilos.botaoJogar}>
         <TouchableHighlight onPress={()=> navigation.navigate("Questoes")}>
+      <View style={estilos.botaoJogar}>
           <Text style={estilos.textoJogar}>Jogar</Text>
-        </TouchableHighlight>
       </View>
+        </TouchableHighlight>
 
     </View>
   )
