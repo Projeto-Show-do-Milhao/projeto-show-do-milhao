@@ -31,7 +31,7 @@
 				flexDirection: 'row',
 				flex: 3,
                 justifyContent: 'space-around',
-                marginTop:-25
+                marginTop:-80
 		},
 
 		containerRank: {

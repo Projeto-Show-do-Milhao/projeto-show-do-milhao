@@ -507,7 +507,7 @@ const perguntasListal = [
 
   },
   {
-      pergunta: 'Qual ator do cinema brasileiro éconhecido por ter unhas enormes?',
+      pergunta: 'Qual ator do cinema brasileiro é conhecido por ter unhas enormes?',
       alternativas: {
           a: 'PENADINHO',
           b: 'ZÉ DO CAIXÃO',
