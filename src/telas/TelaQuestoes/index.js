@@ -1,5 +1,5 @@
 import React, { Component, useState, useEffect } from 'react';
-import { View, Image, ImageBackground, Text, ScrollView, TouchableOpacity } from 'react-native'
+import { View, Image, ImageBackground, Text, ScrollView, TouchableOpacity, Alert } from 'react-native'
 import estilos from '../../telas/TelaQuestoes/styles';
 import 'react-native-gesture-handler';
 import { perguntasListal} from '../../../perguntasNivel1'
@@ -43,7 +43,19 @@ function TelaQuestoes({ navigation }) {
       setPulo(pulo-1)
 			buscaPerguntaAleatoria(pergunta, numeroAleatorio)
 		}
-	}
+  }
+   function alerta(validacao){
+    Alert.alert(
+      'Você tem certeza disso?',
+      'Posso perguntar?',
+      [
+        
+        {text: 'Não tenho', onPress: () => {}},
+        {text: 'Tenho', onPress: () => validacao()},
+      ],
+      { cancelable: false }
+    )}
+  
 
   function validaRespostaA() {
     const respostaCerta = buscaResposta(pergunta, numeroAleatorio)
@@ -169,7 +181,7 @@ function TelaQuestoes({ navigation }) {
           </Text>
           </View>
         </View>
-        <TouchableOpacity onPress={validaRespostaA}>
+        <TouchableOpacity onPress={()=>{alerta(validaRespostaA)}}>
           <View style={estilos.containerResposta}>
             <Text style={{ color: 'yellow', fontSize: 22, margin: 8, textAlign: 'center', }}>
               {buscaAlternativaA(pergunta, numeroAleatorio)}
@@ -178,21 +190,21 @@ function TelaQuestoes({ navigation }) {
             </Text>
           </View>
         </TouchableOpacity>
-        <TouchableOpacity onPress={validaRespostaB}>
+        <TouchableOpacity onPress={()=>{alerta(validaRespostaB)}}>
           <View style={estilos.containerResposta} >
             <Text style={{ color: 'yellow', fontSize: 22, margin: 8, textAlign: 'center', }}>
               {buscaAlternativaB(pergunta, numeroAleatorio)}
             </Text>
           </View>
         </TouchableOpacity>
-        <TouchableOpacity onPress={validaRespostaC}>
+        <TouchableOpacity onPress={()=>{alerta(validaRespostaC)}}>
           <View style={estilos.containerResposta}>
             <Text style={{ color: 'yellow', fontSize: 22, margin: 8, textAlign: 'center', }}>
               {buscaAlternativaC(pergunta, numeroAleatorio)}
             </Text>
           </View>
         </TouchableOpacity>
-        <TouchableOpacity onPress={validaRespostaD}>
+        <TouchableOpacity onPress={()=>{alerta(validaRespostaD)}}>
           <View style={estilos.containerResposta}>
             <Text style={{ color: 'yellow', fontSize: 22, margin: 8, textAlign: 'center', }}>
               {buscaAlternativaD(pergunta, numeroAleatorio)}
