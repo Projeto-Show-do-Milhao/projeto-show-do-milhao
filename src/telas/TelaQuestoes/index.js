@@ -185,8 +185,6 @@ function TelaQuestoes({ navigation }) {
           <View style={estilos.containerResposta}>
             <Text style={{ color: 'yellow', fontSize: 22, margin: 8, textAlign: 'center', }}>
               {buscaAlternativaA(pergunta, numeroAleatorio)}
-              {/* {alternativasAleatorias(pergunta, numeroAleatorio)} */}
-
             </Text>
           </View>
         </TouchableOpacity>

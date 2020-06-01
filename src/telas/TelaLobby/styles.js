@@ -43,7 +43,7 @@
 				width: 360,
 				borderRadius: 15,
 				alignSelf: 'center',
-				marginTop:-245,
+				marginTop:-60,
 		},
 
 		botaoJogar: {
