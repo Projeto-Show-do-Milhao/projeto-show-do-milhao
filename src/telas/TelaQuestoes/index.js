@@ -14,12 +14,15 @@ function TelaQuestoes({ navigation }) {
   const [premio, setPremio] = useState([0, 1000, 5000, 10000, 25000, 50000, 100000, 200000, 300000, 500000, 1000000])
   const [numPergunta, setNumPergunta] = useState(0)
   let premioTotal = premio[numPergunta]
-  const numeroAleatorio = BuscaNumeroAleatorio()
+  const [numerosSorteados, setNumerosSorteados] = useState({})
+  const numeroAleatorio = BuscaNumeroAleatorio(numerosSorteados)
   const telaFinal = ()=>{navigation.navigate('TelaDoFim', premioTotal)}
   const telaCampea = ()=>{navigation.navigate('TelaDoFim', premio[10])}
   
+
   function mudaPerguntaEpontuacao(){
     setNumPergunta(numPergunta+1)
+    setNumerosSorteados({})
     if(numPergunta==0){
       console.log(numPergunta)
       setPergunta(perguntasLista2)
@@ -59,7 +62,6 @@ function TelaQuestoes({ navigation }) {
       setPulo(pulo-1)
       buscaPerguntaAleatoria(pergunta, numeroAleatorio)
     }
-    
 	}
 
   function validaRespostaA() {
@@ -123,9 +125,15 @@ function TelaQuestoes({ navigation }) {
     }
   }
  
-  function BuscaNumeroAleatorio() {
+  function BuscaNumeroAleatorio(numerosSorteados){
     let n = Math.floor(Math.random() * 15)
-    return n
+    //verifica se n tá no objeto
+    if(numerosSorteados[n]){
+      return BuscaNumeroAleatorio(numerosSorteados);
+    }else{
+      numerosSorteados[n]=n;
+      return n
+    }
   }
 
   function buscaPerguntaAleatoria(pergunta, numeroAleatorio) {
