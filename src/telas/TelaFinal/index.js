@@ -40,7 +40,7 @@ return (
 				{resposta}
 		</Text>
 				<Text style={estilos.premioFinal}>
-					R${premioTotal} {console.log(premioTotal)}
+					R${premioTotal},00 {console.log(premioTotal)}
 					</Text>
 	</View>
 			<View style={{
