@@ -1,3 +1,4 @@
+export{perguntasListaMilho}
 const perguntasListaMilho = [
     {
         pergunta: 'Qual o nome do prédio mais alto do mundo?',
@@ -11,7 +12,7 @@ const perguntasListaMilho = [
     
     },
     {
-        pergunta: 'Qual o nome do cachorro que de skate percorreu o maior túneu feito pelo homem? ',
+        pergunta: 'Qual o nome do cachorro que, de skate, percorreu o maior túneu feito pelo homem? ',
         alternativas: {
             a: 'OTTO',
             b: 'TOBBY',

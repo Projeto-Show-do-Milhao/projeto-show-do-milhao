@@ -1,5 +1,5 @@
-export { perguntasLista1Nivel2 }
-const perguntasLista1Nivel2 = [
+export { perguntasLista1Nivel2, perguntasLista2Nivel2, perguntasLista3Nivel2 }
+const perguntasLista2Nivel2 = [
     {
         //101
         pergunta: 'Quantos jogadores um jogo de vôlei reúne na quadra?',
@@ -194,7 +194,10 @@ const perguntasLista1Nivel2 = [
         resposta: 'ROMA'
 
     },
-    //116
+    
+]
+
+const perguntasLista3Nivel2 = [
     {
         pergunta: 'Qual é o ponto mais alto da Terra?',
         alternativas: {
@@ -390,6 +393,11 @@ const perguntasLista1Nivel2 = [
         resposta: 'JACK RUBY'
 
     },
+    
+]
+
+const perguntasLista1Nivel2 = [
+    //116
     //151
     {
         pergunta: 'O que leva o sangue do coração para o corpo?',

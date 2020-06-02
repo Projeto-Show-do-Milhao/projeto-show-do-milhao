@@ -1,5 +1,5 @@
-export {perguntasLista1Nivel3}
-const perguntasLista1Nivel3 = [
+export {perguntasLista1Nivel3, perguntasLista2Nivel3, perguntasLista3Nivel3}
+const perguntasLista2Nivel3 =[
     {
         pergunta: 'Em qual espécie o macho choca os ovos e a fêmea procura alimento?',
         alternativas: {
@@ -117,126 +117,129 @@ const perguntasLista1Nivel3 = [
         resposta: 'HINDUÍSMO'
     },
     {
-                pergunta: 'Os nazistas foram julgados em:',
-                alternativas: {
-                    a: 'BERLIM',
-                    b: 'NUREMBERGUE',
-                    c: 'MUNIQUE',
-                    d: 'PARIS',  
-                },
-                // resposta: alternativas.b
-                resposta:'NUREMBERGUE'
-            
-            },
-            {
-                pergunta: 'Qual oceano tem o maior volume de água?',
-                alternativas: {
-                    a: 'ATLÂNTICO',
-                    b: 'PACÍFICO',
-                    c: 'ÍNDICO',
-                    d: 'PARIS',  
-                },
-                // resposta: alternativas.b
-                resposta:'PACÍFICO'
-            
-            },
-            {
-                pergunta: 'Como o rei francês Luis XVI e sua esposa Maria Antonieta morreram?',
-                alternativas: {
-                    a: 'ENFORCADOS',
-                    b: 'FUZILADOS',
-                    c: 'GUILHOTINADOS',
-                    d: 'QUEIMADOS',  
-                },
-                // resposta: alternativas.c
-                resposta:'GUILHOTINADOS'
-            
-            },
-            {
-                pergunta: 'Que conflito ideológico envolveu os EUA e a União Soviética?',
-                alternativas: {
-                    a: 'GUERRA FRIA',
-                    b: 'GUERRA DO VIETNÃ',
-                    c: 'GUERRA NAS ESTRELAS',
-                    d: 'GUERRA DA CORÉIA',  
-                },
-                // resposta: alternativas.a
-                resposta:'GUERRA FRIA'
-            
-            },
-            {
-                pergunta: 'O trapézio é um músculo que está situado:',
-                alternativas: {
-                    a: 'NO PESCOÇO',
-                    b: 'NO OMBRO',
-                    c: 'NA CABEÇA',
-                    d: 'NO BRAÇO',  
-                },
-                // resposta: alternativas.b
-                resposta:'NO OMBRO'
-            
-            },
-            {
-                pergunta: 'Quem escreveu o livro “A sangue frio” em 1966?',
-                alternativas: {
-                    a: 'TRUMAN CAPOTE',
-                    b: 'HENRY JAMES',
-                    c: 'JOHN STEINBECK',
-                    d: 'TONI MORRISON',  
-                },
-                // resposta: alternativas.a
-                resposta:'TRUMAN CAPOTE'
-            
-            },
-            {
-                pergunta: 'Quem escreveu “Ulisses” em 1922?',
-                alternativas: {
-                    a: 'ERNEST HEMINGWAY',
-                    b: 'MARCEL PROUST',
-                    c: 'T.S. ELLIOT',
-                    d: 'JAMES JOYCE',  
-                },
-                // resposta: alternativas.d
-                resposta:'JAMES JOYCE'
-            
-            },
-            {
-                pergunta: 'Qual o símbolo químico do radônio?',
-                alternativas: {
-                    a: 'Rr',
-                    b: 'Rr',
-                    c: 'Rn',
-                    d: 'Ro',  
-                },
-                // resposta: alternativas.c
-                resposta:'Rn'
-            
-            },
-            {
-                pergunta: 'O que são meninges?',
-                alternativas: {
-                    a: 'CÉLULAS',
-                    b: 'NERVOS',
-                    c: 'MEMBRANAS',
-                    d: 'MÚSCULOS',  
-                },
-                // resposta: alternativas.c
-                resposta:'MEMBRANAS'
-            
-            },
-            {
-                pergunta: 'Qual produto gerou guerras e conflitos no século XX?',
-                alternativas: {
-                    a: 'ÁLCOOL',
-                    b: 'PETRÓLEO',
-                    c: 'OURO',
-                    d: 'ALUMÍNIO',  
-                },
-                // resposta: alternativas.b
-                resposta:'PETRÓLEO'
-            
-            },
-            {
+        pergunta: 'Os nazistas foram julgados em:',
+        alternativas: {
+            a: 'BERLIM',
+            b: 'NUREMBERGUE',
+            c: 'MUNIQUE',
+            d: 'PARIS',  
+        },
+        // resposta: alternativas.b
+        resposta:'NUREMBERGUE'
+    
+    },
+    {
+        pergunta: 'Qual oceano tem o maior volume de água?',
+        alternativas: {
+            a: 'ATLÂNTICO',
+            b: 'PACÍFICO',
+            c: 'ÍNDICO',
+            d: 'PARIS',  
+        },
+        // resposta: alternativas.b
+        resposta:'PACÍFICO'
+    
+    },
+    {
+        pergunta: 'Como o rei francês Luis XVI e sua esposa Maria Antonieta morreram?',
+        alternativas: {
+            a: 'ENFORCADOS',
+            b: 'FUZILADOS',
+            c: 'GUILHOTINADOS',
+            d: 'QUEIMADOS',  
+        },
+        // resposta: alternativas.c
+        resposta:'GUILHOTINADOS'
+    
+    },
+    {
+        pergunta: 'Que conflito ideológico envolveu os EUA e a União Soviética?',
+        alternativas: {
+            a: 'GUERRA FRIA',
+            b: 'GUERRA DO VIETNÃ',
+            c: 'GUERRA NAS ESTRELAS',
+            d: 'GUERRA DA CORÉIA',  
+        },
+        // resposta: alternativas.a
+        resposta:'GUERRA FRIA'
+    
+    },
+    {
+        pergunta: 'O trapézio é um músculo que está situado:',
+        alternativas: {
+            a: 'NO PESCOÇO',
+            b: 'NO OMBRO',
+            c: 'NA CABEÇA',
+            d: 'NO BRAÇO',  
+        },
+        // resposta: alternativas.b
+        resposta:'NO OMBRO'
+    
+    },
+    
+]
+const perguntasLista3Nivel3 = [
+    {
+        pergunta: 'Quem escreveu o livro “A sangue frio” em 1966?',
+        alternativas: {
+            a: 'TRUMAN CAPOTE',
+            b: 'HENRY JAMES',
+            c: 'JOHN STEINBECK',
+            d: 'TONI MORRISON',  
+        },
+        // resposta: alternativas.a
+        resposta:'TRUMAN CAPOTE'
+    
+    },
+    {
+        pergunta: 'Quem escreveu “Ulisses” em 1922?',
+        alternativas: {
+            a: 'ERNEST HEMINGWAY',
+            b: 'MARCEL PROUST',
+            c: 'T.S. ELLIOT',
+            d: 'JAMES JOYCE',  
+        },
+        // resposta: alternativas.d
+        resposta:'JAMES JOYCE'
+    
+    },
+    {
+        pergunta: 'Qual o símbolo químico do radônio?',
+        alternativas: {
+            a: 'Rr',
+            b: 'Rr',
+            c: 'Rn',
+            d: 'Ro',  
+        },
+        // resposta: alternativas.c
+        resposta:'Rn'
+    
+    },
+    {
+        pergunta: 'O que são meninges?',
+        alternativas: {
+            a: 'CÉLULAS',
+            b: 'NERVOS',
+            c: 'MEMBRANAS',
+            d: 'MÚSCULOS',  
+        },
+        // resposta: alternativas.c
+        resposta:'MEMBRANAS'
+    
+    },
+    {
+        pergunta: 'Qual produto gerou guerras e conflitos no século XX?',
+        alternativas: {
+            a: 'ÁLCOOL',
+            b: 'PETRÓLEO',
+            c: 'OURO',
+            d: 'ALUMÍNIO',  
+        },
+        // resposta: alternativas.b
+        resposta:'PETRÓLEO'
+    
+    },
+    {
         pergunta: 'Quando começou e terminou a Primeira Guerra Mundial?',
         alternativas: {
             a: '1914-1919',
@@ -365,6 +368,10 @@ const perguntasLista1Nivel3 = [
         resposta:'ÍNDIA'
 
     },
+    
+]
+
+const perguntasLista1Nivel3 = [
     {
                 pergunta: 'Que ramo da pecuária ocupa-se de bodes e cabras?',
                 alternativas: {
@@ -601,6 +608,5 @@ const perguntasLista1Nivel3 = [
         
 
 ];
-
 
 

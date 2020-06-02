@@ -2,10 +2,10 @@ import React, { Component, useState, useEffect } from 'react';
 import { View, Image, ImageBackground, Text, ScrollView, TouchableOpacity, Alert } from 'react-native'
 import estilos from '../../telas/TelaQuestoes/styles';
 import 'react-native-gesture-handler';
-import { perguntasListal} from '../../../perguntasNivel1'
-import {perguntasLista1Nivel2} from '../../../perguntasNivel2'
-import {perguntasLista1Nivel3} from '../../../perguntasNivel3'
-
+import { perguntasListal, perguntasLista2, perguntasLista3} from '../../../perguntasNivel1'
+import {perguntasLista1Nivel2, perguntasLista2Nivel2, perguntasLista3Nivel2} from '../../../perguntasNivel2'
+import {perguntasLista1Nivel3, perguntasLista2Nivel3, perguntasLista3Nivel3} from '../../../perguntasNivel3'
+import {perguntasListaMilho} from '../../../perguntasDoMilho'
 
 
 function TelaQuestoes({ navigation }) {
@@ -20,42 +20,47 @@ function TelaQuestoes({ navigation }) {
   
   function mudaPerguntaEpontuacao(){
     setNumPergunta(numPergunta+1)
-    if(numPergunta<=1){
+    if(numPergunta==0){
+      console.log(numPergunta)
+      setPergunta(perguntasLista2)
+    }else if(numPergunta==1){
 			console.log(numPergunta)
-      setPergunta(perguntasListal)
-    }else if(numPergunta<=2){
+      setPergunta(perguntasLista3)
+    }else if(numPergunta==2){
 			console.log(numPergunta)
       setPergunta(perguntasLista1Nivel2)
-    }else if(numPergunta<=5){
+    }else if(numPergunta==3){
 			console.log(numPergunta)
-      setPergunta(perguntasLista1Nivel3)
-    }else if(numPergunta<=8){
+      setPergunta(perguntasLista2Nivel2)
+    }else if(numPergunta==4){
       console.log(numPergunta)
+      setPergunta(perguntasLista3Nivel2)
+    }else if(numPergunta==5){
+      console.log(numPergunta)
+			setPergunta(perguntasLista1Nivel3)
+    }else if(numPergunta==6){
+      console.log(numPergunta)
+			setPergunta(perguntasLista2Nivel3)
+    }else if(numPergunta==7){
+      console.log(numPergunta)
+			setPergunta(perguntasLista3Nivel3)
+    }else if(numPergunta==8){
+      console.log(numPergunta)
+			setPergunta(perguntasListaMilho)
     }else if(numPergunta==9){
-			console.log('chegou no final')
-			telaCampea()
+      console.log(numPergunta)
+      telaCampea()
     }
     buscaPerguntaAleatoria(pergunta, numeroAleatorio)
   }
 
 	function pular(){
-		if(pulo>0){
+    if(pulo>0){
       setPulo(pulo-1)
-			buscaPerguntaAleatoria(pergunta, numeroAleatorio)
-		}
-  }
-   function alerta(validacao){
-    Alert.alert(
-      'Você tem certeza disso?',
-      'Posso perguntar?',
-      [
-        
-        {text: 'Não tenho', onPress: () => {}},
-        {text: 'Tenho', onPress: () => validacao()},
-      ],
-      { cancelable: false }
-    )}
-  
+      buscaPerguntaAleatoria(pergunta, numeroAleatorio)
+    }
+    
+	}
 
   function validaRespostaA() {
     const respostaCerta = buscaResposta(pergunta, numeroAleatorio)
@@ -119,7 +124,7 @@ function TelaQuestoes({ navigation }) {
   }
  
   function BuscaNumeroAleatorio() {
-    let n = Math.floor(Math.random() * 50)
+    let n = Math.floor(Math.random() * 15)
     return n
   }
 
@@ -181,28 +186,28 @@ function TelaQuestoes({ navigation }) {
           </Text>
           </View>
         </View>
-        <TouchableOpacity onPress={()=>{alerta(validaRespostaA)}}>
+        <TouchableOpacity onPress={validaRespostaA}>
           <View style={estilos.containerResposta}>
             <Text style={{ color: 'yellow', fontSize: 22, margin: 8, textAlign: 'center', }}>
               {buscaAlternativaA(pergunta, numeroAleatorio)}
             </Text>
           </View>
         </TouchableOpacity>
-        <TouchableOpacity onPress={()=>{alerta(validaRespostaB)}}>
+        <TouchableOpacity onPress={validaRespostaB}>
           <View style={estilos.containerResposta} >
             <Text style={{ color: 'yellow', fontSize: 22, margin: 8, textAlign: 'center', }}>
               {buscaAlternativaB(pergunta, numeroAleatorio)}
             </Text>
           </View>
         </TouchableOpacity>
-        <TouchableOpacity onPress={()=>{alerta(validaRespostaC)}}>
+        <TouchableOpacity onPress={validaRespostaC}>
           <View style={estilos.containerResposta}>
             <Text style={{ color: 'yellow', fontSize: 22, margin: 8, textAlign: 'center', }}>
               {buscaAlternativaC(pergunta, numeroAleatorio)}
             </Text>
           </View>
         </TouchableOpacity>
-        <TouchableOpacity onPress={()=>{alerta(validaRespostaD)}}>
+        <TouchableOpacity onPress={validaRespostaD}>
           <View style={estilos.containerResposta}>
             <Text style={{ color: 'yellow', fontSize: 22, margin: 8, textAlign: 'center', }}>
               {buscaAlternativaD(pergunta, numeroAleatorio)}
