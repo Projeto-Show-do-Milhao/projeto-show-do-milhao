@@ -55,7 +55,7 @@ const estilos = StyleSheet.create({
     height: 300,
     borderRadius: 15,
     alignSelf: 'center',
-    marginBottom: 50,
+    marginBottom: 0,
     marginTop: 100
   },
 
@@ -120,7 +120,7 @@ const estilos = StyleSheet.create({
     height: 60,
     paddingBottom: '2%',
     paddingTop: '1%',
-    marginBottom: '20%',
+    marginBottom: '70%',
     borderRadius: 15,
     alignSelf: 'center',
   }

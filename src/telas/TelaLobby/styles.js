@@ -31,19 +31,19 @@
 				flexDirection: 'row',
 				flex: 3,
                 justifyContent: 'space-around',
-                marginTop:-25
+                marginTop:-15
 		},
 
 		containerRank: {
 				// flex: 4,
-				height:400,
+				height: 400,
 				paddingTop: '35%',
 				marginBottom: 10,
 				backgroundColor: 'rgba(0, 0, 255, 0.40)',
 				width: 360,
 				borderRadius: 15,
 				alignSelf: 'center',
-				marginTop:-60,
+				marginTop:-10,
 		},
 
 		botaoJogar: {
@@ -53,7 +53,7 @@
 				width: 215,
 				paddingBottom: '2%',
 				paddingTop: '1%',
-				marginBottom: '20%',
+				marginBottom: 40,
 				borderRadius: 15,
 				alignSelf: 'center',
 		},
@@ -87,7 +87,7 @@
 		},
 		textoRegrasSub: {
 				fontSize: 18,
-				margin:15,
+				margin:5,
 				alignSelf: 'center',
 				fontWeight: 'bold',
 				color: 'yellow',
