@@ -135,6 +135,17 @@ function TelaQuestoes({ navigation }) {
       return n
     }
   }
+  function alerta(validacao){
+    Alert.alert(
+      'Você tem certeza disso?',
+      'Posso perguntar?',
+      [
+
+        {text: 'Não tenho', onPress: () => {}},
+        {text: 'Tenho', onPress: () => validacao()},
+      ],
+      { cancelable: false }
+    )}
 
   function buscaPerguntaAleatoria(pergunta, numeroAleatorio) {
     return pergunta[numeroAleatorio].pergunta
@@ -194,28 +205,28 @@ function TelaQuestoes({ navigation }) {
           </Text>
           </View>
         </View>
-        <TouchableOpacity onPress={validaRespostaA}>
+        <TouchableOpacity onPress={()=>alerta(validaRespostaA)}>
           <View style={estilos.containerResposta}>
             <Text style={{ color: 'yellow', fontSize: 22, margin: 8, textAlign: 'center', }}>
               {buscaAlternativaA(pergunta, numeroAleatorio)}
             </Text>
           </View>
         </TouchableOpacity>
-        <TouchableOpacity onPress={validaRespostaB}>
+        <TouchableOpacity onPress={()=>alerta(validaRespostaB)}>
           <View style={estilos.containerResposta} >
             <Text style={{ color: 'yellow', fontSize: 22, margin: 8, textAlign: 'center', }}>
               {buscaAlternativaB(pergunta, numeroAleatorio)}
             </Text>
           </View>
         </TouchableOpacity>
-        <TouchableOpacity onPress={validaRespostaC}>
+        <TouchableOpacity onPress={()=>alerta(validaRespostaC)}>
           <View style={estilos.containerResposta}>
             <Text style={{ color: 'yellow', fontSize: 22, margin: 8, textAlign: 'center', }}>
               {buscaAlternativaC(pergunta, numeroAleatorio)}
             </Text>
           </View>
         </TouchableOpacity>
-        <TouchableOpacity onPress={validaRespostaD}>
+        <TouchableOpacity onPress={()=>alerta(validaRespostaD)}>
           <View style={estilos.containerResposta}>
             <Text style={{ color: 'yellow', fontSize: 22, margin: 8, textAlign: 'center', }}>
               {buscaAlternativaD(pergunta, numeroAleatorio)}
