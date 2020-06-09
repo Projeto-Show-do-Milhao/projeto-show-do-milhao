@@ -6,3 +6,4 @@ admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
   databaseURL: "https://banco-perfis.firebaseio.com"
 });
+

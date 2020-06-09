@@ -4,21 +4,9 @@ import estilos from '../../telas/TelaInicial/styles';
 import * as Facebook from 'expo-facebook';
 import '@expo/vector-icons';
 
-// Initialize Firebase
-const firebaseConfig = {
-  apiKey: "AIzaSyCtjFUY5xt3GTIt35zxPaUDjJ7brKQr-eY",
-  authDomain: "banco-perfis.firebaseapp.com",
-  databaseURL: "https://banco-perfis.firebaseio.com",
-  projectId: "banco-perfis",
-  storageBucket: "banco-perfis.appspot.com",
-  messagingSenderId: "26074504438",
-  appId: "1:26074504438:web:2c16989d13d5fbab0ca0d7",
-  measurementId: "G-G70WCMS0X5"
-};
+const id = '245579273555466';
 
-// firebase.initializeApp(firebaseConfig);
-const id = '248425269594978';
-login = async () => {
+const login = async () => {
   try {
     await Facebook.initializeAsync(id);
 
@@ -29,16 +17,15 @@ login = async () => {
       const response = await fetch(
         `https://graph.facebook.com/me?access.token=${token}&fields=id,name,email,about,picture`
       )
-
-      const userObject = await response.json();
-      console.log(userObject)
-      Alert.alert(JSON.stringify(userObject))
-
+        const userObject = await response.json()
+        console.log(userObject)
+        Alert.alert(JSON.stringify({userObject}))
+      
     } else {
       Alert.alert(type);
     }
   } catch (e) {
-    Alert.alert(e.message)
+    console.log(e.message)
   }
 }
 
@@ -52,16 +39,23 @@ function TelaInicial() {
       <View style={estilos.containerImagemDeFundoLogo}>
         <ImageBackground source={require('../../imagens/showDoMilhaoBackground.png')} style={estilos.imagemDeFundoShowDoMilhaoTelaInicial}>
         </ImageBackground>
+        <View style={{
+        width: 250,
+        height: 60,
+        borderRadius: 10,
+        alignSelf: 'center',
+        marginTop: 300
+      }}>
+        <Button
+          onPress={login}
+          styles={{
+            margin: 20
+          }}
+          title='Login com Facebook'
+        />
       </View>
-      <Button
-        onPress={login}
-        styles={{
-          margin: 20
-        }}
-        title='Login com Facebook'
-      >
-
-      </Button>
+      </View>
+      
     </View>
   )
 }
