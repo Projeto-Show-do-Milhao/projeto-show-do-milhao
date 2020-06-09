@@ -51,7 +51,7 @@ const perguntasLista2 = [
     },
     
     {
-        pergunta: 'Qual é o personagem do folclore brasileiro que tem umaperna só?',
+        pergunta: 'Qual é o personagem do folclore brasileiro que tem uma perna só?',
         alternativas: {
             a: 'CUCA',
             b: 'NEGRINHO DO PASTOREIO',
@@ -285,7 +285,7 @@ const perguntasLista3 = [
     },
   
     {
-        pergunta: 'Qual cantora tinha o apelido de “Ternurinha” na época da jovemguarda?',
+        pergunta: 'Qual cantora tinha o apelido de “Ternurinha” na época da jovem guarda?',
         alternativas: {
             a: 'SILVINHA',
             b: 'WANDERLÉIA',
