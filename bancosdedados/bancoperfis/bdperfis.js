@@ -1,7 +1,5 @@
 var admin = require('firebase-admin')
-
 var axios = require('axios')
-
 var serviceAccount = require("./banco-perfis-firebase.json");
 
 admin.initializeApp({
@@ -14,11 +12,12 @@ var db = ref => admin.database().ref(ref)
 var idUsuario = id => `${usuarios}/${id}`
 
 function cadastraUsuario(id, nome, foto){   
-          db(idUsuario(id)).push({
-              id: id,
-              nome: nome,
-              foto: foto,
-            })        
+  db(idUsuario(id)).push({
+      id: id,
+      nome: nome,
+      foto: foto,
+    }) 
+    console.log('foi')           
   }
   function buscaUsuario(id) {
     var idUsuario = idUsuarioRef(id)
@@ -27,3 +26,4 @@ function cadastraUsuario(id, nome, foto){
         nome: jogador.nome,
     })}
   export {cadastraUsuario}
+  
