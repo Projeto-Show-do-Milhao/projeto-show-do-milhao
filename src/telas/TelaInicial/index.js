@@ -4,6 +4,7 @@ import estilos from '../../telas/TelaInicial/styles';
 import * as Facebook from 'expo-facebook';
 import '@expo/vector-icons';
 import 'react-native-gesture-handler';
+import {cadastraUsuario} from '../../../bancosdedados/bancoperfis/bdperfis'
 import firebase from 'firebase'
 const id = '245579273555466';
 const login = async () => {
@@ -44,7 +45,8 @@ function TelaInicial({navigation}) {
     login()
     .then(user => {
       console.log(user),
-      navigation.navigate('TelaLobby', {nome: user.name, foto: user.picture.data.url})
+      navigation.navigate('TelaLobby', {nome: user.name, foto: user.picture.data.url}),
+      cadastraUsuario(user.id, user.name, user.picture.data.url, 0)
     })
     .catch(err => Alert.alert('erro ao conectar'))
   }
