@@ -46,7 +46,7 @@ function TelaInicial({navigation}) {
     .then(user => {
       console.log(user),
       navigation.navigate('TelaLobby', {nome: user.name, foto: user.picture.data.url}),
-      cadastraUsuario(user.id, user.name, user.picture.data.url, 0)
+      cadastraUsuario(user.id, user.name, user.picture.data.url)
     })
     .catch(err => Alert.alert('erro ao conectar'))
   }

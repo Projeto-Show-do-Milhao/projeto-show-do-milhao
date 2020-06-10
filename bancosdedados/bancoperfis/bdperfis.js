@@ -13,12 +13,17 @@ var usuarios = 'Usuários'
 var db = ref => admin.database().ref(ref)
 var idUsuario = id => `${usuarios}/${id}`
 
-function cadastraUsuario(id, nome, foto, pontuacao){   
+function cadastraUsuario(id, nome, foto){   
           db(idUsuario(id)).push({
               id: id,
               nome: nome,
               foto: foto,
-              pontuacao: pontuacao
             })        
   }
+  function buscaUsuario(id) {
+    var idUsuario = idUsuarioRef(id)
+
+    idUsuario.set({
+        nome: jogador.nome,
+    })}
   export {cadastraUsuario}
