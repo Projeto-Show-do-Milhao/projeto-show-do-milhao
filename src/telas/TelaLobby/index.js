@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { View, Image, ImageBackground, Text, ScrollView, TouchableHighlight, Alert } from 'react-native'
 import estilos from '../../telas/TelaLobby/styles';
 
-function TelaLobby({route , navigation}) {
+function TelaLobby({route, navigation}) {
   const {nome} = route.params
   const {foto} = route.params
   console.log(route)
@@ -21,7 +21,7 @@ function TelaLobby({route , navigation}) {
         >
         </ImageBackground>
         <View>
-        <TouchableHighlight onPress={()=> navigation.navigate('TelaDoPerfil', )}>
+        <TouchableHighlight onPress={()=> navigation.navigate('TelaDoPerfil', {nome, foto} )}>
           <Image source={{uri: foto}} style={estilos.avatarTelaJogar}>
           </Image>
           </TouchableHighlight>
@@ -50,7 +50,7 @@ function TelaLobby({route , navigation}) {
          PERDE TUDO!!!
         </Text>
       </View>
-        <TouchableHighlight onPress={()=> navigation.navigate("Questoes")}>
+        <TouchableHighlight onPress={()=> navigation.navigate("Questoes", {nome, foto })}>
       <View style={estilos.botaoJogar}>
           <Text style={estilos.textoJogar}>Jogar</Text>
       </View>

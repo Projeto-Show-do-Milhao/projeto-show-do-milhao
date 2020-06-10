@@ -3,7 +3,9 @@ import { View, Text, ImageBackground, Image } from 'react-native';
 import estilos from './styles'
 import { TouchableHighlight, TouchableOpacity } from 'react-native-gesture-handler';
 
-function TelaPerfil({navigation}) {
+function TelaPerfil({route , navigation}) {
+    const {nome} = route.params
+    const {foto} = route.params
   return (
       <View style={estilos.containerTelaPerfil}>
           <Text>Oi</Text>
@@ -19,10 +21,10 @@ function TelaPerfil({navigation}) {
                 style={estilos.imagemDeFundoShowDoMilhaoTelaPerfil} 
               />
               </TouchableOpacity>
-              <Image source={require('../../imagens/chico1.png')} style={estilos.avatarTelaPerfil} />
+              <Image source={{uri: foto}} style={estilos.avatarTelaPerfil} />
           </View>
           <View style={estilos.containerNickName}>
-              <Text style={estilos.nickname}>NickName</Text>
+              <Text style={estilos.nickname}>{nome}</Text>
           </View>
           <View style={estilos.containerMaiorPontuacao}>
               <Text style={estilos.maiorPontuacao}>Maior Pontuacao</Text>

@@ -8,7 +8,8 @@ import {perguntasLista1Nivel3, perguntasLista2Nivel3, perguntasLista3Nivel3} fro
 import {perguntasListaMilho} from '../../../perguntasDoMilho'
 
 
-function TelaQuestoes({ navigation }) {
+function TelaQuestoes({route, navigation }) {
+  const {foto} = route.params
   const [pergunta, setPergunta] = useState(perguntasListal);
   const [pulo, setPulo] = useState(3)
   const [premio, setPremio] = useState([0, 1000, 5000, 10000, 25000, 50000, 100000, 200000, 300000, 500000, 1000000])
@@ -181,8 +182,7 @@ function TelaQuestoes({ navigation }) {
           style={estilos.imagemDeFundoShowDoMilhaoTelaJogar}>
         </ImageBackground>
         <View>
-          <Image source={
-            require('../../imagens/chico1.png')}
+          <Image source={{uri: foto}}
             style={estilos.avatarTelaJogar}>
           </Image>
         </View>
@@ -235,7 +235,7 @@ function TelaQuestoes({ navigation }) {
         </TouchableOpacity>
         <View style={{ flexDirection: "row", justifyContent: "space-around" }}>
 
-          <TouchableOpacity onPress={() => navigation.navigate("TelaDoFim", premioTotal/2)}>
+          <TouchableOpacity onPress={() => {navigation.navigate("TelaDoFim", premioTotal/2)}}>
             <View style={estilos.botaoParar}>
             <Text style={{ fontSize: 22, alignSelf: "center", }}>
                 PARAR

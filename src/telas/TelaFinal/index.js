@@ -4,9 +4,7 @@ import { View, Image, ImageBackground, Text, TouchableOpacity, Button } from 're
 import estilos from '../../telas/TelaFinal/styles';
 
 function TelaFinal({route , navigation }) {
-
 const premioTotal = route.params
-
 let resposta = ''
 if(premioTotal == 0){
 resposta = 'Infelizmente você perdeu Tudo!\n🤬😭😭'
@@ -31,7 +29,7 @@ return (
 			>
 			</ImageBackground>
 			<View>
-					<Image source={require('../../imagens/chico1.png')} style={estilos.avatarTelaJogar}>
+					<Image source={require('../../imagens/SilvioSantos.gif')} style={estilos.avatarTelaJogar}>
 					</Image>
 			</View>
 	</View>
