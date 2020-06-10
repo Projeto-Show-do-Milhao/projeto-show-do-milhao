@@ -1,9 +1,12 @@
 import 'react-native-gesture-handler';
 import React, { Component } from 'react';
-import { View, Image, ImageBackground, Text, ScrollView, TouchableHighlight } from 'react-native'
+import { View, Image, ImageBackground, Text, ScrollView, TouchableHighlight, Alert } from 'react-native'
 import estilos from '../../telas/TelaLobby/styles';
 
-function TelaLobby({ navigation }) {
+function TelaLobby({route , navigation}) {
+  const {nome} = route.params
+  const {foto} = route.params
+  console.log(route)
   return (
     <View style={estilos.containerTelaJogar}>
       <View style={estilos.containerImagemFundoTelaJogar}>
@@ -18,8 +21,8 @@ function TelaLobby({ navigation }) {
         >
         </ImageBackground>
         <View>
-        <TouchableHighlight onPress={()=> navigation.navigate("TelaDoPerfil")}>
-          <Image source={require('../../imagens/chico1.png')} style={estilos.avatarTelaJogar}>
+        <TouchableHighlight onPress={()=> navigation.navigate('TelaDoPerfil', )}>
+          <Image source={{uri: foto}} style={estilos.avatarTelaJogar}>
           </Image>
           </TouchableHighlight>
         </View>
