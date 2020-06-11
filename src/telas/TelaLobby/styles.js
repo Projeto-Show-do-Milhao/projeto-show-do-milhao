@@ -37,7 +37,7 @@
 		containerRank: {
 				// flex: 4,
 				height: 400,
-				paddingTop: '35%',
+				padding: 20,
 				marginBottom: 10,
 				backgroundColor: 'rgba(0, 0, 255, 0.40)',
 				width: 360,

@@ -43,19 +43,29 @@ var idUsuario = id => `${usuarios}/${id}`
 function cadastraUsuario(userObject) {
   firebase.database().ref(idUsuario(userObject.id)).set({
     nome: userObject.name,
-    imageUrl: userObject.picture.data.url,
-    userId: userObject.id,
+    foto: userObject.picture.data.url,
+    id: userObject.id,
+    pontuação: 0
   });
   console.log('foi')
 }
 
+function verificaPontuacao(ranking){
+  firebase.database().ref(usuarios).on('value', snapshot =>{
+    snapshot.forEach(childSnapshot=>{
+      ranking.push(childSnapshot.val())
+      console.log(ranking)
+    })
+  })
+}
 function TelaInicial({navigation}) {
- 
+  const ranking = []
   const chamarLogin = () => {
+    verificaPontuacao(ranking)
     login()
     .then(user => {
-      console.log(user),
-      navigation.navigate('TelaLobby', {nome: user.name, foto: user.picture.data.url, id: user.id})
+      console.log(user);
+      navigation.navigate('TelaLobby', {nome: user.name, foto: user.picture.data.url, id: user.id, ranking})
     })
     .catch(err => Alert.alert('erro ao conectar'))
   }
@@ -70,8 +80,8 @@ function TelaInicial({navigation}) {
         </ImageBackground>
         <View style={{
           width: 250,
-          height: 60,
-          borderRadius: 10,
+          height: 80,
+          borderRadius: 15,
           alignSelf: 'center',
           marginTop: 300
         }}>

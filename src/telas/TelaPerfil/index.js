@@ -6,9 +6,9 @@ import { TouchableHighlight, TouchableOpacity } from 'react-native-gesture-handl
 function TelaPerfil({route , navigation}) {
     const {nome} = route.params
     const {foto} = route.params
+    const {premioTotal} = route.params
   return (
       <View style={estilos.containerTelaPerfil}>
-          <Text>Oi</Text>
           <View style={estilos.containerImagemFundoTelaPerfil}>
               <ImageBackground source={
                   require('../../imagens/dinheiroBackground.png')} 
@@ -26,11 +26,9 @@ function TelaPerfil({route , navigation}) {
           <View style={estilos.containerNickName}>
               <Text style={estilos.nickname}>{nome}</Text>
           </View>
-          <View style={estilos.containerMaiorPontuacao}>
-              <Text style={estilos.maiorPontuacao}>Maior Pontuacao</Text>
-          </View>
           <View style={estilos.containerUltimaPontuacao}>
               <Text style={estilos.ultimaPontuacao}>Ultima Pontuacao</Text>
+              <Text style={estilos.ultimaPontuacao}>{premioTotal}</Text>
           </View>
           <View style={estilos.containerBotaoLogout}>
               <TouchableHighlight style={estilos.botaoLogout}>
