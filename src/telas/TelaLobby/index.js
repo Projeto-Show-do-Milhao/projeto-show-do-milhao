@@ -1,12 +1,27 @@
 import 'react-native-gesture-handler';
-import React, { Component } from 'react';
-import { View, Image, ImageBackground, Text, ScrollView, TouchableHighlight, Alert } from 'react-native'
+import React, { Component, useState } from 'react';
+import { View, Image, ImageBackground, Text, ScrollView, TouchableHighlight, Alert, } from 'react-native'
 import estilos from '../../telas/TelaLobby/styles';
+import firebase from 'firebase'
+
+
+
 
 function TelaLobby({route, navigation}) {
   const {nome} = route.params
   const {foto} = route.params
-  console.log(route)
+  const {id} = route.params
+  
+  const[ranking, setRanking] = useState([])
+  var usuarios = 'Usuários'
+  var idUsuario = id => `${usuarios}/${id}`
+  function verificaPontuacao(){
+    firebase.database().ref(usuarios).on('value', snapshot =>{
+      snapshot.forEach(childSnapshot=>{
+        console.log(childSnapshot.val())
+      })
+    })
+  }
   return (
     <View style={estilos.containerTelaJogar}>
       <View style={estilos.containerImagemFundoTelaJogar}>
@@ -27,30 +42,15 @@ function TelaLobby({route, navigation}) {
           </TouchableHighlight>
         </View>
       </View>
+      <TouchableHighlight onPress={verificaPontuacao}>
       <View style={estilos.containerRank}>
-        <Text style={estilos.textoRegrasPrincipal}>
-          Regras do Jogo
-        </Text>
-        <Text style={estilos.textoRegrasSub}>
-          Cada questão tem quatro alternativas com apenas uma correta.
-        </Text>
-        <Text style={estilos.textoRegrasSub}>
-          Pressione a alternativa correta para avançar e aumentar seu prêmio!
-        </Text>
-        <Text style={estilos.textoRegrasSub}>
-          Você pode pular de pergunta até três vezes;
-        </Text>
-        <Text style={estilos.textoRegrasSub}>
-          Ou arregar pela metade do prêmio.
-        </Text>
-        <Text style={estilos.textoRegrasSub}>
-         Mas se errar...
-        </Text>
-        <Text style={estilos.textoRegrasSubFinal}>
-         PERDE TUDO!!!
-        </Text>
+        <ScrollView>
+          {console.log(ranking)}
+
+        </ScrollView>
       </View>
-        <TouchableHighlight onPress={()=> navigation.navigate("Questoes", {nome, foto })}>
+      </TouchableHighlight>
+        <TouchableHighlight onPress={()=> navigation.navigate("Questoes", {nome, foto, id })}>
       <View style={estilos.botaoJogar}>
           <Text style={estilos.textoJogar}>Jogar</Text>
       </View>

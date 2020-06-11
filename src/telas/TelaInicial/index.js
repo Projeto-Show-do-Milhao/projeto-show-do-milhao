@@ -25,27 +25,26 @@ const login = async () => {
   }
 }
 
-// var firebaseConfig = {
-//   apiKey: "AIzaSyCtjFUY5xt3GTIt35zxPaUDjJ7brKQr-eY",
-//   authDomain: "banco-perfis.firebaseapp.com",
-//   databaseURL: "https://banco-perfis.firebaseio.com",
-//   projectId: "banco-perfis",
-//   storageBucket: "banco-perfis.appspot.com",
-//   messagingSenderId: "26074504438",
-//   appId: "1:26074504438:web:2c16989d13d5fbab0ca0d7",
-//   measurementId: "G-G70WCMS0X5"
-// };
-// // Initialize Firebase
-// firebase.initializeApp(firebaseConfig);
-// const db = firebase.database();
-// console.log(db)
+var firebaseConfig = {
+  apiKey: "AIzaSyCtjFUY5xt3GTIt35zxPaUDjJ7brKQr-eY",
+  authDomain: "banco-perfis.firebaseapp.com",
+  databaseURL: "https://banco-perfis.firebaseio.com",
+  projectId: "banco-perfis",
+  storageBucket: "banco-perfis.appspot.com",
+  messagingSenderId: "26074504438",
+  appId: "1:26074504438:web:2c16989d13d5fbab0ca0d7",
+  measurementId: "G-G70WCMS0X5"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
 
+var usuarios = 'Usuários'
+var idUsuario = id => `${usuarios}/${id}`
 function cadastraUsuario(userObject) {
-  firebase.database().ref('usuarios').set({
+  firebase.database().ref(idUsuario(userObject.id)).set({
     nome: userObject.name,
     imageUrl: userObject.picture.data.url,
     userId: userObject.id,
-    pontuação: 0
   });
   console.log('foi')
 }
@@ -56,7 +55,7 @@ function TelaInicial({navigation}) {
     login()
     .then(user => {
       console.log(user),
-      navigation.navigate('TelaLobby', {nome: user.name, foto: user.picture.data.url})
+      navigation.navigate('TelaLobby', {nome: user.name, foto: user.picture.data.url, id: user.id})
     })
     .catch(err => Alert.alert('erro ao conectar'))
   }

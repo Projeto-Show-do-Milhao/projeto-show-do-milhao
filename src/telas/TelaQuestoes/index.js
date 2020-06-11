@@ -6,21 +6,60 @@ import { perguntasListal, perguntasLista2, perguntasLista3} from '../../../pergu
 import {perguntasLista1Nivel2, perguntasLista2Nivel2, perguntasLista3Nivel2} from '../../../perguntasNivel2'
 import {perguntasLista1Nivel3, perguntasLista2Nivel3, perguntasLista3Nivel3} from '../../../perguntasNivel3'
 import {perguntasListaMilho} from '../../../perguntasDoMilho'
-
+import firebase from 'firebase'
 
 function TelaQuestoes({route, navigation }) {
+  const {nome} = route.params
   const {foto} = route.params
+  const {id} = route.params
   const [pergunta, setPergunta] = useState(perguntasListal);
   const [pulo, setPulo] = useState(3)
   const [premio, setPremio] = useState([0, 1000, 5000, 10000, 25000, 50000, 100000, 200000, 300000, 500000, 1000000])
   const [numPergunta, setNumPergunta] = useState(0)
   let premioTotal = premio[numPergunta]
+  //const [premioTotal, setPremioTotal] = useState
   const [numerosSorteados, setNumerosSorteados] = useState({})
-  const numeroAleatorio = BuscaNumeroAleatorio(numerosSorteados)
-  const telaFinal = ()=>{navigation.navigate('TelaDoFim', premioTotal)}
-  const telaCampea = ()=>{navigation.navigate('TelaDoFim', premio[10])}
+  const numeroAleatorio = BuscaNumeroAleatorio(numerosSorteados) 
+  const telaFinal = ()=>{navigation.navigate('TelaDoFim', premioTotal); registraPontuacaoErro(nome, id, foto, premioTotal)}
+  const telaCampea = ()=>{navigation.navigate('TelaDoFim', premio[10]); registraPontuacao(nome, id, foto, premioTotal)}
   
-
+  var usuarios = 'Usuários'
+  var idUsuario = id => `${usuarios}/${id}`
+  function registraPontuacaoErro(nome, id, foto, pontuacao){
+    
+    firebase.database().ref(idUsuario(id)).set({
+      nome,
+      id,
+      foto,
+      pontuação: pontuacao,
+    })
+  }  
+ 
+  
+  function registraPontuacao(nome, id, foto, pontuacao){
+    firebase.database().ref(idUsuario(id)).set({
+      nome,
+      id,
+      foto,
+      pontuação: 1000000,
+    })
+  }
+  // function buscaPontuacaoTotal(id, pontuacao){
+  //   firebase.database().ref(id).on('value',(snapshot)=>{
+  //     const pontuacaoAcumulada = snapshot.val().pontuação + pontuacao
+  //     console.log(pontuacaoAcumulada)
+  //     return pontuacaoAcumulada
+  //   })
+  // }
+  function registraPontuacaoParar(nome, id, foto, pontuacao){
+    const pontuacaoNova = pontuacao/2
+    firebase.database().ref(idUsuario(id)).set({
+      nome,
+      id,
+      foto,
+      pontuação: pontuacaoNova,
+    })
+  }
   function mudaPerguntaEpontuacao(){
     setNumPergunta(numPergunta+1)
     setNumerosSorteados({})
@@ -235,7 +274,7 @@ function TelaQuestoes({route, navigation }) {
         </TouchableOpacity>
         <View style={{ flexDirection: "row", justifyContent: "space-around" }}>
 
-          <TouchableOpacity onPress={() => {navigation.navigate("TelaDoFim", premioTotal/2)}}>
+          <TouchableOpacity onPress={() => {registraPontuacaoParar(nome, id, foto, premioTotal); navigation.navigate("TelaDoFim", premioTotal/2)}}>
             <View style={estilos.botaoParar}>
             <Text style={{ fontSize: 22, alignSelf: "center", }}>
                 PARAR
