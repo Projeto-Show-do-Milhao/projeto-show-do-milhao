@@ -31,7 +31,7 @@ function TelaPerfil({route , navigation}) {
               <Text style={estilos.ultimaPontuacao}>{premioTotal}</Text>
           </View>
           <View style={estilos.containerBotaoLogout}>
-              <TouchableHighlight style={estilos.botaoLogout}>
+              <TouchableHighlight style={estilos.botaoLogout} onPress={()=> navigation.navigate('TelaInicial')}>
               <Text style={estilos.textoBotaoLogout}>Logout</Text>
               </TouchableHighlight>
           </View>
