@@ -5,6 +5,8 @@ import * as Facebook from 'expo-facebook';
 import '@expo/vector-icons';
 import 'react-native-gesture-handler';
 import firebase from 'firebase'
+
+
 const id = '245579273555466';
 const login = async () => {
   await Facebook.initializeAsync(id);
@@ -16,27 +18,37 @@ const login = async () => {
       `https://graph.facebook.com/me?access.token=${token}&fields=id,name,email,about,picture`
     )
     var userObject = await response.json()
+    await cadastraUsuario(userObject) 
     return userObject;
   } else {
     throw Error('Falha ao logar ....')
   }
 }
 
-var firebaseConfig = {
-  apiKey: "AIzaSyCtjFUY5xt3GTIt35zxPaUDjJ7brKQr-eY",
-  authDomain: "banco-perfis.firebaseapp.com",
-  databaseURL: "https://banco-perfis.firebaseio.com",
-  projectId: "banco-perfis",
-  storageBucket: "banco-perfis.appspot.com",
-  messagingSenderId: "26074504438",
-  appId: "1:26074504438:web:2c16989d13d5fbab0ca0d7",
-  measurementId: "G-G70WCMS0X5"
-};
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-const db = firebase.database();
-console.log(db)
+// var firebaseConfig = {
+//   apiKey: "AIzaSyCtjFUY5xt3GTIt35zxPaUDjJ7brKQr-eY",
+//   authDomain: "banco-perfis.firebaseapp.com",
+//   databaseURL: "https://banco-perfis.firebaseio.com",
+//   projectId: "banco-perfis",
+//   storageBucket: "banco-perfis.appspot.com",
+//   messagingSenderId: "26074504438",
+//   appId: "1:26074504438:web:2c16989d13d5fbab0ca0d7",
+//   measurementId: "G-G70WCMS0X5"
+// };
+// // Initialize Firebase
+// firebase.initializeApp(firebaseConfig);
+// const db = firebase.database();
+// console.log(db)
 
+function cadastraUsuario(userObject) {
+  firebase.database().ref('usuarios').set({
+    nome: userObject.name,
+    imageUrl: userObject.picture.data.url,
+    userId: userObject.id,
+    pontuação: 0
+  });
+  console.log('foi')
+}
 
 function TelaInicial({navigation}) {
  
