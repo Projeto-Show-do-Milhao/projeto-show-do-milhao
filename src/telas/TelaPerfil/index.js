@@ -3,10 +3,12 @@ import { View, Text, ImageBackground, Image } from 'react-native';
 import estilos from './styles'
 import { TouchableHighlight, TouchableOpacity } from 'react-native-gesture-handler';
 
+
 function TelaPerfil({route , navigation}) {
     const {nome} = route.params
     const {foto} = route.params
-    const {premioTotal} = route.params
+    const {pontuação} = route.params
+
   return (
       <View style={estilos.containerTelaPerfil}>
           <View style={estilos.containerImagemFundoTelaPerfil}>
@@ -28,7 +30,9 @@ function TelaPerfil({route , navigation}) {
           </View>
           <View style={estilos.containerUltimaPontuacao}>
               <Text style={estilos.ultimaPontuacao}>Ultima Pontuacao</Text>
-              <Text style={estilos.ultimaPontuacao}>{premioTotal}</Text>
+          </View>
+          <View style={estilos.containerUltimaPontuacao}>
+              <Text style={estilos.ultimaPontuacao}>R${pontuação},00</Text>
           </View>
           <View style={estilos.containerBotaoLogout}>
               <TouchableHighlight style={estilos.botaoLogout} onPress={()=> navigation.navigate('TelaInicial')}>
