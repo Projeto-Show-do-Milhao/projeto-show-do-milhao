@@ -63,7 +63,7 @@ return (
 </View>
 
 			<TouchableOpacity 
-			onPress={()=>{verificaPontuacao(ranking); navigation.navigate("TelaLobby", {ranking}, premioTotal)}}
+			onPress={()=>{verificaPontuacao(ranking); navigation.navigate("TelaLobby", {ranking})}}
 			style={estilos.botaoSair}
 			>
 				<Text style={estilos.textoSair}>
