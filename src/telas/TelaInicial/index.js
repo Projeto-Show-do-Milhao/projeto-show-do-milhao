@@ -54,7 +54,6 @@ function verificaPontuacao(ranking){
   firebase.database().ref(usuarios).on('value', snapshot =>{
     snapshot.forEach(childSnapshot=>{
       ranking.push(childSnapshot.val())
-      console.log(ranking)
     })
   })
 }
@@ -65,7 +64,7 @@ function TelaInicial({navigation}) {
     login()
     .then(user => {
       console.log(user);
-      navigation.navigate('TelaLobby', {nome: user.name, foto: user.picture.data.url, id: user.id, ranking})
+      navigation.navigate('TelaLobby', {nome: user.name, foto: user.picture.data.url, id: user.id, ranking, pontuação: user.pontuação})
     })
     .catch(err => Alert.alert('erro ao conectar'))
   }
