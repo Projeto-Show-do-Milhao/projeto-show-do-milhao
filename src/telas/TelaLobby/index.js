@@ -4,28 +4,31 @@ import { View, Image, ImageBackground, Text, ScrollView, TouchableHighlight, Ale
 import estilos from '../../telas/TelaLobby/styles';
 import firebase from 'firebase'
 
-function Usuario({usuario}){
+function Usuario({usuario, foto}){
+  console.log('EU SOU O USUARIO', usuario)
   return (
-  <View style={{flexDirection: 'row', margin: 10}}>
-    <Image source={{uri: usuario.foto}}/>
-    <Text style={{margin: 5, fontSize: 15, color: 'yellow'}}>
+  <View style={{margin: 10, borderBottomWidth:2, borderColor: 'yellow'}}>
+    <Image source={{uri: foto}}/>
+    <Text style={{margin: 5,  fontSize: 15, color: 'yellow', alignSelf: 'center'}}>
+      👑
+    </Text>
+    <Text style={{margin: 5, fontSize: 18, color: 'white', alignSelf: 'center'}}>
       {usuario.nome}
     </Text>
-    <Text style={{margin: 5, fontSize: 15, color: 'yellow'}}>
-      ................... R${usuario.pontuação},00
+    <Text style={{margin: 5, marginBottom: 10, fontSize: 18,color: 'white', alignSelf: 'center'}}>
+      R${usuario.pontuação},00
     </Text>
   </View>
   )
 }
 
-function ListaDeusuarios({usuarios}){
+
+function ListaDeusuarios({usuarios, foto}){
   return(
-    <View style={estilos.containerRank}>
-      <ScrollView>
-        {usuarios.map((usuario)=>{<Usuario usuario={usuario}/>, console.log(usuario)})}
-      </ScrollView>
-      </View>
-  
+    <ScrollView>
+      {usuarios.sort((a,b)=>b.pontuação - a.pontuação)
+        .map((usuario, index)=> <Usuario usuario={usuario} foto={foto} key={index}/>)}
+    </ScrollView>
   )
 }
 
@@ -34,7 +37,7 @@ function TelaLobby({route, navigation}) {
   const {foto} = route.params
   const {id} = route.params
   let {ranking} = route.params
-  let {premioTotal} = route.params
+  const {pontuação} = route.params
   console.log(ranking)
   
   return (
@@ -51,7 +54,7 @@ function TelaLobby({route, navigation}) {
         >
         </ImageBackground>
         <View>
-        <TouchableHighlight onPress={()=> navigation.navigate('TelaDoPerfil', {nome, foto, premioTotal} )}>
+        <TouchableHighlight onPress={()=> navigation.navigate('TelaDoPerfil', {nome, foto, pontuação})}>
           <Image source={{uri: foto}} style={estilos.avatarTelaJogar}>
           </Image>
           </TouchableHighlight>
@@ -61,44 +64,7 @@ function TelaLobby({route, navigation}) {
         <Text style={{alignSelf:'center', fontSize: 20, fontWeight: 'bold', color: 'yellow', marginBottom: 20}}>
          Última pontuação dos Jogadores
         </Text>
-      <ScrollView>
-        <View style={{flexDirection: 'row', margin: 12}}>
-          <Image source={{uri: ranking[0].foto}}/>
-          <Text style={{margin: 5, fontSize: 15, color: 'yellow'}}>
-            {ranking[0].nome}
-          </Text>
-          <Text style={{margin: 5, fontSize: 15, color: 'yellow'}}>
-          ................... R${ranking[0].pontuação},00
-          </Text>
-      </View>
-      <View style={{flexDirection: 'row', margin: 12}}>
-          <Image source={{uri: ranking[1].foto}}/>
-          <Text style={{margin: 5, fontSize: 15, color: 'yellow'}}>
-            {ranking[1].nome}
-          </Text>
-          <Text style={{margin: 5, fontSize: 15, color: 'yellow'}}>
-          ................... R${ranking[1].pontuação},00
-          </Text>
-      </View>
-      <View style={{flexDirection: 'row', margin: 12}}>
-        <Image source={{uri: ranking[2].foto}}/>
-        <Text style={{margin: 5, fontSize: 15, color: 'yellow'}}>
-          {ranking[2].nome}
-        </Text>
-        <Text style={{margin: 5, fontSize: 15, color: 'yellow'}}>
-        ................... R${ranking[2].pontuação},00
-        </Text>
-      </View>
-      <View style={{flexDirection: 'row', margin: 12}}>
-        <Image source={{uri: ranking[3].foto}}/>
-        <Text style={{margin: 5, fontSize: 15, color: 'yellow'}}>
-          {ranking[3].nome}
-        </Text>
-        <Text style={{margin: 5, fontSize: 15, color: 'yellow'}}>
-        ................... R${ranking[3].pontuação},00
-        </Text>
-      </View>
-      </ScrollView>
+        <ListaDeusuarios usuarios={ranking} foto={foto}/>
       </View>
         <TouchableHighlight onPress={()=> navigation.navigate("Questoes", {nome, foto, id })}>
       <View style={estilos.botaoJogar}>
