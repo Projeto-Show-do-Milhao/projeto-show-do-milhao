@@ -103,7 +103,7 @@ const perguntasLista2 = [
     },
     
     {
-        pergunta: 'Quem era o apresentador que reprovava os calouros tocandouma buzina?',
+        pergunta: 'Quem era o apresentador que reprovava os calouros tocando uma buzina?',
         alternativas: {
             a: 'RAUL GIL',
             b: 'BOLINHA',
