@@ -40,9 +40,9 @@ function TelaLobby({route, navigation}) {
   const {foto} = route.params
   const {id} = route.params
   let {ranking} = route.params
-  const {pontuação} = route.params
   console.log(ranking)
-
+  var usuarios = 'Usuários'
+ 
   return (
     <View style={estilos.containerTelaJogar}>
       <View style={estilos.containerImagemFundoTelaJogar}>
@@ -57,7 +57,7 @@ function TelaLobby({route, navigation}) {
         >
         </ImageBackground>
         <View>
-        <TouchableHighlight onPress={()=> navigation.navigate('TelaDoPerfil', {nome, foto, pontuação})}>
+        <TouchableHighlight onPress={()=> navigation.navigate('TelaDoPerfil', {nome, foto, id})}>
           <Image source={{uri: foto}} style={estilos.avatarTelaJogar}>
           </Image>
           </TouchableHighlight>

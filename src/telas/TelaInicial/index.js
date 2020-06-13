@@ -45,7 +45,7 @@ function cadastraUsuario(userObject) {
     nome: userObject.name,
     foto: userObject.picture.data.url,
     id: userObject.id,
-    pontuação: 0
+    pontuação: 0,
   });
   console.log('foi')
 }
@@ -59,6 +59,7 @@ function verificaPontuacao(ranking){
 }
 function TelaInicial({navigation}) {
   const ranking = []
+  
   const chamarLogin = () => {
     verificaPontuacao(ranking)
     console.log('eu sou o ranking', ranking)

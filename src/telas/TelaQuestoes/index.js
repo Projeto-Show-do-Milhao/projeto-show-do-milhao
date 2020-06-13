@@ -22,7 +22,6 @@ function TelaQuestoes({route, navigation}) {
   const numeroAleatorio = BuscaNumeroAleatorio(numerosSorteados) 
   const telaFinal = ()=>{navigation.navigate('TelaDoFim', premioTotal); registraPontuacaoErro(nome, id, foto, premioTotal)}
   const telaCampea = ()=>{navigation.navigate('TelaDoFim', premio[10]); registraPontuacao(nome, id, foto, premioTotal);}
-  
   var usuarios = 'Usuários'
   var idUsuario = id => `${usuarios}/${id}`
   function registraPontuacaoErro(nome, id, foto, pontuacao){
@@ -34,13 +33,7 @@ function TelaQuestoes({route, navigation}) {
     })
   }  
 
-  const trofeus = firebase.database().ref(idUsuario(id)).on('value', snapshot =>{
-    snapshot.forEach(childSnapshot=>{
-       console.log(childSnapshot.val().troféus)
-    })
-  })
   function registraPontuacao(nome, id, foto, pontuacao){
-    const trofeus = []
     firebase.database().ref(idUsuario(id)).set({
       nome,
       id,
