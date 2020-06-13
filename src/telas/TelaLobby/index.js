@@ -18,9 +18,6 @@ function Usuario({usuario}){
     <Text style={{margin: 5, marginBottom: 10, fontSize: 18,color: 'white', alignSelf: 'center'}}>
       R${usuario.pontuação},00
     </Text>
-    <Text style={{margin: 5, marginBottom: 10, fontSize: 18,color: 'white', alignSelf: 'center'}}>
-      {usuario.troféus}x 🏆
-    </Text>
   </View>
   )
 }
