@@ -61,6 +61,7 @@ function TelaInicial({navigation}) {
   const ranking = []
   const chamarLogin = () => {
     verificaPontuacao(ranking)
+    console.log('eu sou o ranking', ranking)
     login()
     .then(user => {
       console.log(user);

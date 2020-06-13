@@ -1,5 +1,5 @@
 import React, { Component, useState, useEffect } from 'react';
-import { View, Image, ImageBackground, Text, ScrollView, TouchableOpacity, Alert } from 'react-native'
+import { View, Image, ImageBackground, Text, ScrollView, TouchableOpacity, Alert, ToastAndroid } from 'react-native'
 import estilos from '../../telas/TelaQuestoes/styles';
 import 'react-native-gesture-handler';
 import { perguntasListal, perguntasLista2, perguntasLista3} from '../../../perguntasNivel1'
@@ -8,7 +8,7 @@ import {perguntasLista1Nivel3, perguntasLista2Nivel3, perguntasLista3Nivel3} fro
 import {perguntasListaMilho} from '../../../perguntasDoMilho'
 import firebase from 'firebase'
 
-function TelaQuestoes({route, navigation }) {
+function TelaQuestoes({route, navigation}) {
   const {nome} = route.params
   const {foto} = route.params
   const {id} = route.params
@@ -21,12 +21,11 @@ function TelaQuestoes({route, navigation }) {
   const [numerosSorteados, setNumerosSorteados] = useState({})
   const numeroAleatorio = BuscaNumeroAleatorio(numerosSorteados) 
   const telaFinal = ()=>{navigation.navigate('TelaDoFim', premioTotal); registraPontuacaoErro(nome, id, foto, premioTotal)}
-  const telaCampea = ()=>{navigation.navigate('TelaDoFim', premio[10]); registraPontuacao(nome, id, foto, premioTotal)}
+  const telaCampea = ()=>{navigation.navigate('TelaDoFim', premio[10]); registraPontuacao(nome, id, foto, premioTotal);}
   
   var usuarios = 'Usuários'
   var idUsuario = id => `${usuarios}/${id}`
   function registraPontuacaoErro(nome, id, foto, pontuacao){
-    
     firebase.database().ref(idUsuario(id)).set({
       nome,
       id,
@@ -34,9 +33,14 @@ function TelaQuestoes({route, navigation }) {
       pontuação: pontuacao,
     })
   }  
- 
-  
+
+  const trofeus = firebase.database().ref(idUsuario(id)).on('value', snapshot =>{
+    snapshot.forEach(childSnapshot=>{
+       console.log(childSnapshot.val().troféus)
+    })
+  })
   function registraPontuacao(nome, id, foto, pontuacao){
+    const trofeus = []
     firebase.database().ref(idUsuario(id)).set({
       nome,
       id,
@@ -44,6 +48,7 @@ function TelaQuestoes({route, navigation }) {
       pontuação: 1000000,
     })
   }
+ 
   // function buscaPontuacaoTotal(id, pontuacao){
   //   firebase.database().ref(id).on('value',(snapshot)=>{
   //     const pontuacaoAcumulada = snapshot.val().pontuação + pontuacao
@@ -101,6 +106,8 @@ function TelaQuestoes({route, navigation }) {
     if(pulo>0){
       setPulo(pulo-1)
       buscaPerguntaAleatoria(pergunta, numeroAleatorio)
+    }else{
+      ToastAndroid.show("Você não tem mais pulos!", ToastAndroid.SHORT)
     }
 	}
 
