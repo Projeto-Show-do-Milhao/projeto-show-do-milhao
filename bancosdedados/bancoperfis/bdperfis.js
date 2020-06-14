@@ -17,7 +17,6 @@
 //       nome: nome,
 //       foto: foto,
 //     }) 
-//     console.log('foi')           
 //   }
 //   function buscaUsuario(id) {
 //     var idUsuario = idUsuarioRef(id)

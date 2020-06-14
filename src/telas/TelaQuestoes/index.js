@@ -108,10 +108,8 @@ function TelaQuestoes({route, navigation}) {
     const respostaCerta = buscaResposta(pergunta, numeroAleatorio)
     const respostaSelecionada = buscaAlternativaA(pergunta, numeroAleatorio)
     if(respostaCerta === respostaSelecionada){
-      console.log('vc acertou')
 			mudaPerguntaEpontuacao()
     }else{
-      console.log('errou')
       setPergunta(perguntasListal)
       setNumPergunta(0)
       premioTotal=0
@@ -123,10 +121,8 @@ function TelaQuestoes({route, navigation}) {
     const respostaCerta = buscaResposta(pergunta, numeroAleatorio)
     const respostaSelecionada = buscaAlternativaB(pergunta, numeroAleatorio)
     if(respostaCerta === respostaSelecionada){
-			console.log('vc acertou')
       mudaPerguntaEpontuacao()
     }else{
-      console.log('vc errou')
 			setPergunta(perguntasListal)
 			setNumPergunta(numPergunta+1)
       setNumPergunta(0)
@@ -139,10 +135,8 @@ function TelaQuestoes({route, navigation}) {
     const respostaCerta = buscaResposta(pergunta, numeroAleatorio)
     const respostaSelecionada = buscaAlternativaC(pergunta, numeroAleatorio)
     if(respostaCerta === respostaSelecionada){
-			console.log('vc acertou')
       mudaPerguntaEpontuacao()
     }else{
-      console.log('vc errou')
       setPergunta(perguntasListal)
       setNumPergunta(0)
       premioTotal=0
@@ -154,10 +148,8 @@ function TelaQuestoes({route, navigation}) {
     const respostaCerta = buscaResposta(pergunta, numeroAleatorio)
     const respostaSelecionada = buscaAlternativaD(pergunta, numeroAleatorio)
     if(respostaCerta === respostaSelecionada){
-			console.log('vc acertou')
       mudaPerguntaEpontuacao()
     }else{
-      console.log('vc errou')
       setPergunta(perguntasListal)
       setNumPergunta(0)
       premioTotal=0
