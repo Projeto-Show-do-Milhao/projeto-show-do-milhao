@@ -231,7 +231,7 @@ function TelaQuestoes({route, navigation}) {
         flexDirection: 'row'
       }}>
         <Text style={{color: 'yellow'}}>
-          Prêmio Total: R${premioTotal}
+          Prêmio Total: R${premioTotal},00
         </Text>
         <Text style={{color: 'yellow'}}>
           Pergunta {(numPergunta+1)}/10

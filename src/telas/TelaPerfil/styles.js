@@ -30,7 +30,7 @@ const estilos = StyleSheet.create({
     },
 
     containerUltimaPontuacao: {
-        marginBottom: 100,
+        marginBottom: 20,
         alignSelf: 'center',
         width: 250,
         height: 50,
@@ -43,6 +43,7 @@ const estilos = StyleSheet.create({
         marginBottom: 50,
         width: 150,
         height: 50,
+        marginTop: 50
     },
 
     botaoLogout: {
@@ -67,7 +68,8 @@ const estilos = StyleSheet.create({
         color: 'white',
         alignSelf: 'center',
         fontWeight: 'bold',
-        fontSize: 20
+        fontSize: 20,
+        alignSelf: 'center'
     },
 
     maiorPontuacao: {
@@ -97,18 +99,17 @@ const estilos = StyleSheet.create({
 
     avatarTelaPerfil: {
         marginTop: '10%',
-        marginLeft: '13%',
+        marginLeft: 10,
         width: 100,
         height: 100,
         borderColor: 'white',
         borderRadius: 100,
-        borderWidth: 2
+        borderWidth: 2,
+        alignSelf: 'center'
     },
 
     containerLogoEAvatar: {
-        // flexDirection: 'row',
-        flex: 1,
-        // justifyContent: 'space-around',
+     marginBottom: 50
     },
 })
 

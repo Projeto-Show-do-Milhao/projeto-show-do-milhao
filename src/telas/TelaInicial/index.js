@@ -1,5 +1,5 @@
 import React, { Component, useState } from 'react';
-import { View, ImageBackground, Button, Alert } from 'react-native'
+import { View, ImageBackground, TouchableHighlight, Alert, Image } from 'react-native'
 import estilos from '../../telas/TelaInicial/styles';
 import * as Facebook from 'expo-facebook';
 import '@expo/vector-icons';
@@ -86,13 +86,12 @@ function TelaInicial({navigation}) {
           alignSelf: 'center',
           marginTop: 300
         }}>
-          <Button
-            onPress={chamarLogin}
-            styles={{
-              margin: 20
-            }}
-            title='Login com Facebook'
-          />
+         <TouchableHighlight onPress={chamarLogin} >
+          <View style={{alignItems: 'center'}} >
+          <Image source={require('../../imagens/facebook-login.png')} style={{height: 60, width: 280}}/>
+          </View>
+         </TouchableHighlight>
+          
         </View>
       </View>
 

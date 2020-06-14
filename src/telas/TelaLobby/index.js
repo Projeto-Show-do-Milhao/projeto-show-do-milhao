@@ -1,6 +1,6 @@
 import 'react-native-gesture-handler';
-import React, { Component, useState } from 'react';
-import { View, Image, ImageBackground, Text, ScrollView, TouchableHighlight, Alert, } from 'react-native'
+import React, { Component, useState} from 'react';
+import { View, Image, ImageBackground, Text, ScrollView, TouchableHighlight, Alert, Button, } from 'react-native'
 import estilos from '../../telas/TelaLobby/styles';
 import firebase from 'firebase'
 
@@ -32,14 +32,23 @@ function ListaDeusuarios({usuarios}){
   )
 }
 
+
+function verificaPontuacao(ranking){
+  firebase.database().ref('Usuários').on('value', snapshot =>{
+    snapshot.forEach(childSnapshot=>{
+      ranking.push(childSnapshot.val())
+    })
+  })
+}
+
 function TelaLobby({route, navigation}) {
   const {nome} = route.params
   const {foto} = route.params
   const {id} = route.params
-  let {ranking} = route.params
+  const ranking = []
   console.log(ranking)
-  var usuarios = 'Usuários'
- 
+  verificaPontuacao(ranking)
+
   return (
     <View style={estilos.containerTelaJogar}>
       <View style={estilos.containerImagemFundoTelaJogar}>

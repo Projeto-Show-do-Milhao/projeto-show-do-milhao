@@ -31,12 +31,10 @@ function TelaPerfil({route , navigation}) {
               />
               </TouchableOpacity>
               <Image source={{uri: foto}} style={estilos.avatarTelaPerfil} />
-          </View>
-          <View style={estilos.containerNickName}>
               <Text style={estilos.nickname}>{nome}</Text>
           </View>
           <View style={estilos.containerUltimaPontuacao}>
-              <Text style={estilos.ultimaPontuacao}>Ultima Pontuacao</Text>
+              <Text style={estilos.ultimaPontuacao}>Última Pontuação</Text>
           </View>
           <View style={estilos.containerUltimaPontuacao}>
               <Text style={estilos.ultimaPontuacao}>R${pontos[0]},00</Text>

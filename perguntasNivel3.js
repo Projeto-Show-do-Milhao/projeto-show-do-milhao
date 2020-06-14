@@ -117,7 +117,7 @@ const perguntasLista2Nivel3 =[
         resposta: 'HINDUÍSMO'
     },
     {
-        pergunta: 'Os nazistas foram julgados em:',
+        pergunta: 'Os nazistas foram julgados em?',
         alternativas: {
             a: 'BERLIM',
             b: 'NUREMBERGUE',
