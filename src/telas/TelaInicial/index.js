@@ -47,7 +47,6 @@ function cadastraUsuario(userObject) {
     id: userObject.id,
     pontuação: 0,
   });
-  console.log('foi')
 }
 
 function verificaPontuacao(ranking){
@@ -62,7 +61,6 @@ function TelaInicial({navigation}) {
   
   const chamarLogin = () => {
     verificaPontuacao(ranking)
-    console.log('eu sou o ranking', ranking)
     login()
     .then(user => {
       console.log(user);
