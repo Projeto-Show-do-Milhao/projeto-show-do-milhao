@@ -280,7 +280,7 @@ function TelaQuestoes({route, navigation}) {
                 PARAR
             </Text>
 						<Text style={{ fontSize: 16, alignSelf: "center", }}>
-                R${premioTotal/2}
+                R${premioTotal/2},00
             </Text>
             <Text style={{ fontSize: 22, alignSelf: "center", }}>
             </Text>
